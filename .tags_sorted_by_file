@@ -1,0 +1,21 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+getFiles	install.sh	/^function getFiles(){$/;"	f
+installDotFiles	install.sh	/^function installDotFiles() {$/;"	f
+setup	install.sh	/^function setup() {$/;"	f
+logo	src/enviorment.sh	/^function logo(){$/;"	f
+note	src/enviorment.sh	/^function note() {$/;"	f
+progress	src/enviorment.sh	/^function progress(){$/;"	f
+Progress	src/progress-bar.sh	/^Progress() {$/;"	f
+usage	src/progress-bar.sh	/^usage() {$/;"	f
+getOS	src/set_os.sh	/^function getOS() {$/;"	f
+get_Linux_type	src/set_os.sh	/^function get_Linux_type() {$/;"	f
+setDebian	src/set_os.sh	/^setDebian() {$/;"	f
+setMac	src/set_os.sh	/^setMac() {$/;"	f
+setRedHat	src/set_os.sh	/^setRedHat() {$/;"	f
+check	test.py	/^check = commands.getoutput("ls -F | grep -v .\/.*")$/;"	v
+commands	test.py	/^import commands$/;"	i
