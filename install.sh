@@ -86,7 +86,7 @@ function installDotFiles() {
   do
     #無視するファイル
     case $file in
-      .|..|.git|.tag*)
+      .|..|.git*|.tag*)
         continue
         ;;
        .DS_Store)
