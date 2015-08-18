@@ -9,8 +9,17 @@ export EDITOR='/usr/bin/emacs -nw'
 
 alias emacs='/usr/bin/emacs -nw'
 
-alias ls='ls -G'
-alias la='ls -la'
+# lsがカラー表示になるようエイリアスを設定
+case "${OSTYPE}" in
+darwin*)
+  # Mac
+  alias ls="ls -GF"
+  ;;
+linux*)
+  # Linux
+  alias ls='ls -F --color'
+  ;;
+esac
 
 export LSCOLORS=gxfxcxdxbxegedabagacad
 

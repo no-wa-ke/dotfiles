@@ -33,7 +33,7 @@ bindkey "^R" history-incremental-search-backward
 # 補完機能
 # ----------------------------
 # 補完機能をON
-autoload -U compinit; compinit
+autoload -Uz compinit; compinit
 
 # Shift-Tabで補完候補を逆順する("\e[Z"でも動作する)
 bindkey "^[[Z" reverse-menu-complete

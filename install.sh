@@ -61,7 +61,7 @@ function setup() {
     getFiles
   elif [ $platform == 'linux' ]; then
     note "\tDetected Linux OS...\n"
-    porgress sleep 0.5
+    progress sleep 0.5
     get_Linux_type # set_os.sh
 
     if [ $dtype == 'redhat' ]; then

@@ -170,6 +170,7 @@ au BufNewFile,BufRead *.ejs set filetype=html
 
 set clipboard=unnamed,autoselect
 set hlsearch
+nnoremap<CR> :noh<CR><CR>
 set ignorecase
 set smartcase
 filetype plugin indent on     " required!
