@@ -56,23 +56,27 @@ NeoBundle 'VimClojure'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neocomplcache'
-
 NeoBundle 'jpalardy/vim-slime'
 NeoBundle 'scrooloose/syntastic'
 
-NeoBundle 'nathanaelkane/vim-indent-guides'
+"NeoBundle 'nathanaelkane/vim-indent-guides'
 " Vim 起動時 vim-indent-guides を自動起動
-let g:indent_guides_enable_on_vim_startup=1
+"let g:indent_guides_enable_on_vim_startup=1
 " ガイドをスタートするインデントの量
-let g:indent_guides_start_level=2
+"let g:indent_guides_start_level=1
 " 自動カラー無効
-let g:indent_guides_auto_colors=0
+"let g:indent_guides_auto_colors=0
 " 奇数番目のインデントの色
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#444433 ctermbg=black
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#444433 ctermbg=black
 " 偶数番目のインデントの色
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#333344 ctermbg=darkgray
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#333344 ctermbg=darkgray
 " ガイドの幅
-let g:indent_guides_guide_size = 1
+"let g:indent_guides_guide_size = 1
+
+
+"nerdtree
+NeoBundle 'scrooloose/nerdtree'
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
 
 ""dev tools
 NeoBundle 'mattn/emmet-vim'
@@ -164,8 +168,13 @@ vmap <C-K> <Plug>(caw:i:toggle)
 au BufNewFile,BufRead *.ejs set filetype=html
 """"""""""""""""""""""""""""""
 
-""filetype plugin indent on     " required!
+set clipboard=unnamed,autoselect
+set hlsearch
+set ignorecase
+set smartcase
+filetype plugin indent on     " required!
 filetype indent on
+autocmd colorscheme molokai highlight Visual ctermbg=8
 colorscheme molokai
 set number
 syntax on

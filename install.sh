@@ -31,6 +31,8 @@ path=(zsh-completions .vim)
       mkdir -p ~/.vim/colors
       git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
       git clone git://github.com/Shougo/vimproc.vim.git ~/.vim/bundle/vimproc
+
+      echo "building vimproc ...\n."
       make -C ~/.vim/bundle/vimproc/
       git clone git://github.com/tomasr/molokai ~/.vim/colors/molokai
       cp ~/.vim/colors/molokai/colors/molokai.vim ~/.vim/colors/
@@ -56,7 +58,7 @@ function setup() {
   if [ $platform == 'mac' ]; then
     note "${cyan}Detected Mac OSX...\n"
     setMac # set_os.sh
-
+    getFiles
   elif [ $platform == 'linux' ]; then
     note "\tDetected Linux OS...\n"
     porgress sleep 0.5
@@ -65,27 +67,26 @@ function setup() {
     if [ $dtype == 'redhat' ]; then
       note "\tDetected redhat...not yet developed\n"
       # setRedHat
-      exit 1
+      
     elif [ $dtype == 'debian' ]; then
       note "\tDetected redhat...not yet developed\n"
       # setDebian
-      exit 1
+      
     fi
   fi
-getFiles
+
 
 }
 
 #-------------------------------------------------
 
 function installDotFiles() {
-
   note "Linking dotfiles...\n"
   for file in .* ;
   do
     #無視するファイル
     case $file in
-      .|..|.git)
+      .|..|.git|.tag*)
         continue
         ;;
        .DS_Store)
