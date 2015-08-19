@@ -1,10 +1,3 @@
-
-
-
-export EDITOR='/usr/bin/emacs -nw'
-
-alias emacs='/usr/bin/emacs -nw'
-
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
 alias subpack='cd /Users/mty1245/Library/Application\ Support/Sublime\ Text\ 2/Packages/'
@@ -50,13 +43,8 @@ darwin*)
 linux*)
   # Linux
   alias ls='ls -F --color'
-  
   ;;
 esac
-
-
-
-
 
 
 ### Added by the Heroku Toolbelt

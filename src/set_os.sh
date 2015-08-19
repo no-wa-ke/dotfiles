@@ -53,9 +53,9 @@ function get_Linux_type() {
 #-------------------------------------------------
 setMac() {
 
-  read  -p "${ylw}Do you wish to update Homebrew(may take a while)(y/n)?=>  ${normal}" yn
+    read  -p "${ylw}Do you wish to update Homebrew(may take a while)(y/n)?=>  ${normal}" yn
     case $yn in
-        [Yy]* ) brew update; break;;
+        [Yy]* ) brew update; ;;
         [Nn]* ) echo "\n Okay.Processing without updating.\n"; ;;
         * ) echo "${red}Please answer yes or no."
             echo "Terminating."

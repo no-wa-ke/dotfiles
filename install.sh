@@ -51,7 +51,7 @@ path=(zsh-completions .vim)
 
 function setup() {
   
- logo
+ callLogo
 
   getOS # set_os.sh
 
@@ -81,6 +81,7 @@ function setup() {
 #-------------------------------------------------
 
 function installDotFiles() {
+
   note "Linking dotfiles...\n"
   for file in .* ;
   do
@@ -94,7 +95,7 @@ function installDotFiles() {
       ;;
     #処理するファイル
     *)
-    if [ -a $HOME/$file ]; then
+    if [ -e $HOME/$file ]; then
       # ln -s $HOME/dotfiles/$file $HOME/$file.dot
       # echo "ファイルが存在しますから.dotファイルつくるよ: $file"
       progress sleep 0.5
@@ -107,11 +108,25 @@ function installDotFiles() {
       echo "${cyan}シンボリックリンクを貼りました: $file${normal}"
     fi
     ;;
-
     esac
-
   done
-
+  
+#REFRESH
+for refresh in .* ;
+  do
+    #無視するファイル
+    case $refresh in
+       .|.DS_Store|..|.git*|.tag*|.tmux*|.vimrc)
+        continue
+      ;;
+    #処理するファイル
+    *)
+    echo "\n"
+    zsh $HOME/$refresh 2>&1 >/dev/null
+    echo "${cyan}refreshed: $refresh${normal}"
+    ;;
+    esac
+  done
 }
 
 #-------------------------------------------------

@@ -23,7 +23,7 @@ function progress(){
 #install.sh に呼び出されるのでパスはホームから
 . ./src/progress-bar.sh
 }
-function logo(){
+function callLogo(){
 echo "\n"
 echo "#### DOTFILES SETUP ####"
 echo "#### By No-wa-ke    ####\n" 
