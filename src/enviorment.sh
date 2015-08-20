@@ -17,16 +17,16 @@ blue=$(tput setaf 4)
 
 
 function note() {
-  echo "[32;1m * [0m$*"
+  printf "[32;1m * [0m$*"
 }
 function progress(){
 #install.sh に呼び出されるのでパスはホームから
 . ./src/progress-bar.sh
 }
 function callLogo(){
-echo "\n"
-echo "#### DOTFILES SETUP ####"
-echo "#### By No-wa-ke    ####\n" 
+printf "\n\n"
+printf "#### DOTFILES SETUP ####\n"
+printf "#### By No-wa-ke    ####\n\n" 
 cat << "EOF"
 
 ██████╗  ██████╗ ████████╗███████╗██╗██╗     ███████╗███████╗

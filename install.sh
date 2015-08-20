@@ -15,34 +15,36 @@ path=(zsh-completions .vim)
     #zsh completetion
     if [ ! -e $HOME/zsh-completions ]; then
     progress sleep 0.5  
-      echo "${ylw}Installing zsh-completions settings....${normal}\n"
+      printf "${ylw}Installing zsh-completions settings....${normal}\n"
       git clone git://github.com/zsh-users/zsh-completions.git ~/zsh-completions
       
-      echo "${blue}zsh-completions ready.${normal}\n"
+      printf "${blue}zsh-completions ready.${normal}\n"
     else
-      echo "${blue}zsh-completions already installed.${normal}\n"      
+    progress sleep 0.5 
+      printf "${blue}zsh-completions already installed.${normal}\n"      
     fi
 
     #vim neobundle/color settings
     if [ ! -e $HOME/.vim ]; then
       progress sleep 0.5
-      echo "${ylw}Installing vim settings....${normal}\n"
+      printf "${ylw}Installing vim settings....${normal}\n"
       mkdir -p ~/.vim/bundle
       mkdir -p ~/.vim/colors
       git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
       git clone git://github.com/Shougo/vimproc.vim.git ~/.vim/bundle/vimproc
 
-      echo "building vimproc ...\n."
+      printf "building vimproc ...\n."
       make -C ~/.vim/bundle/vimproc/
       git clone git://github.com/tomasr/molokai ~/.vim/colors/molokai
       cp ~/.vim/colors/molokai/colors/molokai.vim ~/.vim/colors/
-      echo "${blue}vim ready.${normal}\n"
+      printf "${blue}vim ready.${normal}\n"
     else
-      echo "${blue}vim already installed.${normal}\n"
+      progress sleep 0.5
+      printf "${blue}vim already installed.${normal}\n"
     fi
   
   progress sleep 0.5
-  echo "${ylw}Enviorment ready!\n"
+  printf "${ylw}Enviorment ready!\n"
 
 }
 
@@ -60,17 +62,16 @@ function setup() {
     setMac # set_os.sh
     getFiles
   elif [ $platform == 'linux' ]; then
-    note "\tDetected Linux OS...\n"
-    progress sleep 0.5
+    note "${cyan}Detected Linux OS...\n"
     get_Linux_type # set_os.sh
 
     if [ $dtype == 'redhat' ]; then
-      note "\tDetected redhat...not yet developed\n"
-      # setRedHat
+      note "${cyan}Detected redhat...\n"
+      setRedHat
       getFiles 
     elif [ $dtype == 'debian' ]; then
-      note "\tDetected redhat...not yet developed\n"
-      # setDebian
+      note "${cyan}Detected redhat..\n"
+      setDebian
       getFiles
     fi
   fi
@@ -97,15 +98,15 @@ function installDotFiles() {
     *)
     if [ -e $HOME/$file ]; then
       # ln -s $HOME/dotfiles/$file $HOME/$file.dot
-      # echo "ファイルが存在しますから.dotファイルつくるよ: $file"
+      # printf "ファイルが存在しますから.dotファイルつくるよ: $file"
       progress sleep 0.5
       rm $HOME/$file
       ln -s $HOME/dotfiles/$file $HOME/$file
-      echo "${cyan}既存のファイルがあったので勝手に更新しました: $file${normal}"
+      printf "${cyan}既存のファイルがあったので勝手に更新しました: $file${normal}"
     else
       progress sleep 0.5
       ln -s $HOME/dotfiles/$file $HOME/$file
-      echo "${cyan}シンボリックリンクを貼りました: $file${normal}"
+      printf "${cyan}シンボリックリンクを貼りました: $file${normal}"
     fi
     ;;
     esac
@@ -121,9 +122,9 @@ function installDotFiles() {
         ;;
       #処理するファイル
       *)
-      echo "\n"
+      printf "\n"
       zsh $HOME/$refresh 2>&1 >/dev/null
-      echo "${cyan}refreshed: $refresh${normal}"
+      printf "${cyan}refreshed: $refresh${normal}"
       ;;
       esac
     done
@@ -133,4 +134,4 @@ function installDotFiles() {
 setup
 # installDotFiles
 
-echo "\n\n${ylw}COMPLEETED SETUP!\n\n"
+printf "\n\n${ylw}COMPLEETED SETUP!\n\n"
