@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function getOS() {
   
   if [ "$(uname)" == 'Darwin' ]; then
@@ -5,10 +7,10 @@ function getOS() {
   elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
     platform='linux' 
   elif [ "$(expr substr $(uname -s) 1 10)" == 'MINGW32_NT' ]; then                                                                                           
-    echo "${i}This script does not support Windows"
+    printf "${i}This script does not support Windows"
     exit 1
   else
-    echo "Your platform ($(uname -a)) is not supported."
+    printf "Your platform ($(uname -a)) is not supported."
     exit 1
   fi
 
@@ -18,7 +20,6 @@ function getOS() {
 #Linuxのディストリビューションを確認/ dtypeに保存  
 function get_Linux_type() {
     
-
     # First test against Fedora / RHEL / CentOS / generic Redhat derivative
     if [ -r /etc/rc.d/init.d/functions ]; then
         source /etc/rc.d/init.d/functions
@@ -53,49 +54,36 @@ function get_Linux_type() {
 #-------------------------------------------------
 setMac() {
 
-    read  -p "${ylw}Do you wish to update Homebrew(may take a while)(y/n)?=>  ${normal}" yn
+programs=(vim zsh tmux)
+
+#Brewをアップデートするか判断
+
+  read  -p "${ylw}Do you wish to update Homebrew(may take a while)(y/n)?=>  ${normal}" yn
     case $yn in
         [Yy]* ) brew update; ;;
-        [Nn]* ) echo "\n Okay.Processing without updating.\n"; ;;
-        * ) echo "${red}Please answer yes or no."
-            echo "Terminating."
+        [Nn]* ) printf "\n Okay.Processing without updating.\n\n"; ;;
+        * ) printf "${red}Please answer yes or no."
+            printf "Terminating."
             exit;;
     esac
 
   note "Setting up for Macintosh using brew...\n"
   progress sleep 0.5
 
+#TODO:もすうこしスマートに振り分ける
 
-  if [[ vim ]]; then
-    echo "${cyan}vim already installed.Ignoring.${normal}\n"
-    progress sleep 0.5
+  for i in "${programs[@]}"
+  do
+  if [ $i ]; then
+      printf "${cyan}$i already installed.Ignoring.${normal}\n"
+      progress sleep 0.5
   else
-    echo "${ylw}vim not found. Installing vim ....${normal}\n"
-    brew install vim
-    progress sleep 0.5
+      brew install $i
+      progress sleep 0.5
   fi
-  
-  if [[ zsh ]]; then
-    echo "${cyan}zsh already installed.Ignoring.${normal}\n"
-    progress sleep 0.5
-  else
-    echo "${ylw}zsh not found. Installing vim ....${normal}\n"
-    brew install zsh
-    chsh -s /bin/zsh
-    progress sleep 0.5
-  fi
+  done
 
-  if [[ tmux ]]; then
-    echo "${cyan}tmux already installed.Ignoring.${normal}\n"
-    progress sleep 0.5
-  else
-    echo "${ylw}tmux not found. Installing vim ....${normal}\n"
-    brew install tmux
-    progress sleep 0.5
-  fi
- 
-    echo "${ylw}Dependecies ready!\n"
-
+  printf "${ylw}Dependecies ready!\n\n"
 
 }
 
@@ -103,21 +91,44 @@ setMac() {
 #-------------------------------------------------
 #WIP
 setRedHat() {
+  
+  programs=(vim zsh tmux)
+
   note "Setting up for Redhat using yum...\n"
   progress sleep 0.5
 
-  sudo yum -y install zsh
-  sudo yum -y update vim 
-  sudo yum -y install rsync 
+  for i in "${programs[@]}"
+  do
+  if [ $i ]; then
+      printf "${cyan}$i already installed.Ignoring.${normal}\n"
+      progress sleep 0.5
+  else
+      sudo yum install -y $i
+      progress sleep 0.5
+  fi
+  done
+
+      printf "${ylw}Dependecies ready!\n"
 }
 
 
 #-------------------------------------------------
 #WIP
 setDebian() {
-  note "Setting up for Debian using apt-get...\n" 
+  programs=(vim zsh tmux)
+
+  note "Setting up for Debian using apt-get...\n"
   progress sleep 0.5
 
-  apt-get install zsh
-  apt-get install vim
+  for i in "${programs[@]}"
+  do
+  if [ $i ]; then
+      printf "${cyan}$i already installed.Ignoring.${normal}\n"
+      progress sleep 0.5
+  else
+      apt-get install -y $i
+      progress sleep 0.5
+  fi
+  done
+
 }

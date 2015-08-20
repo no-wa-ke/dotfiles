@@ -67,11 +67,11 @@ function setup() {
     if [ $dtype == 'redhat' ]; then
       note "\tDetected redhat...not yet developed\n"
       # setRedHat
-      
+      getFiles 
     elif [ $dtype == 'debian' ]; then
       note "\tDetected redhat...not yet developed\n"
       # setDebian
-      
+      getFiles
     fi
   fi
 
@@ -111,26 +111,26 @@ function installDotFiles() {
     esac
   done
   
-#REFRESH
-for refresh in .* ;
-  do
-    #無視するファイル
-    case $refresh in
-       .|.DS_Store|..|.git*|.tag*|.tmux*|.vimrc)
-        continue
+  #REFRESH
+  for refresh in .* ;
+    do
+      #無視するファイル
+      case $refresh in
+         .|.DS_Store|..|.git*|.tag*|.tmux*|.vimrc)
+          continue
+        ;;
+      #処理するファイル
+      *)
+      echo "\n"
+      zsh $HOME/$refresh 2>&1 >/dev/null
+      echo "${cyan}refreshed: $refresh${normal}"
       ;;
-    #処理するファイル
-    *)
-    echo "\n"
-    zsh $HOME/$refresh 2>&1 >/dev/null
-    echo "${cyan}refreshed: $refresh${normal}"
-    ;;
-    esac
-  done
-}
+      esac
+    done
+  }
 
 #-------------------------------------------------
 setup
-installDotFiles
+# installDotFiles
 
 echo "\n\n${ylw}COMPLEETED SETUP!\n\n"

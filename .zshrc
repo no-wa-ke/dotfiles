@@ -5,10 +5,8 @@ PATH=$PATH:$HOME/.node/bin/npm
 # ----------------------------
 # 言語設定
 export LANG=ja_JP.UTF-8
-
 # エディタはvim
 export EDITOR=vim
-
 # PCRE 互換の正規表現を使う
 setopt re_match_pcre
 
