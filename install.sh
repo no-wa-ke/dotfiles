@@ -34,7 +34,7 @@ function setup() {
     fi
   fi
 
-InstallDotFiles
+  InstallDotFiles
 
 
 }

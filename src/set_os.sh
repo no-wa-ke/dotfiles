@@ -13,9 +13,7 @@ function getOS() {
     printf "Your platform ($(uname -a)) is not supported."
     exit 1
   fi
-
 }
-
 #-------------------------------------------------
 #Linuxのディストリビューションを確認/ dtypeに保存  
 function get_Linux_type() {

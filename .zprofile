@@ -27,18 +27,19 @@ linux*)
 	 alias ls='ls -F --color'
   ;;
 esac
-
-#PATH設定
+	#PATH設定
 	PATH=$PATH:$HOME/.node/bin
 	PATH=$PATH:$HOME/.rbenv/bin
+	PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+	PATH=$PATH:$HOME/.node/bin/npm
 	PATH=$PATH:/usr/local/lib/node_modules
 	PATH=$PATH:/usr/local/heroku/bin ### Added by the Heroku Toolbel
-	
+		
 	export PATH
 	
 	export NODE_PATH=/usr/local/lib/node_module
-	
-	
+	export MECAB_PATH=/usr/local/Cellar/mecab/0.996/lib/libmecab.dylib 	
+	if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 
 

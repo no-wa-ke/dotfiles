@@ -1,22 +1,23 @@
+#!/bin/bash
+
 function InstallDotFiles () {
 
   function setLink() {
-  note "Linking dotfiles...\n"
-  for file in .* ;
-  do
-    #無視するファイル
-    case $file in
-      .|..|.git*|.tag*)
-        continue
-        ;;
-       .DS_Store)
-        continue
-      ;;
-    #処理するファイル
-    *)
-    if [ -e $HOME/$file ]; then
+    note "Linking dotfiles...\n"
+    for file in .* ;
+    do
+  #無視するファイル
+  case $file in
+    .|..|.git*|.tag*)
+    continue
+    ;;
+    .DS_Store)
+    continue
+    ;;
+  #処理するファイル
+  *)
+  if [ -e $HOME/$file ]; then
       # TODO:既存のファイルとの共存をたもつ処理をかく
-
       # ln -s $HOME/dotfiles/$file $HOME/$file.dot
       # printf "ファイルが存在しますから.dotファイルつくるよ: $file"
       progress sleep 0.5
@@ -29,10 +30,11 @@ function InstallDotFiles () {
       printf "${cyan}シンボリックリンクを貼りました: $file${normal}\n"
     fi
     ;;
-    esac
-  done
-  return 0
-  }
+  esac
+done
+return 0
+
+}
 
   if setLink $1 ; then #実行してboolを得る
   progress sleep 0.5
@@ -48,9 +50,9 @@ function InstallDotFiles () {
     do
       #無視するファイル
       case $refresh in
-         .|.DS_Store|..|.git*|.tag*|.tmux*|.vimrc)
-          continue
-        ;;
+       .|.DS_Store|..|.git*|.tag*|.tmux*|.vimrc)
+      continue
+      ;;
       #処理するファイル
       *)
       printf "\n"
@@ -69,4 +71,6 @@ function InstallDotFiles () {
   else
   printf "${red}Could not refresh your enviorment\n\n"  
   fi
+
+  
   }

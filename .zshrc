@@ -1,6 +1,4 @@
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=$PATH:$HOME/.node/bin/npm
 # 基本設定
 # ----------------------------
 # 言語設定
