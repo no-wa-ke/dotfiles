@@ -103,9 +103,13 @@ setRedHat() {
       printf "${cyan}$i already installed.Ignoring.${normal}\n"
       progress sleep 0.5
   else
-      sudo yum install -y $i
+      printf "${cyan}Installing $i ...${normal}\n"
+      sudo yum -y install $i
+      printf "${cyan}updating $i ...${normal}\n"
+      sudo yum -y update $i
       progress sleep 0.5
   fi
+
   done
 
       printf "${ylw}Dependecies ready!\n"
@@ -126,7 +130,7 @@ setDebian() {
       printf "${cyan}$i already installed.Ignoring.${normal}\n"
       progress sleep 0.5
   else
-      apt-get install -y $i
+      apt-get -y install $i
       progress sleep 0.5
   fi
   done

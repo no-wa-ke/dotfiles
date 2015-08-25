@@ -10,7 +10,8 @@ alias lolipop='ssh main.jp-kidoyoji@ssh048.lolipop.jp -p 2222'
 alias myimac='ssh nowake@imac-2.268546406.members.btmm.icloud.com'
 alias myHub='open https://github.com/no-wa-ke/'
 alias tmux="tmux -2"
-
+alias hex2dec="printf '%d\n'"
+alias dec2hex="printf '%x\n'"
 
 ##OS DEPENDENCIES(TODO:別ファイルに分ける)
 
@@ -21,7 +22,7 @@ darwin*)
 	alias ls="ls -GF"
 	alias la="ls -la"
 	alias ctags="`brew --prefix`/bin/ctags"
-  ;;
+      	;;
 linux*)
 	 # Linux
 	 alias ls='ls -F --color'

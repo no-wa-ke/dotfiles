@@ -1,6 +1,9 @@
 function InstallDotFiles () {
 
+  #setLink -> doRefresh
+
   function setLink() {
+  
   note "Linking dotfiles...\n"
   for file in .* ;
   do
@@ -34,16 +37,18 @@ function InstallDotFiles () {
   return 0
   }
 
-  if setLink $1 ; then #実行してboolを得る
-  progress sleep 0.5
-  printf "${ylw}Symbolics Ready!\n\n"  
-  else
-  printf "${red}Could not locate your symbolic link.\n\n"  
-  fi
-  
+    if setLink $1 ; then #実行してboolを得る
+    progress sleep 0.5
+    printf "${ylw}Symbolics Ready!\n\n"  
+    else
+    printf "${red}Could not locate your symbolic link.\n\n"  
+    fi
+    
   function doRefresh (){
+
   note "zshに初期化...\n"
   chsh -s /bin/zsh
+
   for refresh in .* ;
     do
       #無視するファイル
@@ -62,11 +67,13 @@ function InstallDotFiles () {
     return 0
   }
 
-  if doRefresh $1 ; then 
-  printf "\n"
-  progress sleep 0.5
-  printf "${ylw}Refreshed your enviorment!\n\n"  
-  else
-  printf "${red}Could not refresh your enviorment\n\n"  
-  fi
+    #実行して判断する
+    if doRefresh $1 ; then 
+    printf "\n"
+    progress sleep 0.5
+    printf "${ylw}Refreshed your enviorment!\n\n"  
+    else
+    printf "${red}Could not refresh your enviorment\n\n"  
+    fi
+  
   }

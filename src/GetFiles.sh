@@ -35,6 +35,7 @@ path=(zsh-completions .vim)
       printf "${blue}vim already installed.${normal}\n"
     fi
   
+  
   progress sleep 0.5
   printf "${ylw}Enviorment ready!\n\n"
 

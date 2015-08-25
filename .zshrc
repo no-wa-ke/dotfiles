@@ -142,7 +142,7 @@ setopt interactive_comments
 # プロンプトが表示されるたびにプロンプト文字列を評価、置換する
 setopt prompt_subst
 
-PROMPT="[%n] %{${fg[yellow]}%}%~%{${reset_color}%}%{$fg[blue]%}$%{${reset_color}%} "
+PROMPT="[%n @ $m] %{${fg[yellow]}%}%~%{${reset_color}%}%{$fg[blue]%}$%{${reset_color}%} "
 
 # プロンプト指定(コマンドの続き)
 PROMPT2='[%n]> '
