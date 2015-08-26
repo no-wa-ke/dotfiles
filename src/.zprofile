@@ -41,15 +41,6 @@ esac
 	export PATH
 	
 	export NODE_PATH=/usr/local/lib/node_module
-<<<<<<< HEAD:.zprofile
-	export MECAB_PATH=/usr/local/Cellar/mecab/0.996/lib/libmecab.dylib 	
+
+	# export MECAB_PATH=/usr/local/Cellar/mecab/0.996/lib/libmecab.dylib 	
 	if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-
-
-
-
-
-=======
-	
->>>>>>> with-ansible:src/.zprofile

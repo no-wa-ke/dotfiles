@@ -36,11 +36,8 @@ function setup() {
     fi
   fi
 
-<<<<<<< HEAD
-  InstallDotFiles
-=======
 linkDotFiles
->>>>>>> with-ansible
+
 
 
 }
@@ -50,4 +47,4 @@ linkDotFiles
 setup
 
 printf "\n\n${ylw}COMPLEETED SETUP!\n\n"
-printf "\n\n${ylw}make sure you refresh other dotfiles such as .vimrc, tmux...etc\n\n"
+printf "${cyan}make sure you refresh other dotfiles such as .vimrc, tmux...etc\n\n"

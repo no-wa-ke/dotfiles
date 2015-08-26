@@ -47,6 +47,8 @@ function linkDotFiles () {
     esac
   done
 
+  sh ./script/mac/Sublime-Setting.sh
+  
   return 0
 
   }

@@ -27,7 +27,5 @@ progress sleep 0.5
     fi
   done
 
-printf "${ylw}Installed Lite packages!{$normal}\n\n"
+printf "${ylw}Installed Lite packages!${normal}\n\n"
 
-progress sleep 0.5
-sh ./script/mac/Sublime-Setting.sh

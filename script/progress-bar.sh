@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#delay bar
 Progress() {
   _bar=$1; _bar=${_bar:=.}
   while :

@@ -24,4 +24,3 @@ ansible-galaxy install hnakamur.homebrew-cask-packages
 # Execute ansible
 ansible-playbook mac-env.yml -i hosts
 
-sh ./scripts/mac/Sublime-Settings.sh
