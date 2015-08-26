@@ -4,20 +4,22 @@ My dotfile using sh+Ansible.
 Darwin/Redhat/Debian
 
 ### Install(Mac)
-1. Get Xcode from [App Store](https://itunes.apple.com/jp/app/xcode/id497799835?mt=12) or [developer.apple.com](https://developer.apple.com/downloads/) 
-2. Install Command Line Tools by:
+1. **Get Xcode from [App Store](https://itunes.apple.com/jp/app/xcode/id497799835?mt=12) or [developer.apple.com](https://developer.apple.com/downloads/)**
+2. **Install Command Line Tools by:**
 ```shell
 $ gcc 
 ```
-and then pop-up window will show up. 
-3. Install brew, git , and this repository by:
+and then pop-up window will show up.
+
+3. **Install brew, git , and this repository by:**
 ```shell
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 $ brew install git
 $ git clone https://github.com/no-wa-ke/dotfiles.git
 ```
 Or just download this repository on another machine and just drop them into your $HOME directory.
-4. Install
+
+4. **Install**
 ```shell
 $ sh install.sh
 ```
@@ -53,7 +55,7 @@ You can either overwrite them, or create *~.dot* files and concat them with orig
 Lite-Install is supported on Redhat | Debian for now.
 
 ********
-#### sublime text setting
+###sublime text setting
 
 
 **Open console**
