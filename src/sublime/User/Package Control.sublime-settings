@@ -1,0 +1,46 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AAAPackageDev",
+		"AdvancedNewFile",
+		"BeautifyRuby",
+		"Build Next",
+		"ChucK Syntax",
+		"CodeFormatter",
+		"CTags",
+		"Dotfiles Syntax Highlighting",
+		"EJS",
+		"Emmet",
+		"Fix Mac Path",
+		"Glue",
+		"Gulp",
+		"HTMLBeautify",
+		"JSLint",
+		"knockdown",
+		"Markdown Extended",
+		"Package Control",
+		"Project Manager",
+		"Ruby Debugger",
+		"Ruby on Rails snippets",
+		"Sass",
+		"Seti_UI",
+		"Shell Exec",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-annotations",
+		"SublimeLinter-contrib-ruby-lint",
+		"SublimeLinter-csslint",
+		"SublimeLinter-flake8",
+		"SublimeLinter-jshint",
+		"SublimeLinter-json",
+		"SublimeLinter-phplint",
+		"SublimeLinter-ruby",
+		"SublimeLinter-shellcheck",
+		"Sublimerge Pro",
+		"SummitLinter"
+	]
+}
