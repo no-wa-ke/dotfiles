@@ -1,3 +1,4 @@
+#!/bin/bash
 
 alias dev='cd $HOME/MyVagrant/dev'
 alias runsv='sudo apachectl start'
@@ -12,6 +13,7 @@ alias myHub='open https://github.com/no-wa-ke/'
 alias tmux="tmux -2"
 alias hex2dec="printf '%d\n'"
 alias dec2hex="printf '%x\n'"
+alias glog="tail -f /var/log/system.log | ccze -A"
 
 ##OS DEPENDENCIES(TODO:別ファイルに分ける)
 
@@ -39,10 +41,3 @@ esac
 	
 	export NODE_PATH=/usr/local/lib/node_module
 	
-	
-
-
-
-
-
-

@@ -1,0 +1,123 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  sudo: no
+  vars:
+
+    homebrew_packages_taps:
+      - sanemat/font
+      - caskroom/cask
+
+    homebrew_packages_packages:
+      - { name: aubio }
+      - { name: autoconf }
+      - { name: automake }
+      - { name: bdw-gc }
+      - { name: berkeley-db }
+      - { name: brew-gem }
+      - { name: ccze }
+      - { name: chromedriver }
+      - { name: chuck }
+      - { name: cloog }
+      - { name: cmake }
+      - { name: cscope }
+      - { name: ctags }
+      - { name: eigen }
+      - { name: emacs }
+      - { name: fftw }
+      - { name: flac }
+      - { name: gcc }
+      - { name: gdbm }
+      - { name: gettext }
+      - { name: gmp }
+      - { name: hub }
+      - { name: ilmbase }
+      - { name: isl }
+      - { name: jack }
+      - { name: jpeg }
+      - { name: lame }
+      - { name: leiningen }
+      - { name: libevent }
+      - { name: libffi }
+      - { name: libgpg-error }
+      - { name: libksba }
+      - { name: libmpc }
+      - { name: libogg }
+      - { name: libpng }
+      - { name: libsamplerate }
+      - { name: libsndfile }
+      - { name: libtiff }
+      - { name: libtool }
+      - { name: libvorbis }
+      - { name: libxml2 }
+      - { name: libyaml }
+      - { name: lzlib }
+      - { name: mecab }
+      - { name: mecab-ipadic }
+      - { name: mpfr }
+      - { name: mysql }
+      - { name: ngrok }
+      - { name: node}
+      - { name: openexr }
+      - { name: openssl }
+      - { name: osxfuse }
+      - { name: pcre }
+      - { name: picocom }
+      - { name: pkg-config }
+      - { name: pv }
+      - { name: python }
+      - { name: rbenv }
+      - { name: rbenv-gem-rehash }
+      - { name: rbenv-gemset }
+      - { name: readline }
+      - { name: reattach-to-user-namespace }
+      - { name: ruby }
+      - { name: ruby-build }
+      - { name: shellcheck }
+      - { name: sqlite }
+      - { name: swig }
+      - { name: the_silver_searcher }
+      - { name: tmux }
+      - { name: tree }
+      - { name: vim }
+      - { name: w3m }
+      - { name: wget }
+      - { name: xz }
+      - { name: zsh }
+
+    homebrew_cask_packages_packages:
+      - xquartz
+      - air-video-server-hd
+      - arduino
+      - chromium
+      - dropbox
+      - firefox
+      - google-chrome
+      - handbrake
+      - iterm2
+      - java
+      - java6
+      - java7
+      - skype
+      - slack
+      - sublime-text
+      - vagrant
+      - virtualbox
+
+  pre_tasks:
+    - name: 'homebrew: tap homebrew/versions'
+      command: brew tap homebrew/versions
+    - name: 'homebrew: tap caskroom/versions'
+      command: brew tap caskroom/versions
+    - name: 'homebrew: tap caskroom/homebrew-fonts'
+      command: brew tap caskroom/homebrew-fonts
+    - name: 'homebrew: tap supistar/customs'
+      command: brew tap supistar/customs
+    - name: 'homebrew: update'
+      command: brew update
+
+
+  roles:
+    - hnakamur.homebrew-cask-packages
+    - hnakamur.homebrew-packages

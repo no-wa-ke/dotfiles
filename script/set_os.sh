@@ -13,7 +13,6 @@ function getOS() {
     printf "Your platform ($(uname -a)) is not supported."
     exit 1
   fi
-
 }
 
 #-------------------------------------------------
@@ -50,40 +49,27 @@ function get_Linux_type() {
 }
 
 ## Setting Up | Methods for each OS ##
-
 #-------------------------------------------------
 setMac() {
 
-programs=(vim zsh tmux)
+# Check Xcode.app existence
+if [ ! -e "/Applications/Xcode.app" ]; then
+    echo "*** ${red}[Error] There is no Xcode.app, please install it first***${normal}"
+    exit 1
+fi
 
-#Brewをアップデートするか判断
-
-  read  -p "${ylw}Do you wish to update Homebrew(may take a while)(y/n)?=>  ${normal}" yn
-    case $yn in
-        [Yy]* ) brew update; ;;
-        [Nn]* ) printf "\n Okay.Processing without updating.\n\n"; ;;
-        * ) printf "${red}Please answer yes or no."
-            printf "Terminating."
-            exit;;
+read  -p "${ylw}Install Lite-version or Complete Version(l/c)?=>  ${normal}" lc
+    case $lc in
+        [Ll]* ) sh ./script/mac/LiteInstall.sh; ;;
+        [Cc]* ) sh ./script/mac/CompleteInstall.sh; ;;
+        * ) printf "${red}Please answer yes or no."; ;;
     esac
-
-  note "Setting up for Macintosh using brew...\n"
-  progress sleep 0.5
-
-#TODO:もすうこしスマートに振り分ける
-
-  for i in "${programs[@]}"
-  do
-  if [ $i ]; then
-      printf "${cyan}$i already installed.Ignoring.${normal}\n"
-      progress sleep 0.5
-  else
-      brew install $i
-      progress sleep 0.5
-  fi
-  done
-
-  printf "${ylw}Dependecies ready!\n\n"
+# read  -p "${ylw}Do you wish to update Homebrew(may take a while)(y/n)?=>  ${normal}" yn
+#     case $yn in
+#         [Yy]* ) brew update; ;;
+#         [Nn]* ) printf "\n Okay.Processing without updating.\n\n"; ;;
+#         * ) printf "${red}Please answer yes or no."; ;;
+#     esac
 
 }
 
