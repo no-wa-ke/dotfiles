@@ -1,22 +1,29 @@
 ## dotfiles
 My dotfile using sh+Ansible.
+
 Darwin/Redhat/Debian
 
 ### Install(Mac)
-1.Get Xcode from [App Store](https://itunes.apple.com/jp/app/xcode/id497799835?mt=12) or [developer.apple.com](https://developer.apple.com/downloads/) 
-2.Install Command Line Tools by:
+1. Get Xcode from [App Store](https://itunes.apple.com/jp/app/xcode/id497799835?mt=12) or [developer.apple.com](https://developer.apple.com/downloads/) 
+
+2. Install Command Line Tools by:
 ```shell
 $ gcc 
 ```
+
 and then pop-up window will show up. 
-3.Install brew, git , and this repository by:
+
+3. Install brew, git , and this repository by:
+
 ```shell
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 $ brew install git
 $ git clone https://github.com/no-wa-ke/dotfiles.git
 ```
+
 Or just download this repository on another machine and just drop them into your $HOME directory.
-4.Install
+
+4. Install
 ```shell
 $ sh install.sh
 ```
@@ -26,8 +33,13 @@ $ sh install.sh
 
 ####**Lite** or **Complete** Install
 **Lite** only installs minimum packages for development(vim,zsh,tmux)
+
 On the other hand, **Complete** uses **Ansible** | **Homebrew cask** which install
-wide variety of apps, such as virtual-box,vagrant,and etc( take a look at *mac-env.yml* )If you want to dry run Ansible, just alter the line in *script/mac/CompleteInstall.sh* :
+wide variety of apps, such as virtual-box,vagrant,and etc( take a look at *mac-env.yml* )
+
+If you want to dry run Ansible, just alter the line in 
+
+*script/mac/CompleteInstall.sh* :
 
 ```shell
 ansible-playbook mac-env.yml -i hosts 
@@ -39,6 +51,7 @@ ansible-playbook mac-env.yml -i hosts --check
 
 ####**Overwrite** or create **.dot** 
 Some of the dotfiles might be already in your system.
+
 You can either overwrite them, or create *~.dot* files and concat them with original dotfiles later on.
 
 #### Redhat/Debian
@@ -59,6 +72,7 @@ As you reboot ST3 it will automatically install missing packages.
 
 
 ### TODO
-Adapt anyenv packages.Improve other OS support
+- Adapt anyenv packages
+- Improve other OS support
 
 
