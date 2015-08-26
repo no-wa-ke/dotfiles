@@ -3,3 +3,12 @@ tags
 .tags_sorted_by_file
 .DS_Store
 
+src/sublime/User/Package Control.last-run
+src/sublime/User/Package Control.ca-list
+src/sublime/User/Package Control.ca-bundle
+src/sublime/User/Package Control.system-ca-bundle
+src/sublime/User/Package Control.cache/
+src/sublime/User/Package Control.ca-certs/
+src/sublime/User/Projects
+src/sublime/User/SublimeLinter
+

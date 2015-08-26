@@ -1,3 +1,4 @@
+#!/bin/bash
 
 alias dev='cd $HOME/MyVagrant/dev'
 alias runsv='sudo apachectl start'
@@ -10,7 +11,9 @@ alias lolipop='ssh main.jp-kidoyoji@ssh048.lolipop.jp -p 2222'
 alias myimac='ssh nowake@imac-2.268546406.members.btmm.icloud.com'
 alias myHub='open https://github.com/no-wa-ke/'
 alias tmux="tmux -2"
-
+alias hex2dec="printf '%d\n'"
+alias dec2hex="printf '%x\n'"
+alias glog="tail -f /var/log/system.log | ccze -A"
 
 ##OS DEPENDENCIES(TODO:別ファイルに分ける)
 
@@ -21,7 +24,7 @@ darwin*)
 	alias ls="ls -GF"
 	alias la="ls -la"
 	alias ctags="`brew --prefix`/bin/ctags"
-  ;;
+      	;;
 linux*)
 	 # Linux
 	 alias ls='ls -F --color'
@@ -38,6 +41,7 @@ esac
 	export PATH
 	
 	export NODE_PATH=/usr/local/lib/node_module
+<<<<<<< HEAD:.zprofile
 	export MECAB_PATH=/usr/local/Cellar/mecab/0.996/lib/libmecab.dylib 	
 	if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
@@ -46,3 +50,6 @@ esac
 
 
 
+=======
+	
+>>>>>>> with-ansible:src/.zprofile

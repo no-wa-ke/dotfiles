@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 #global variable
 platform='unknown'
 dtype='unknown'
@@ -15,18 +14,17 @@ red=$(tput setaf 1)
 cyan=$(tput setaf 6)
 blue=$(tput setaf 4)
 
-
 function note() {
   printf "[32;1m * [0m$*"
 }
 function progress(){
 #install.sh に呼び出されるのでパスはホームから
-. ./src/progress-bar.sh
+. ./script/progress-bar.sh
 }
 function callLogo(){
 printf "\n\n"
 printf "#### DOTFILES SETUP ####\n"
-printf "#### By No-wa-ke    ####\n\n" 
+printf "#### By Yoji Kido    ####\n\n" 
 cat << "EOF"
 
 ██████╗  ██████╗ ████████╗███████╗██╗██╗     ███████╗███████╗

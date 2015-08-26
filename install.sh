@@ -2,10 +2,10 @@
 
 #-------------------------------------------------
 #external
-. ./src/enviorment.sh
-. ./src/set_os.sh
-. ./src/GetFiles.sh
-. ./src/installDotFiles.sh
+. ./script/enviorment.sh
+. ./script/set_os.sh
+. ./script/GetEnvFiles.sh
+. ./script/LinkDotFiles.sh
 
 #-------------------------------------------------
 
@@ -18,7 +18,8 @@ function setup() {
   if [ $platform == 'mac' ]; then
     note "${cyan}Detected Mac OSX...\n"
     setMac # set_os.sh
-    getFiles
+    get_envFiles
+  
   elif [ $platform == 'linux' ]; then
     note "${cyan}Detected Linux OS...\n"
     get_Linux_type # set_os.sh
@@ -26,15 +27,20 @@ function setup() {
     if [ $dtype == 'redhat' ]; then
       note "${cyan}Detected redhat...\n"
       setRedHat
-      getFiles 
+      get_envFiles 
+  
     elif [ $dtype == 'debian' ]; then
       note "${cyan}Detected redhat..\n"
       setDebian
-      getFiles
+      get_envFiles
     fi
   fi
 
+<<<<<<< HEAD
   InstallDotFiles
+=======
+linkDotFiles
+>>>>>>> with-ansible
 
 
 }
@@ -44,3 +50,4 @@ function setup() {
 setup
 
 printf "\n\n${ylw}COMPLEETED SETUP!\n\n"
+printf "\n\n${ylw}make sure you refresh other dotfiles such as .vimrc, tmux...etc\n\n"
