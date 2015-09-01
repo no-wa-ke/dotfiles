@@ -18,7 +18,6 @@
 		"Glue",
 		"Gulp",
 		"HTMLBeautify",
-		"JSLint",
 		"knockdown",
 		"Markdown Extended",
 		"Package Control",
@@ -37,10 +36,11 @@
 		"SublimeLinter-flake8",
 		"SublimeLinter-jshint",
 		"SublimeLinter-json",
-		"SublimeLinter-phplint",
+		"SublimeLinter-php",
 		"SublimeLinter-ruby",
 		"SublimeLinter-shellcheck",
 		"Sublimerge Pro",
-		"SummitLinter"
+		"SummitLinter",
+		"Three.js Autocomplete"
 	]
 }

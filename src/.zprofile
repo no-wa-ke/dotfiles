@@ -14,7 +14,7 @@ alias tmux="tmux -2"
 alias hex2dec="printf '%d\n'"
 alias dec2hex="printf '%x\n'"
 alias glog="tail -f /var/log/system.log | ccze -A"
-
+alias ofx="cd ~/github_tester/OF/"
 ##OS DEPENDENCIES(TODO:別ファイルに分ける)
 
 case "${OSTYPE}" in

@@ -45,7 +45,7 @@
 			},
 			"flake8":
 			{
-				"@disable": false,
+				"@disable": true,
 				"args":
 				[
 				],
@@ -71,7 +71,7 @@
 			},
 			"json":
 			{
-				"@disable": false,
+				"@disable": true,
 				"args":
 				[
 				],
@@ -80,9 +80,19 @@
 				],
 				"strict": true
 			},
+			"php":
+			{
+				"@disable": true,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
 			"phplint":
 			{
-				"@disable": false,
+				"@disable": true,
 				"args":
 				[
 				],
@@ -92,7 +102,7 @@
 			},
 			"ruby":
 			{
-				"@disable": false,
+				"@disable": true,
 				"args":
 				[
 				],
@@ -112,7 +122,7 @@
 			},
 			"shellcheck":
 			{
-				"@disable": false,
+				"@disable": true,
 				"args":
 				[
 				],

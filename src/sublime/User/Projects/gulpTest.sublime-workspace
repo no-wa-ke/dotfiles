@@ -5,7 +5,19 @@
 		[
 			[
 				"get",
-				"getFiles"
+				"getcwd〔function〕"
+			],
+			[
+				"DB_",
+				"DB_PASSWORD〔constant〕"
+			],
+			[
+				"DB",
+				"DB_USERNAME"
+			],
+			[
+				"html",
+				"htmlspecialchars〔function〕"
 			],
 			[
 				"insta",
@@ -40,90 +52,10 @@
 	"buffers":
 	[
 		{
-			"file": "/Users/mty1245/dotfiles/.gitignore",
+			"file": "/Users/mty1245/github_tester/node/gulpTest/app/dev/ejs/common/_head.ejs",
 			"settings":
 			{
-				"buffer_size": 334,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/mty1245/dotfiles/script/mac/Sublime-Setting.sh",
-			"settings":
-			{
-				"buffer_size": 580,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/mty1245/dotfiles/install.sh",
-			"settings":
-			{
-				"buffer_size": 953,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/mty1245/dotfiles/script/LinkDotFiles.sh",
-			"settings":
-			{
-				"buffer_size": 1979,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/mty1245/dotfiles/README.md",
-			"settings":
-			{
-				"buffer_size": 2314,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/mty1245/dotfiles/mac-env.yml",
-			"settings":
-			{
-				"buffer_size": 2768,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/mty1245/dotfiles/script/GetEnvFiles.sh",
-			"settings":
-			{
-				"buffer_size": 1338,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/mty1245/dotfiles/script/progress-bar.sh",
-			"settings":
-			{
-				"buffer_size": 261,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/mty1245/dotfiles/script/set_os.sh",
-			"settings":
-			{
-				"buffer_size": 3504,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/mty1245/dotfiles/script/mac/LiteInstall.sh",
-			"settings":
-			{
-				"buffer_size": 637,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/mty1245/dotfiles/script/mac/CompleteInstall.sh",
-			"settings":
-			{
-				"buffer_size": 561,
+				"buffer_size": 471,
 				"line_ending": "Unix"
 			}
 		}
@@ -136,20 +68,52 @@
 	"command_palette":
 	{
 		"height": 400.0,
-		"last_filter": "linter",
+		"last_filter": "pro",
 		"selected_items":
 		[
+			[
+				"pro",
+				"Project Manager"
+			],
+			[
+				"prom",
+				"Project Manager: Open Project"
+			],
+			[
+				"reiin",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"rebui",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"compare",
+				"Sublimerge: Compare to Clipboard"
+			],
+			[
+				"rebu",
+				"CTags: Rebuild Tags"
+			],
 			[
 				"linter",
 				"SublimeLinter: Toggle Linter"
 			],
 			[
-				"save",
-				"Project: Save As"
+				"remove",
+				"Package Control: Remove Package"
 			],
 			[
-				"pro",
-				"Project Manager"
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"save",
+				"Project: Save As"
 			],
 			[
 				"set git",
@@ -180,16 +144,8 @@
 				"Indentation: Reindent Lines"
 			],
 			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
 				"lint ",
 				"SublimeLinter: Toggle Linter"
-			],
-			[
-				"compare",
-				"Sublimerge: Compare to Revision..."
 			],
 			[
 				"toggle",
@@ -222,10 +178,6 @@
 			[
 				"shell",
 				"Shell Exec: Open"
-			],
-			[
-				"rebui",
-				"CTags: Rebuild Tags"
 			],
 			[
 				"insta",
@@ -340,7 +292,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 592.0
+		"width": 382.0
 	},
 	"console":
 	{
@@ -362,13 +314,35 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/mty1245/dotfiles",
-		"/Users/mty1245/dotfiles/script",
-		"/Users/mty1245/dotfiles/script/mac",
-		"/Users/mty1245/dotfiles/src"
+		"/Users/mty1245/github_tester/node/gulpTest",
+		"/Users/mty1245/github_tester/node/gulpTest/app",
+		"/Users/mty1245/github_tester/node/gulpTest/app/dev",
+		"/Users/mty1245/github_tester/node/gulpTest/app/dev/ejs",
+		"/Users/mty1245/github_tester/node/gulpTest/app/dev/ejs/common",
+		"/Users/mty1245/github_tester/node/gulpTest/app/public"
 	],
 	"file_history":
 	[
+		"/Users/mty1245/github_tester/threeJs/app/public/js",
+		"/Users/mty1245/github_tester/node/gulpTest/package.json",
+		"/Users/mty1245/github_tester/three-js/css/main.css",
+		"/Users/mty1245/github_tester/three-js/js/main.js",
+		"/Users/mty1245/github_tester/three-js/index.html",
+		"/Users/mty1245/github_tester/php/.tags_sorted_by_file",
+		"/Users/mty1245/github_tester/php/.htaccess",
+		"/Users/mty1245/github_tester/php/class.php",
+		"/Users/mty1245/github_tester/php/class/util.php",
+		"/Users/mty1245/github_tester/php/db/param.php",
+		"/Users/mty1245/github_tester/php/index.php",
+		"/Users/mty1245/github_tester/php/db/index.php",
+		"/Users/mty1245/github_tester/php/external.php",
+		"/Users/mty1245/github_tester/php/db/util.php",
+		"/Users/mty1245/github_tester/php/util.php",
+		"/Users/mty1245/github_tester/php/getInput.php",
+		"/Users/mty1245/github_tester/php/access.php",
+		"/Users/mty1245/github_tester/php/db/db/index.php",
+		"/etc/apache2/httpd.conf",
+		"/Users/mty1245/Downloads/ULJM050370004/ULJM050370004/PARAM.SFO",
 		"/Users/mty1245/dotfiles/src/sublime/User/Projects/library.json",
 		"/Users/mty1245/dotfiles/script/GetEnvFiles.sh",
 		"/Users/mty1245/dotfiles/src/.zprofile",
@@ -438,6 +412,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"jsfil",
+			"bower",
+			"::",
+			"root",
+			"document root",
 			"</dd>",
 			"<dd>",
 			"<dl>",
@@ -511,249 +490,16 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/mty1245/dotfiles/.gitignore",
-					"semi_transient": false,
+					"file": "/Users/mty1245/github_tester/node/gulpTest/app/dev/ejs/common/_head.ejs",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 334,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								301,
-								301
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/mty1245/dotfiles/script/mac/Sublime-Setting.sh",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 580,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								148,
-								148
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/Users/mty1245/dotfiles/install.sh",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 953,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								883,
-								883
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/Users/mty1245/dotfiles/script/LinkDotFiles.sh",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1979,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								999,
-								999
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/Users/mty1245/dotfiles/README.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2314,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								561,
-								561
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/knockdown/Markdown (Github Flavored).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/Users/mty1245/dotfiles/mac-env.yml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2768,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2685,
-								2685
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/Users/mty1245/dotfiles/script/GetEnvFiles.sh",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1338,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1080,
-								1080
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/Users/mty1245/dotfiles/script/progress-bar.sh",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 261,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								12,
-								12
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/Users/mty1245/dotfiles/script/set_os.sh",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3504,
+						"buffer_size": 471,
 						"regions":
 						{
 						},
@@ -766,73 +512,13 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/EJS/EJS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "/Users/mty1245/dotfiles/script/mac/LiteInstall.sh",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 637,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								623,
-								623
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "/Users/mty1245/dotfiles/script/mac/CompleteInstall.sh",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 561,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								559,
-								522
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -874,7 +560,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "dotfiles.sublime-project",
+	"project": "gulpTest.sublime-project",
 	"replace":
 	{
 		"height": 46.0
@@ -886,6 +572,26 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"index",
+				"index.php"
+			],
+			[
+				"clas",
+				"class.php"
+			],
+			[
+				"exter",
+				"external.php"
+			],
+			[
+				"inde",
+				"index.php"
+			],
+			[
+				"",
+				".htaccess"
+			],
 			[
 				"get",
 				"script/GetEnvFiles.sh"
@@ -903,20 +609,12 @@
 				"src/enviorment.sh"
 			],
 			[
-				"",
-				"~/Library/Application Support/Sublime Text 3/Packages/User/README.md"
-			],
-			[
 				"gulp",
 				"gulpfile.js"
 			],
 			[
 				"page",
 				"app/dev/ejs/_page.ejs"
-			],
-			[
-				"inde",
-				"index.html"
 			],
 			[
 				"vim",
@@ -955,7 +653,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 191.0,
+	"side_bar_width": 205.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
