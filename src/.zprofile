@@ -37,10 +37,12 @@ esac
 	PATH=$PATH:$HOME/.node/bin/npm
 	PATH=$PATH:/usr/local/lib/node_modules
 	PATH=$PATH:/usr/local/heroku/bin ### Added by the Heroku Toolbel
-		
+	PATH=$PATH:$HOME/.anyenv/bin	
+	
 	export PATH
 	
 	export NODE_PATH=/usr/local/lib/node_module
-
+	export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH	
 	# export MECAB_PATH=/usr/local/Cellar/mecab/0.996/lib/libmecab.dylib 	
 	if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+	eval "$(anyenv init -)"

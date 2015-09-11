@@ -84,7 +84,7 @@ setRedHat() {
 
   for i in "${programs[@]}"
   do
-  if [ $i ]; then
+  if [ type "$i" > /dev/null ]; then
       printf "${cyan}$i already installed.Ignoring.${normal}\n"
       progress sleep 0.5
   else
@@ -111,7 +111,7 @@ setDebian() {
 
   for i in "${programs[@]}"
   do
-  if [ $i ]; then
+  if [ type "$i" > /dev/null ]; then
       printf "${cyan}$i already installed.Ignoring.${normal}\n"
       progress sleep 0.5
   else

@@ -51,25 +51,6 @@
 	},
 	"buffers":
 	[
-		{
-			"contents": "var gulp = require('gulp');\nvar fs = require('fs');\nvar sass = require('gulp-sass');\nvar autoprefixer = require('gulp-autoprefixer');\nvar uglify = require('gulp-uglify');\nvar browser = require('browser-sync');\nvar plumber = require('gulp-plumber');\nvar bower = require('main-bower-files');\nvar concat = require('gulp-concat');\nvar filter = require('gulp-filter');\nvar rename = require('gulp-rename');\nvar debug = require('gulp-debug');\nvar ejs = require('gulp-ejs');\nvar concat_json = require('gulp-concat-json');\nvar print = require('gulp-print');\n  \n\n// json parser\nvar jsonData = require('./app/dev/js/pages.json');\nvar workData = require('./app/dev/js/media.json');\n\n// ページ生成用タス クを格納する配列\nvar taskSet= [];\n// ページ振り分け用のID\nvar taskNumber = 0;\n\n//タスクをページ毎に設定、まとめて定義\nfor (var key in jsonData){\n	var ids = JSON.stringify(jsonData[key].id);\n  (function(key) {\n\n    	gulp.task(jsonData[key].id,function(){\n\n        gulp.src(\"app/dev/ejs/_page.ejs\")\n        .pipe(ejs({\n            jsonData: jsonData,\n            //JSONデータをテンプレートファイルに渡す\n            flag:taskNumber\n        }))\n        .pipe(rename(jsonData[key].id+\".html\")) //出力ファイル名を指定\n        .pipe(gulp.dest(\"app/public\")); //ファイル出力先を設定\n        taskNumber++;\n        console.log(\"***   HTML rendered : app/public/\"+ jsonData\n		[key].id+\".html   ***\");\n      }());//即時\n    })(key);\n    taskSet.push(jsonData[key].id);\n}\n\ngulp.task(\"server\", function() {\n	    browser({\n	    	open: false,\n       		 server: {\n		 baseDir: \"./app/public/\"\n		            }\n	});\n});\n\n// bower\ngulp.task(\"BowerJS\",function(){\n	jsFilter = filter([\"**/*.js\"]);\n	gulp.src(bower())\n	.pipe(jsFilter)\n	.pipe(concat('lib.js'))\n	.pipe(debug({title:'bowerJS : '}))\n	.pipe(gulp.dest('./app/public/lib/js'));\n});\n\ngulp.task(\"workData\",function(){\n        gulp.src(\"app/dev/ejs/_portfolio.ejs\")\n        .pipe(ejs({\n            workData: workData\n        }));\n});\n\ngulp.task (\"BowerCSS\",function(){\n  cssFilter = filter(['**/*.css']);\n  scssFilter = filter(['**/*.scss']);\n  sassFilter = filter(['**/*.sass']);\n  gulp.src(bower())\n  .pipe(debug({title:'bowerCSS : '}))\n    .pipe(cssFilter)\n    .pipe(rename({\n      prefix: '_',\n      extname: '.css'}))\n    .pipe(gulp.dest('./app/public/lib/css'))\n    .pipe(cssFilter.restore())\n    .pipe(scssFilter)\n    .pipe(gulp.dest('./app/public/lib/css'))\n    .pipe(cssFilter.restore())\n    .pipe(sassFilter)\n    .pipe(gulp.dest('./app/public/lib/css'))\n    .pipe(cssFilter.restore());\n});\n\ngulp.task(\"sass\",function(){\n	gulp.src(\"./app/dev/sass/**/*scss*\")\n	.pipe(plumber())\n	.pipe(sass())\n	.pipe(autoprefixer())\n	.pipe(gulp.dest(\"./app/public/css/\"))\n	.pipe(browser.reload({stream:true}));\n});\n\n// gulp.task(\"html\",function(){\n// 	gulp.src('**/*.html')\n// 	.pipe(plumber())\n// 	.pipe(browser.reload({stream:true}))\n// 	});\n\ngulp.task(\"js\",function(){\n	gulp.src([\"./app/dev/js/**/*.js\",\"!./app/dev/js/min/**/*.js\"])\n	.pipe(plumber())\n	.pipe(uglify())\n	.pipe(rename({\n      extname: '.min.js'}))\n	.pipe(gulp.dest(\"./app/public/js/\"))\n	.pipe(browser.reload({stream:true}));\n});\n\ngulp.task(\"ejs\", function() {\n    gulp.src(\n        [\"app/dev/ejs/**/*.ejs\",'!' + \"app/dev/ejs/**/_*.ejs\"]\n    )\n    	.pipe(plumber())\n        .pipe(ejs())\n        .pipe(gulp.dest(\"./app/public\"))\n        .pipe(browser.reload({stream:true}));\n});\n\n//execute\ngulp.task(\"default\",['server'], function() {\n	gulp.watch([\"./app/dev/js/**/*.js\",\"!./app/dev/js/min/**/*.js\"],[\"js\"]);\n	gulp.watch([\"app/dev/ejs/**/*.ejs\",'!' + \"app/dev/ejs/**/_*.ejs\"],[\"ejs\"]);\n	gulp.watch(\"./app/dev/sass/**/*.scss\",[\"sass\"]);\n});\n",
-			"file": "/Users/mty1245/github_tester/threeJs/gulpfile.js",
-			"file_size": 0,
-			"file_write_time": 130855057350000000,
-			"settings":
-			{
-				"buffer_size": 3539,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/mty1245/github_tester/node/gulpTest/gulpfile.js",
-			"settings":
-			{
-				"buffer_size": 3537,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -78,10 +59,54 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 400.0,
-		"last_filter": "prom",
+		"height": 396.0,
+		"last_filter": "instal",
 		"selected_items":
 		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"toggile",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"linter",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"togg",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"compa",
+				"Sublimerge: Compare to Revision..."
+			],
+			[
+				"set ar",
+				"Set Syntax: Arduino"
+			],
+			[
+				"pro",
+				"Project Manager"
+			],
+			[
+				"rebui",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"rebuild",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"reb",
+				"CTags: Rebuild Tags"
+			],
 			[
 				"prom",
 				"Project Manager: Open Project"
@@ -89,14 +114,6 @@
 			[
 				"reiin",
 				"Indentation: Reindent Lines"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
-				"rebui",
-				"CTags: Rebuild Tags"
 			],
 			[
 				"compare",
@@ -107,20 +124,12 @@
 				"CTags: Rebuild Tags"
 			],
 			[
-				"linter",
-				"SublimeLinter: Toggle Linter"
-			],
-			[
 				"remove",
 				"Package Control: Remove Package"
 			],
 			[
 				"insa",
 				"Package Control: Install Package"
-			],
-			[
-				"pro",
-				"Project Manager"
 			],
 			[
 				"save",
@@ -173,10 +182,6 @@
 			[
 				"glue",
 				"Glue - Launch"
-			],
-			[
-				"instal",
-				"Package Control: Install Package"
 			],
 			[
 				"g",
@@ -303,7 +308,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 546.0
+		"width": 382.0
 	},
 	"console":
 	{
@@ -325,9 +330,14 @@
 	},
 	"expanded_folders":
 	[
+		"/Users/mty1245/github_tester/python/faceRecServo"
 	],
 	"file_history":
 	[
+		"/Users/mty1245/github_tester/python/faceRecServo/faceRec.ino",
+		"/Users/mty1245/github_tester/python/faceRecServo/init.py",
+		"/Users/mty1245/dotfiles/install.sh",
+		"/Users/mty1245/installenv.sh",
 		"/Users/mty1245/github_tester/node/gulpTest/package.json",
 		"/Users/mty1245/github_tester/three-js/css/main.css",
 		"/Users/mty1245/github_tester/three-js/js/main.js",
@@ -351,7 +361,6 @@
 		"/Users/mty1245/dotfiles/script/GetEnvFiles.sh",
 		"/Users/mty1245/dotfiles/src/.zprofile",
 		"/Users/mty1245/dotfiles/script/set_os.sh",
-		"/Users/mty1245/dotfiles/install.sh",
 		"/Users/mty1245/dotfiles/script/mac/Sublime-Setting.sh",
 		"/Users/mty1245/dotfiles/.zprofile",
 		"/Users/mty1245/dotfiles/src/installDotFiles.sh",
@@ -416,6 +425,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"murakami",
+			"muraji",
+			".js",
+			",js",
+			"p._static.removeEvent",
+			"jslist",
+			"src/",
+			"src",
 			"::",
 			"root",
 			"document root",
@@ -492,70 +509,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/Users/mty1245/github_tester/threeJs/gulpfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3539,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								551,
-								551
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/Seti_UI/Langs/Gulpfile JS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/mty1245/github_tester/node/gulpTest/gulpfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3537,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								3537
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Seti_UI/Langs/Gulpfile JS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -595,7 +550,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "three-js.sublime-project",
+	"project": "faceRecServo.sublime-project",
 	"replace":
 	{
 		"height": 46.0
@@ -687,7 +642,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 205.0,
 	"status_bar_visible": true,
 	"template_settings":

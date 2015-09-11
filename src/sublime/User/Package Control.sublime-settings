@@ -6,6 +6,7 @@
 	[
 		"AAAPackageDev",
 		"AdvancedNewFile",
+		"arduino-cli",
 		"BeautifyRuby",
 		"Build Next",
 		"ChucK Syntax",
@@ -37,6 +38,8 @@
 		"SublimeLinter-jshint",
 		"SublimeLinter-json",
 		"SublimeLinter-php",
+		"SublimeLinter-pyflakes",
+		"SublimeLinter-pylint",
 		"SublimeLinter-ruby",
 		"SublimeLinter-shellcheck",
 		"Sublimerge Pro",

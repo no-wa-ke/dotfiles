@@ -11,6 +11,7 @@ endif
 call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+NeoBundle 'Shougo/neocomplcache'
 
 NeoBundle 'itchyny/lightline.vim'
 let g:lightline = {

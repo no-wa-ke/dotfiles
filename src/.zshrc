@@ -1,4 +1,3 @@
-
 # 基本設定
 # ----------------------------
 # 言語設定
@@ -153,9 +152,12 @@ RPROMPT="%1(v|%F{green}%1v%f|)"
 
 eval "$(rbenv init - zsh)"
 
+#zsh-completions
+if [ -e ~/zsh-completions ]; then
 
 fpath=(~/zsh-completions/src $fpath)
-autoload -U compinit; compinit # 補完機能は有効にしとく必要がある
+
+fi
 
 ### web検索定義
 # url: $1, delimiter: $2, prefix: $3, words: $4..
@@ -294,3 +296,10 @@ elif type compctl &>/dev/null; then
   compctl -K _npm_completion npm
 fi
 ###-end-npm-completion-###
+
+
+#anyenv
+if [ -d $HOME/.anyenv ] ; then
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
+ fi
