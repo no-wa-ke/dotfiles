@@ -1,9 +1,14 @@
 [
+
 { "keys": ["ctrl+b"], "command": "soft_undo" },
 { "keys": ["super+e"], "command": "toggle_side_bar" },
 { "keys": ["super+k","super+b"], "command": "slurp_find_string" },
   {
     "command": "navigate_to_definition",
+    "keys": ["alt+t", "alt+t"]
+  },
+  {
+    "command": "goto_definition",
     "keys": ["ctrl+t", "ctrl+t"]
   },
   {
@@ -13,10 +18,6 @@
   {
     "command": "jump_prev",
     "keys": ["ctrl+t", "ctrl+e"]
-  },
-  {
-    "command": "jump_prev",
-    "keys": ["ctrl+shift+comma"]
   },
   {
     "command": "rebuild_tags",
@@ -66,5 +67,12 @@
       { "key": "num_selections", "operator": "not_equal", "operand": 1 }
     ],
     "keys": ["ctrl+t"]
-  }
+  },
+
+
+
+  // { "keys": ["shift+ctrl+space"], "command": "code_intel_auto_complete" },
+  // { "keys": ["ctrl+t", "ctrl+t"], "command": "goto_python_definition"},
+  // { "keys": ["ctrl+t", "ctrl+e"], "command": "back_to_python_definition"}
+
 ]

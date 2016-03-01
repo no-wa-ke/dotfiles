@@ -15,13 +15,13 @@ NeoBundle 'Shougo/neocomplcache'
 
 NeoBundle 'itchyny/lightline.vim'
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ 'component': {
-      \   'readonly': '%{&readonly?"x":""}',
-      \ },
-      \ 'separator': { 'left': '', 'right': '' },
-      \ 'subseparator': { 'left': '|', 'right': '|' }
-      \ }
+  \ 'colorscheme': 'wombat',
+  \ 'component': {
+  \   'readonly': '%{&readonly?"x":""}',
+  \ },
+  \ 'separator': {'left': '', 'right':''},
+  \ 'subseparator': { 'left': '|', 'right':'|'}
+  \}
 
 NeoBundleLazy 'alpaca-tc/beautify.vim', {
   \ 'autoload' : {
@@ -136,8 +136,7 @@ inoremap <expr><C-e>  neocomplcache#cancel_popup()
 """"""""""""""""""""""""""""""
 nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 nnoremap <C-k> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
-
-
+set tags+=.tags
 """"""""""""""""""""""""""""""
 " Unite.vimの設定
 """"""""""""""""""""""""""""""

@@ -3,74 +3,44 @@
 	{
 		"selected_items":
 		[
-			[
-				"get",
-				"getcwd〔function〕"
-			],
-			[
-				"DB_",
-				"DB_PASSWORD〔constant〕"
-			],
-			[
-				"DB",
-				"DB_USERNAME"
-			],
-			[
-				"html",
-				"htmlspecialchars〔function〕"
-			],
-			[
-				"insta",
-				"installDotFiles"
-			],
-			[
-				"i",
-				"i"
-			],
-			[
-				"fi",
-				"fi"
-			],
-			[
-				"zsh",
-				"zsh"
-			],
-			[
-				"set",
-				"setRedHat"
-			],
-			[
-				"vim",
-				"vimproc"
-			],
-			[
-				"filename",
-				"filename"
-			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "(function(){\n\n	var camera, scene, renderer;\n	var mesh;\n	var mousedown = false;\n\n	init();\n	animate();\n\n	function env(){\n\n	}\n\n	function init() {\n\n		renderer = new THREE.WebGLRenderer();\n		renderer.setPixelRatio( window.devicePixelRatio );\n		renderer.setSize( window.innerWidth, window.innerHeight );\n		renderer.setClearColor(0xfff000, 1);\n		$(\"#stage\").append( renderer.domElement );\n\n		//\n\n		camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 1000 );\n		camera.position.z = 400;\n\n		scene = new THREE.Scene();\n\n		var geometry = new THREE.BoxGeometry( 200, 200, 200 );\n\n		var texture = THREE.ImageUtils.loadTexture( 'media/img-thing.jpg' );\n		texture.anisotropy = renderer.getMaxAnisotropy();\n\n		var material = new THREE.MeshBasicMaterial( { map: texture } );\n\n		mesh = new THREE.Mesh( geometry, material );\n		scene.add( mesh );\n\n		//\n\n		window.addEventListener( 'resize', onWindowResize, false );\n\n	}\n\n	function onWindowResize() {\n\n		camera.aspect = window.innerWidth / window.innerHeight;\n		camera.updateProjectionMatrix();\n\n		renderer.setSize( window.innerWidth, window.innerHeight );\n\n	}\n\n	function animate() {\n\n		requestAnimationFrame( animate );\n\n		mesh.rotation.x += 0.005;\n		mesh.rotation.y += 0.01;\n\n		renderer.render( scene, camera );\n\n	}\n\n\n	\n\n\n\n})();",
-			"file": "/Users/mty1245/github_tester/threeJs/app/dev/js/cube.js",
-			"file_size": 1291,
-			"file_write_time": 130855183370000000,
+			"file": "/Users/ykido/workspace/threeJs/gulpfile.js",
 			"settings":
 			{
-				"buffer_size": 1291,
+				"buffer_size": 2592,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/\n!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;\" to lines/\n!_TAG_PROGRAM_VERSION	5.8	//\n!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/\n!_TAG_PROGRAM_NAME	Exuberant Ctags	//\nanimate	cube.js	/^	function animate() {$/;\"	f\nenv	cube.js	/^	function env(){$/;\"	f\ninit	cube.js	/^	function init() {$/;\"	f\nmesh	cube.js	/^	var mesh;$/;\"	v\nmousedown	cube.js	/^	var mousedown = false;$/;\"	v\nonWindowResize	cube.js	/^	function onWindowResize() {$/;\"	f\n!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/\n",
-			"file": "/Users/mty1245/github_tester/threeJs/app/dev/js/.tags_sorted_by_file",
-			"file_size": 597,
-			"file_write_time": 130855408860000000,
+			"file": "/Users/ykido/workspace/threeJs/package.json",
 			"settings":
 			{
-				"buffer_size": 597,
+				"buffer_size": 689,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{\n  \"name\": \"three.js\",\n  \"version\": \"0.71.0\",\n  \"homepage\": \"http://threejs.org/\",\n  \"authors\": [\n    \"http://mrdoob.com\"\n  ],\n  \"description\": \"JavaScript 3D library\",\n  \"main\": \"three.min.js\",\n  \"keywords\": [\n    \"threejs\",\n    \"3d\",\n    \"webgl\"\n  ],\n  \"license\": \"MIT\",\n  \"ignore\": [\n    \"**/.*\",\n    \"node_modules\",\n    \"bower_components\",\n    \"test\",\n    \"tests\"\n  ],\n  \"_release\": \"0.71.0\",\n  \"_resolution\": {\n    \"type\": \"version\",\n    \"tag\": \"0.71.0\",\n    \"commit\": \"88e39096b78c1c720244c541395ccc1e937a8fc5\"\n  },\n  \"_source\": \"git://github.com/jiyinyiyong/three.js.git\",\n  \"_target\": \"~0.71.0\",\n  \"_originalSource\": \"three.js\",\n  \"_direct\": true\n}",
+			"file": "/Users/ykido/workspace/threeJs/bower_components/three.js/.bower.json",
+			"file_size": 657,
+			"file_write_time": 130860714160000000,
+			"settings":
+			{
+				"buffer_size": 657,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "unction str-or(){\n    ret=$1\n    while shift 2>/dev/null; do\n	if ! [ -z \"$ret\" ]; then\n	    echo $ret\n	    return 0\n	else\n	    ret=$1\n	fi\n    done\n    return 0\n}\n\n# refs:\n#  http://www.geocities.jp/geo_sunisland/parameter.html\nfunction tmp-gnuplot(){\n    local opt_output=\"gnuplot-output\"\n    local opt_input\n    local opt_type=\"x11\"\n    local opt_show_help\n\n    local tmp_terminal=\"\"\n    local tmp_pause=\"\"\n    local tmp_input=\"\"\n    local tmp_output=\"\"\n    local tmp_ext=\"\"\n    local tmp_plot='plot [][0:] sin(x) title \"sine curve\" with lp ls 1'\n    local tmp_plot_nodata='plot [][0:] sin(x) title \"sine curve\" with lp ls 1'\n    name=\"foo\"\n\n    while getopts \"hi:o:t:\" flag\n    do\n	case ${flag} in\n	    \\?)\n		opt_show_help=1\n		;;\n	    \"h\")\n		opt_show_help=0\n		;;\n	    \"i\")\n		opt_input=\"${OPTARG}\"\n		;;\n	    \"o\")\n		opt_output=\"${OPTARG}\"\n		;;\n	    \"t\")\n		opt_type=\"${OPTARG}\"\n		;;\n	    *)\n		echo \"hoge\" $flag\n		;;\n	esac\n    done\n\n    case ${opt_type} in\n	x|x11|eps|latex|table)\n	    echo \"output type: ${opt_type}\" > /dev/stderr\n	    ;;\n	*)\n	    opt_show_help=1\n	    echo \"invalid output type: '${opt_type}'\"\n	    ;;\n    esac\n\n    if ! [ -z \"${opt_show_help}\" ]; then\n	cat <<EOF\nusage: ${0} [options]\n\noptions:\n	-h		show this help\n	-i INPUT_FILE	set input(data) filename to INPUT_FILE\n	-o OUT_FILE	set output filename to OUT_FILE\n	-t OUT_TYPE	set output type. types: x x11 eps latex table\nEOF\n	return opt_show_help\n    fi\n\n    case ${opt_type} in\n	x)\n	    tmp_pause=\"pause 100\"\n	    tmp_terminal=\"x11\"\n	    opt_output=\"\"\n	    ;;\n	x11)\n	    tmp_pause=\"pause 100\"\n	    tmp_terminal=\"x11\"\n	    opt_output=\"\"\n	    ;;\n	eps)\n	    tmp_terminal=\"postscript eps enhanced color\"\n	    tmp_ext=\"eps\"\n	    ;;\n	latex)\n	    tmp_terminal=\"latex\"\n	    tmp_ext=\"tex\"\n	    ;;\n	table)\n	    tmp_terminal=\"table\"\n	    tmp_ext=\"dat\"\n	    ;;\n    esac\n\n    tmp_output=$opt_output\n    if ! [ -z \"${tmp_output}\" ]; then\n	if ! (echo $tmp_output|egrep \"\\\\.${tmp_ext}\\$\">/dev/null);then\n	    tmp_output=\"${tmp_output}.${tmp_ext}\"\n	fi\n    fi\n    \n    if ! [ -z \"${tmp_output}\" ]; then\n	tmp_output=\"set output ${tmp_output}\"\n    fi\n\n    tmp_input=$(str-or ${opt_input} \"foobar\")\n    tmp_plot=\"plot [][0:] \\\"${tmp_input}\\\" using 1:2 ti \\\"${tmp_input}1\\\" wi lp ls 1, \\\"${tmp_input}\\\" using 1:3 ti \\\"${tmp_input}2\\\" wi lp ls 2\"\n\n    if [ -z \"${opt_input}\" ]; then\n	tmp_plot=\"# ${tmp_plot}\"\n    else\n	tmp_plot_nodata=\"# ${tmp_plot_nodata}\"\n    fi\n\n    cat <<EOF\n# generated at $(LANG=C date)\nset terminal ${tmp_terminal}\n${tmp_output}\nset size 0.7,0.7\nset key outside center top horizontal reverse Left\nset grid ytics lw 0.1 lt -1\nset key outside center top horizontal reverse Left samplen 2\nset style line 1 lt 1 lc rgbcolor \"#354E66\" lw 5 pt 5 ps 2\nset style line 2 lt 1 lc rgbcolor \"#8D484A\" lw 5 pt 4 ps 2\nset xlabel \"x axis label\"\nset ylabel \"y axis label\"\n\n${tmp_plot}\n${tmp_plot_nodata}\n${tmp_pause}\nEOF\n}",
+			"settings":
+			{
+				"buffer_size": 2877,
+				"line_ending": "Unix",
+				"name": "unction str-or(){"
 			}
 		}
 	],
@@ -81,248 +51,44 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 158.0,
-		"last_filter": "rebuild",
+		"height": 56.0,
+		"last_filter": "shell sc",
 		"selected_items":
 		[
 			[
-				"rebuild",
-				"CTags: Rebuild Tags"
-			],
-			[
-				"pro",
-				"Project Manager"
-			],
-			[
-				"reb",
-				"CTags: Rebuild Tags"
-			],
-			[
-				"prom",
-				"Project Manager: Open Project"
-			],
-			[
-				"reiin",
-				"Indentation: Reindent Lines"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
-				"rebui",
-				"CTags: Rebuild Tags"
-			],
-			[
-				"compare",
-				"Sublimerge: Compare to Clipboard"
-			],
-			[
-				"rebu",
-				"CTags: Rebuild Tags"
-			],
-			[
-				"linter",
-				"SublimeLinter: Toggle Linter"
-			],
-			[
-				"remove",
-				"Package Control: Remove Package"
-			],
-			[
-				"insa",
-				"Package Control: Install Package"
-			],
-			[
-				"save",
-				"Project: Save As"
-			],
-			[
-				"set git",
-				"Set Syntax: Git"
-			],
-			[
-				"proj",
-				"Project Manager"
-			],
-			[
-				"proje",
-				"Project Manager"
-			],
-			[
-				"ke",
-				"Preferences: Key Bindings - User"
-			],
-			[
-				"key",
-				"Preferences: Key Bindings - User"
-			],
-			[
-				"rein",
-				"Indentation: Reindent Lines"
-			],
-			[
-				"indent",
-				"Indentation: Reindent Lines"
-			],
-			[
-				"lint ",
-				"SublimeLinter: Toggle Linter"
-			],
-			[
-				"toggle",
-				"SublimeLinter: Toggle Linter"
-			],
-			[
-				"gulp",
-				"Gulp: Kill running tasks"
-			],
-			[
-				"glu",
-				"Glue - Launch"
-			],
-			[
-				"glue",
-				"Glue - Launch"
-			],
-			[
-				"instal",
-				"Package Control: Install Package"
-			],
-			[
-				"g",
-				"Gulp: Kill running tasks"
-			],
-			[
-				"lint",
-				"SublimeLinter: Toggle Linter"
+				"shell sc",
+				"Set Syntax: Shell Script (Bash)"
 			],
 			[
 				"shell",
 				"Shell Exec: Open"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
+				"proje",
+				"Project Manager"
 			],
 			[
-				"bu",
-				"Build With: untitled"
+				"projec",
+				"Project Manager: Remove Project"
 			],
 			[
-				"bul",
-				"Build With: untitled"
+				"linter",
+				"SublimeLinter: Enable Linter"
 			],
 			[
-				"build",
-				"Build: New Build System"
-			],
-			[
-				"package control settin",
-				"Preferences: Package Control Settings – User"
-			],
-			[
-				"ejs",
-				"Set Syntax: EJS (<% and %>)"
-			],
-			[
-				"choose ",
-				"SublimeLinter: Choose Lint Mode"
-			],
-			[
-				"toggle lin",
-				"SublimeLinter: Toggle Linter"
-			],
-			[
-				"ctags",
-				"CTags: Rebuild Tags"
-			],
-			[
-				"set bas",
-				"Set Syntax: Shell Script (Bash)"
-			],
-			[
-				"codeinte",
-				"SublimeCodeIntel: Disable Live Autocompletion"
-			],
-			[
-				"set ",
-				"Set Syntax: Scala"
-			],
-			[
-				"set h",
-				"Set Syntax: Shell Script (Bash)"
-			],
-			[
-				"set",
-				"Set Syntax: Pascal"
-			],
-			[
-				"sublim",
-				"Sublimerge: Compare to Revision..."
-			],
-			[
-				"set she",
-				"Set Syntax: Shell Script (Bash)"
-			],
-			[
-				"java",
-				"Set Syntax: JavaScript"
-			],
-			[
-				"set li",
-				"Set Syntax: Makefile"
-			],
-			[
-				"sublimerge",
-				"Sublimerge"
-			],
-			[
-				"set mark",
-				"Set Syntax: Markdown (Github Flavored)"
-			],
-			[
-				"set md",
-				"Set Syntax: Markdown"
-			],
-			[
-				"subli",
-				"Sublimerge: Compare to Revision..."
-			],
-			[
-				"set c",
-				"Set Syntax: C"
-			],
-			[
-				"set shell",
-				"Set Syntax: Shell Script (Bash)"
-			],
-			[
-				"",
-				"BeautifyRuby"
-			],
-			[
-				"set syntax sh",
-				"Set Syntax: Shell Script (Bash)"
-			],
-			[
-				"set syntax ",
-				"Set Syntax: C"
-			],
-			[
-				"packa",
-				"Preferences: Browse Packages"
+				"proj",
+				"Project Manager"
 			]
 		],
-		"width": 396.0
+		"width": 445.0
 	},
 	"console":
 	{
 		"height": 126.0,
 		"history":
 		[
-			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
-			"import urllib.request,os,hashlib; h = ‘7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0’; pf = 'Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/’ + pf.replace(’ ’, ’%20’)).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install’ % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb’ ).write(by)"
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282'+ 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s),please try manual install' % (dh, h)) if dh != h else open(os.path.join(ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; "
 		]
 	},
 	"distraction_free":
@@ -336,94 +102,25 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/mty1245/github_tester/threeJs",
-		"/Users/mty1245/github_tester/threeJs/app",
-		"/Users/mty1245/github_tester/threeJs/app/dev",
-		"/Users/mty1245/github_tester/threeJs/app/dev/js"
+		"/Users/ykido/workspace/threeJs",
+		"/Users/ykido/workspace/threeJs/app",
+		"/Users/ykido/workspace/threeJs/app/public"
 	],
 	"file_history":
 	[
-		"/Users/mty1245/github_tester/node/gulpTest/package.json",
-		"/Users/mty1245/github_tester/three-js/css/main.css",
-		"/Users/mty1245/github_tester/three-js/js/main.js",
-		"/Users/mty1245/github_tester/three-js/index.html",
-		"/Users/mty1245/github_tester/php/.tags_sorted_by_file",
-		"/Users/mty1245/github_tester/php/.htaccess",
-		"/Users/mty1245/github_tester/php/class.php",
-		"/Users/mty1245/github_tester/php/class/util.php",
-		"/Users/mty1245/github_tester/php/db/param.php",
-		"/Users/mty1245/github_tester/php/index.php",
-		"/Users/mty1245/github_tester/php/db/index.php",
-		"/Users/mty1245/github_tester/php/external.php",
-		"/Users/mty1245/github_tester/php/db/util.php",
-		"/Users/mty1245/github_tester/php/util.php",
-		"/Users/mty1245/github_tester/php/getInput.php",
-		"/Users/mty1245/github_tester/php/access.php",
-		"/Users/mty1245/github_tester/php/db/db/index.php",
-		"/etc/apache2/httpd.conf",
-		"/Users/mty1245/Downloads/ULJM050370004/ULJM050370004/PARAM.SFO",
-		"/Users/mty1245/dotfiles/src/sublime/User/Projects/library.json",
-		"/Users/mty1245/dotfiles/script/GetEnvFiles.sh",
-		"/Users/mty1245/dotfiles/src/.zprofile",
-		"/Users/mty1245/dotfiles/script/set_os.sh",
-		"/Users/mty1245/dotfiles/install.sh",
-		"/Users/mty1245/dotfiles/script/mac/Sublime-Setting.sh",
-		"/Users/mty1245/dotfiles/.zprofile",
-		"/Users/mty1245/dotfiles/src/installDotFiles.sh",
-		"/Users/mty1245/dotfiles/.zshrc",
-		"/Users/mty1245/dotfiles/src/set_os.sh",
-		"/Users/mty1245/dotfiles/.vimrc",
-		"/Users/mty1245/dotfiles/src/enviorment.sh",
-		"/Users/mty1245/dotfiles/src/GetFiles.sh",
-		"/Users/mty1245/Library/Application Support/Sublime Text 3/Packages/Seti_UI/Seti.sublime-theme",
-		"/Users/mty1245/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
-		"/Users/mty1245/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/mty1245/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
-		"/Users/mty1245/dotfiles/.bashrc",
-		"/Users/mty1245/Library/Application Support/Sublime Text 3/Packages/User/.gitignore",
-		"/Users/mty1245/github_tester/node/gulpTest/app/dev/ejs/_page.ejs",
-		"/Users/mty1245/github_tester/node/gulpTest/app/dev/js/index.js",
-		"/Users/mty1245/github_tester/node/gulpTest/gulpfile.js",
-		"/Users/mty1245/github_tester/node/gulpTest/app/dev/js/media.json",
-		"/Users/mty1245/Library/Application Support/Sublime Text 3/Packages/User/Glue.sublime-settings",
-		"/Users/mty1245/github_tester/node/gulpTest/app/dev/js/pages.json",
-		"/etc/profile",
-		"/etc/paths",
-		"/Users/mty1245/.zprofile",
-		"/Users/mty1245/Library/Application Support/Sublime Text 3/Packages/User/untitled.sublime-build",
-		"/Users/mty1245/Library/Application Support/Sublime Text 3/Packages/Gulp/Gulp.sublime-settings",
-		"/Users/mty1245/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/Users/mty1245/dotfiles/README.md",
-		"/Users/mty1245/Library/Application Support/Sublime Text 3/Packages/User/README.md",
-		"/Users/mty1245/Library/Application Support/Sublime Text 3/Packages/User/Gulp.sublime-settings",
-		"/Users/mty1245/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
-		"/Users/mty1245/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/Default (OSX).sublime-keymap",
-		"/Users/mty1245/github_tester/node/gulpTest/index.html",
-		"/Users/mty1245/github_tester/node/gulpTest/node_modules/gulp-plumber/index.js",
-		"/Users/mty1245/.vimrc",
-		"/Users/mty1245/dotfiles/src/progress-bar.sh",
-		"/Users/mty1245/Library/Application Support/Sublime Text 3/Packages/CTags/Default.sublime-keymap",
-		"/Users/mty1245/Library/Application Support/Sublime Text 3/Packages/User/CTags.sublime-settings",
-		"/Users/mty1245/Library/Application Support/Sublime Text 3/Packages/CTags/CTags.sublime-settings",
-		"/Users/mty1245/dotfiles/src/OS",
-		"/Users/mty1245/dotfiles/test.sh",
-		"/Users/mty1245/MyVagrant/dev/Vagrantfile",
-		"/Users/mty1245/dotfiles/.tmux.conf",
-		"/Users/mty1245/github_tester/OF/of_v0.8.1_osx_release/apps/myApps/LiveComposite/bin/data/original/plane.txt",
-		"/Users/mty1245/github_tester/OF/of_v0.8.1_osx_release/apps/myApps/LiveComposite/bin/data/original/camera.txt",
-		"/private/etc/apache2/httpd.conf",
-		"/Applications/MAMP/conf/apache/httpd.conf"
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/ykido/workspace/edison/edisonSetup.sh",
+		"/Users/ykido/workspace/index.php"
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
-		"height": 94.0,
+		"height": 0.0,
 		"where_history":
 		[
-			""
 		]
 	},
 	"find_state":
@@ -431,65 +128,6 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"::",
-			"root",
-			"document root",
-			"</dd>",
-			"<dd>",
-			"<dl>",
-			"blue",
-			"HEAD",
-			"<<<<<<< HEAD",
-			" create mode 100644",
-			"<<<<<<< HEAD",
-			"status",
-			"mkdir",
-			"+u",
-			"+d",
-			"],",
-			"vintage",
-			"ctrl+d",
-			"ctrl",
-			"note",
-			"envior",
-			"/Users/mty1245",
-			"echo",
-			"path",
-			":$PATH",
-			"\n#",
-			"PATH",
-			"down",
-			"move",
-			"page",
-			"fn",
-			"scroll",
-			"focus",
-			"{\n",
-			"move",
-			"scroll",
-			"page",
-			"side",
-			"seti",
-			"indent-",
-			"sleep 1",
-			"progress",
-			"progress sleep ",
-			"progress",
-			"setmac",
-			"do you",
-			"url",
-			"open",
-			"blue",
-			"green",
-			"red",
-			"tmux",
-			"zsh",
-			"do yo",
-			"detected",
-			"echo -ne",
-			"鬼",
-			"fpa",
-			"rbenv"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -512,29 +150,29 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/mty1245/github_tester/threeJs/app/dev/js/cube.js",
+					"file": "/Users/ykido/workspace/threeJs/gulpfile.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1291,
+						"buffer_size": 2592,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								706,
+								550
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Seti_UI/Langs/Gulpfile JS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 858.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -542,11 +180,11 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/Users/mty1245/github_tester/threeJs/app/dev/js/.tags_sorted_by_file",
+					"file": "/Users/ykido/workspace/threeJs/package.json",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 597,
+						"buffer_size": 689,
 						"regions":
 						{
 						},
@@ -559,13 +197,75 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Seti_UI/Langs/npm JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/ykido/workspace/threeJs/bower_components/three.js/.bower.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 657,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2877,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2877,
+								2877
+							]
+						],
+						"settings":
+						{
+							"auto_name": "unction str-or(){",
+							"default_dir": "/Users/ykido/workspace/threeJs",
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 834.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -577,7 +277,7 @@
 	},
 	"input":
 	{
-		"height": 31.0
+		"height": 26.0
 	},
 	"layout":
 	{
@@ -620,68 +320,20 @@
 		"selected_items":
 		[
 			[
-				"index",
-				"index.php"
-			],
-			[
-				"clas",
-				"class.php"
-			],
-			[
-				"exter",
-				"external.php"
-			],
-			[
-				"inde",
-				"index.php"
-			],
-			[
 				"",
-				".htaccess"
-			],
-			[
-				"get",
-				"script/GetEnvFiles.sh"
-			],
-			[
-				"zsh",
-				".zshrc"
-			],
-			[
-				"zp",
-				".zprofile"
-			],
-			[
-				"en",
-				"src/enviorment.sh"
-			],
-			[
-				"gulp",
 				"gulpfile.js"
-			],
-			[
-				"page",
-				"app/dev/ejs/_page.ejs"
-			],
-			[
-				"vim",
-				".vimrc"
-			],
-			[
-				"zpo",
-				".zprofile"
 			]
 		],
 		"width": 0.0
 	},
 	"select_project":
 	{
-		"height": 500.0,
+		"height": 0.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 380.0
+		"width": 0.0
 	},
 	"select_symbol":
 	{
@@ -700,7 +352,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 205.0,
+	"side_bar_width": 150.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

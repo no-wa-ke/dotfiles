@@ -296,10 +296,13 @@ elif type compctl &>/dev/null; then
   compctl -K _npm_completion npm
 fi
 ###-end-npm-completion-###
-
+fpath=(/usr/local/share/zsh-completions $fpath)
 
 #anyenv
 if [ -d $HOME/.anyenv ] ; then
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
  fi
+
+export NVM_DIR="/Users/ykido/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

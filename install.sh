@@ -30,7 +30,7 @@ function setup() {
       get_envFiles 
   
     elif [ $dtype == 'debian' ]; then
-      note "${cyan}Detected redhat..\n"
+      note "${cyan}Detected Debian...\n"
       setDebian
       get_envFiles
     fi

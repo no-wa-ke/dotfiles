@@ -112,7 +112,7 @@
     - name: 'homebrew: tap caskroom/versions'
       command: brew tap caskroom/versions
     - name: 'homebrew: tap sanemat/font'
-      command:brew tap sanemat/font
+      command: brew tap sanemat/font
     - name: 'homebrew: update'
       command: brew update
 

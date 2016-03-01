@@ -5,7 +5,7 @@
 	"atomic_save": false,
 	"auto_close_tags": true,
 	"auto_complete": true,
-	"auto_complete_commit_on_tab": false,
+	"auto_complete_commit_on_tab": true,
 	"auto_complete_cycle": false,
 	"auto_complete_delay": 50,
 	"auto_complete_selector": "source - comment, meta.tag - punctuation.definition.tag.begin",
@@ -43,7 +43,7 @@
 	"caret_extra_width": 0,
 	"caret_style": "smooth",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Seti_UI/Scheme/Seti_monokai.tmTheme",
+	"color_scheme": "Packages/User/seti-monokai-sublime/Seti Monokai (SL).tmTheme",
 	"copy_with_empty_selection": true,
 	"create_window_at_startup": true,
 	"default_encoding": "UTF-8",
@@ -105,6 +105,11 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
+		"ActionScript",
+		"AppleScript",
+		"Clojure",
+		"Ruby Debugger",
+		"Three.js Autocomplete",
 		"Vintage"
 	],
 	"indent_guide_options":
@@ -117,7 +122,7 @@
 	[
 		"*.log"
 	],
-	"index_files": true,
+	"index_files": false,
 	"index_workers": 0,
 	"line_numbers": true,
 	"line_padding_bottom": 0,
@@ -152,7 +157,7 @@
 	"spelling_selector": "markup.raw, source string.quoted - punctuation - meta.preprocessor.c.include, source comment - source comment.block.preprocessor, -(source, constant, keyword, storage, support, variable, markup.underline.link, meta.tag)",
 	"tab_completion": true,
 	"tab_size": 4,
-	"theme": "Seti.sublime-theme",
+	"theme": "Seti_orig.sublime-theme",
 	"translate_tabs_to_spaces": false,
 	"tree_animation_enabled": true,
 	"trim_automatic_white_space": true,
