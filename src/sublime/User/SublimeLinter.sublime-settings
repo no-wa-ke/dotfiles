@@ -4,7 +4,7 @@
 		"debug": true,
 		"delay": 0.25,
 		"error_color": "D02000",
-		"gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
+		"gutter_theme": "Packages/SublimeLinter/gutter-themes/Knob/simple/Knob - simple.gutter-theme",
 		"gutter_theme_excludes":
 		[
 		],
@@ -55,7 +55,7 @@
 			},
 			"eslint":
 			{
-				"@disable": true,
+				"@disable": false,
 				"args":
 				[
 				],
@@ -73,6 +73,7 @@
 				"excludes":
 				[
 				],
+				"executable": "",
 				"ignore": "",
 				"jobs": "1",
 				"max-complexity": -1,
@@ -80,9 +81,19 @@
 				"select": "",
 				"show-code": false
 			},
+			"golint":
+			{
+				"@disable": true,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
 			"jshint":
 			{
-				"@disable": false,
+				"@disable": true,
 				"args":
 				[
 				],
@@ -114,7 +125,7 @@
 			},
 			"jsxhint":
 			{
-				"@disable": false,
+				"@disable": true,
 				"args":
 				[
 				],
@@ -225,6 +236,7 @@
 			],
 			"osx":
 			[
+				"/Users/ykido/.nvm/versions/node/v4.2.6/bin/node"
 			],
 			"windows":
 			[

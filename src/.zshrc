@@ -62,7 +62,14 @@ setopt correct
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
+function peco-history-selection() {
+    BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
+        CURSOR=$#BUFFER
+	    zle reset-prompt
+    }
 
+    zle -N peco-history-selection
+    bindkey '^R' peco-history-selection
 # 重複する履歴は無視
 setopt hist_ignore_dups
 
@@ -139,7 +146,7 @@ setopt interactive_comments
 # プロンプトが表示されるたびにプロンプト文字列を評価、置換する
 setopt prompt_subst
 
-PROMPT="[%n @ $m] %{${fg[yellow]}%}%~%{${reset_color}%}%{$fg[blue]%}$%{${reset_color}%} "
+PROMPT="[%n @ %m] %{${fg[yellow]}%}%~%{${reset_color}%}%{$fg[blue]%}$%{${reset_color}%} "
 
 # プロンプト指定(コマンドの続き)
 PROMPT2='[%n]> '

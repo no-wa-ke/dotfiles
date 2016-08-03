@@ -1,78 +1,75 @@
+
 [
+    {
+        "command": "navigate_to_definition",
+        "keys": ["ctrl+t", "ctrl+t"]
+    },
+    {
+        "command": "navigate_to_definition",
+        "keys": ["ctrl+shift+period"]
+    },
+    {
+        "command": "search_for_definition",
+        "keys": ["ctrl+t", "ctrl+y"]
+    },
+    {
+        "command": "jump_prev",
+        "keys": ["ctrl+t", "ctrl+b"]
+    },
+    {
+        "command": "jump_prev",
+        "keys": ["ctrl+shift+comma"]
+    },
+    {
+        "command": "rebuild_tags",
+        "keys": ["ctrl+t", "ctrl+r"]
+    },
+    {
+        "command": "show_symbols",
+        "context": [
+            {
+                "key": "selector",
+                "match_all": true,
+                "operand": "source -source.css",
+                "operator": "equal"
+            }
+        ],
+        "keys": ["alt+s"]
+    },
+    {
+        "command": "show_symbols",
+        "args": {"type": "multi"},
+        "context": [
+            {
+                "key": "selector",
+                "match_all": true,
+                "operand": "source -source.css",
+                "operator": "equal"
+            }
+        ],
+        "keys": ["alt+shift+s"]
+    },
+    {
+        "command": "show_symbols",
+        "args": {"type": "lang"},
+        "context": [
+            {
+                "key": "selector",
+                "match_all": true,
+                "operand": "source -source.css",
+                "operator": "equal"
+            }
+        ],
+        "keys": ["ctrl+alt+shift+s"]
+    },
+    { // override current default
+        "command": "transpose",
+        "context": [
+            { "key": "num_selections", "operator": "not_equal", "operand": 1 }
+        ],
+        "keys": ["ctrl+t"]
+    }
 
-{ "keys": ["ctrl+b"], "command": "soft_undo" },
-{ "keys": ["super+e"], "command": "toggle_side_bar" },
-{ "keys": ["super+k","super+b"], "command": "slurp_find_string" },
-  {
-    "command": "navigate_to_definition",
-    "keys": ["alt+t", "alt+t"]
-  },
-  {
-    "command": "goto_definition",
-    "keys": ["ctrl+t", "ctrl+t"]
-  },
-  {
-    "command": "search_for_definition",
-    "keys": ["ctrl+t", "ctrl+f"]
-  },
-  {
-    "command": "jump_prev",
-    "keys": ["ctrl+t", "ctrl+e"]
-  },
-  {
-    "command": "rebuild_tags",
-    "keys": ["ctrl+t", "ctrl+r"]
-  },
-  {
-    "command": "show_symbols",
-    "context": [
-      {
-        "key": "selector",
-        "match_all": true,
-        "operand": "source -source.css",
-        "operator": "equal"
-      }
-    ],
-    "keys": ["alt+s"]
-  },
-  {
-    "command": "show_symbols",
-    "args": {"type": "multi"},
-    "context": [
-      {
-        "key": "selector",
-        "match_all": true,
-        "operand": "source -source.css",
-        "operator": "equal"
-      }
-    ],
-    "keys": ["alt+shift+s"]
-  },
-  {
-    "command": "show_symbols",
-    "args": {"type": "lang"},
-    "context": [
-      {
-        "key": "selector",
-        "match_all": true,
-        "operand": "source -source.css",
-        "operator": "equal"
-      }
-    ],
-    "keys": ["ctrl+alt+shift+s"]
-  },
-  { // override current default
-    "command": "transpose",
-    "context": [
-      { "key": "num_selections", "operator": "not_equal", "operand": 1 }
-    ],
-    "keys": ["ctrl+t"]
-  },
-
-
-
-  // { "keys": ["shift+ctrl+space"], "command": "code_intel_auto_complete" },
-  // { "keys": ["ctrl+t", "ctrl+t"], "command": "goto_python_definition"},
-  // { "keys": ["ctrl+t", "ctrl+e"], "command": "back_to_python_definition"}
 
 ]
+

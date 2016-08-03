@@ -1,0 +1,2 @@
+Gocode pkg: "github.com/no-wa-ke/rtsupport"
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/Cellar/go/1.6/libexec/pkg/darwin_amd64:/Users/ykido/workspace/go/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/Cellar/go/1.6/libexec", GOPATH:"/Users/ykido/workspace/go", InstallSuffix:""}

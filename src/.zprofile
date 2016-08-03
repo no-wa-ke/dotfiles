@@ -1,5 +1,5 @@
 #!/bin/bash
-
+alias ptech='ssh -i ~/.ssh/rsync-rsa ptech@ptech-mbp-ultimate.1210547627.members.btmm.icloud.com'
 alias dev='cd $HOME/MyVagrant/dev'
 alias runsv='sudo apachectl start'
 alias endsv='sudo apachectl stop'
@@ -19,13 +19,13 @@ alias ws="cd ~/workspace"
 alias t2="tree -L 2"
 alias gulp-php-skelton="sh ~/workspace/gulp-php-skelton/make.sh"
 alias rszp="sh ~/workspace/shell/imageResize.sh"
-alias aws="ssh -i ~/workspace/keys/aws/yk-test-app.pem ec2-user@ec2-52-36-183-238.us-west-2.compute.amazonaws.com"
+alias aws="ssh -i ~/workspace/keys/aws/yk-test-app.pem ec2-user@52.37.128.78"
+alias vi="vim"
 ##OS DEPENDENCIES(TODO:別ファイルに分ける)
 
 case "${OSTYPE}" in
 darwin*)
-  	# Mac
-  	
+  	# Mac  	
 	alias ls="ls -GF"
 	alias la="ls -la"
 	alias ctags="`brew --prefix`/bin/ctags"
@@ -42,15 +42,15 @@ esac
 	PATH=$PATH:$HOME/.node/bin/npm
 	PATH=$PATH:/usr/local/lib/node_modules
 	PATH=$PATH:/usr/local/heroku/bin ### Added by the Heroku Toolbel
-		
-	
+	export NODE_PATH=$NODE_PATH:/Users/ykido/.nvm/versions/node/v4.2.6/lib/node_modules	
 	export PATH
-	
-	export NODE_PATH=/usr/local/lib/node_module
+	#export NODE_PATH=/usr/local/lib/node_module
 
 	# Setting PATH for Python 3.5
 	# The orginal version is saved in .zprofile.pysave
 	export PYENV_ROOT="$HOME/.pyenv"
+	export GOPATH=$HOME/workspace/go
+	export PATH=$PATH:$GOPATH/bin 
 	export PATH="$PYENV_ROOT/bin:$PATH"
 	eval "$(pyenv init -)"
 	# export MECAB_PATH=/usr/local/Cellar/mecab/0.996/lib/libmecab.dylib 	

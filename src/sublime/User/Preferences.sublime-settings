@@ -97,7 +97,7 @@
 	"font_options":
 	[
 	],
-	"font_size": 14,
+	"font_size": 16,
 	"gpu_window_buffer": "auto",
 	"gutter": true,
 	"highlight_line": false,
@@ -108,9 +108,13 @@
 		"ActionScript",
 		"AppleScript",
 		"Clojure",
+		"Git",
+		"GitGutter",
 		"Ruby Debugger",
+		"Ruby on Rails snippets",
 		"Three.js Autocomplete",
-		"Vintage"
+		"Vintage",
+		"Vintageous"
 	],
 	"indent_guide_options":
 	[
@@ -157,13 +161,14 @@
 	"spelling_selector": "markup.raw, source string.quoted - punctuation - meta.preprocessor.c.include, source comment - source comment.block.preprocessor, -(source, constant, keyword, storage, support, variable, markup.underline.link, meta.tag)",
 	"tab_completion": true,
 	"tab_size": 4,
-	"theme": "Seti_orig.sublime-theme",
+	"theme": "Seti.sublime-theme",
 	"translate_tabs_to_spaces": false,
 	"tree_animation_enabled": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": false,
 	"use_simple_full_screen": false,
 	"use_tab_stops": true,
+	"vintageous_use_ctrl_keys": true,
 	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
 	"word_wrap": "auto",
 	"wrap_width": 0

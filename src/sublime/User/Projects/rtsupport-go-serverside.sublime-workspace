@@ -1,0 +1,1512 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sub",
+				"subscribeChannel	(main.go)"
+			],
+			[
+				"msg",
+				"msgChan"
+			],
+			[
+				"pr",
+				"Println"
+			],
+			[
+				"map",
+				"mapstructure"
+			],
+			[
+				"channe",
+				"channelMap"
+			],
+			[
+				"add",
+				"addChannel"
+			],
+			[
+				"rec",
+				"recMessage"
+			],
+			[
+				"active",
+				"activechannel"
+			],
+			[
+				"Channel",
+				"ChannelSection"
+			],
+			[
+				"image_po",
+				"image_polygon_ctx"
+			],
+			[
+				"Timel",
+				"TimeLimitFaceNotFound"
+			],
+			[
+				"localS",
+				"localstorage()	browser.js"
+			],
+			[
+				"polygon",
+				"polygonBuffer	PostProcess.js"
+			],
+			[
+				"_debug",
+				"_debugCtx"
+			],
+			[
+				"_detec",
+				"_detectCtx"
+			],
+			[
+				"getele",
+				"getElementById	(PostProcess.js)"
+			],
+			[
+				"Event",
+				"EventHandler"
+			],
+			[
+				"removeE",
+				"removeEventListener	(bundle.js)"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"trac",
+				"tracker	FaceDetection.js"
+			],
+			[
+				"Post",
+				"PostProcess"
+			],
+			[
+				"VIE",
+				"VIEWS"
+			],
+			[
+				"face",
+				"FaceLost()	FaceDetection.js"
+			],
+			[
+				"Face",
+				"FaceDetection"
+			],
+			[
+				"texcoo",
+				"texCoordBuffer	face_deformer.js"
+			],
+			[
+				"Even",
+				"EventHandler"
+			],
+			[
+				"position",
+				"positionStorage"
+			],
+			[
+				"w_",
+				"w_offset〔variable〕"
+			],
+			[
+				"getconte",
+				"getContext(\"2d	(lib.js)"
+			],
+			[
+				"fill",
+				"fillRect	(PostProcess.js)"
+			],
+			[
+				"video_guide",
+				"video_guide_comment	(bundle.js)"
+			],
+			[
+				"istra",
+				"isTrackingFired	CameraApp.js"
+			],
+			[
+				"tracker",
+				"trackerCanvas	CameraApp.js"
+			],
+			[
+				"webCAm",
+				"webcamCanvas	CameraApp.js"
+			],
+			[
+				"webcam",
+				"webcamCanvas"
+			],
+			[
+				"CAMERA",
+				"CAMERA_APP"
+			],
+			[
+				"move",
+				"moveTo"
+			],
+			[
+				"get",
+				"getcamera	(Consts.js)"
+			],
+			[
+				"getCurrent",
+				"getCurrentParameters()	clmtrackr.js"
+			],
+			[
+				"doPost",
+				"doPostPhoto	(Main.js)"
+			],
+			[
+				"pointer",
+				"pointer-events"
+			],
+			[
+				"getCurre",
+				"getCurrentPosition"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"confirm_",
+				"confirm_photo	(bundle.js)"
+			],
+			[
+				"css_file",
+				"css_files_sp"
+			],
+			[
+				"photo",
+				"photo_confirmed"
+			],
+			[
+				"getcurren",
+				"getCurrentPosition"
+			],
+			[
+				"recognition",
+				"recognitionTrack"
+			],
+			[
+				"getWi",
+				"getWidth()	bitmap.js"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"getelement",
+				"getElementById"
+			],
+			[
+				"hidden",
+				"hiddenCanvas"
+			],
+			[
+				"getw",
+				"getWidth()	bitmap.js"
+			],
+			[
+				"requestani",
+				"requestAnimFrame	(lib.js)"
+			],
+			[
+				"showCame",
+				"showCameraView	(bundle.js)"
+			],
+			[
+				"show",
+				"showCameraCheck	(bundle.js)"
+			],
+			[
+				"showCam",
+				"showCameraView	(bundle.js)"
+			],
+			[
+				"showca",
+				"showCameraView	(bundle.js)"
+			],
+			[
+				"showc",
+				"showCameraCheck	(bundle.js)"
+			],
+			[
+				"showCamer",
+				"showCameraCheck	(WindowEvent.js)"
+			],
+			[
+				"backgroun",
+				"background-image"
+			],
+			[
+				"connect",
+				"connect_token	main.js"
+			],
+			[
+				"is",
+				"isMobile"
+			],
+			[
+				"getelemen",
+				"getElementById(${0:id})	Element"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"jqu",
+				"jquery.js"
+			],
+			[
+				"effect",
+				"effectBloom"
+			],
+			[
+				"autopla",
+				"autoplay"
+			],
+			[
+				"au",
+				"audio.min.js"
+			],
+			[
+				"came",
+				"cameraPosZ"
+			],
+			[
+				"camera",
+				"cameraSpeed"
+			],
+			[
+				"jinja",
+				"jinja.dae"
+			],
+			[
+				"hip",
+				"hiphopVersion9.json"
+			],
+			[
+				"hi",
+				"hiphopVersion6.json"
+			],
+			[
+				"me",
+				"me9.json"
+			],
+			[
+				"_OBJEc",
+				"_OBJECT_SCALE_"
+			],
+			[
+				"controls",
+				"controls/"
+			],
+			[
+				"setsi",
+				"setSize()	Three.js"
+			],
+			[
+				"pla",
+				"play( animation )	AnimationHandler.js"
+			],
+			[
+				"warpto",
+				"warpToDuration( duration )	three.js"
+			],
+			[
+				"mode",
+				"models/"
+			],
+			[
+				"collada",
+				"collada/"
+			],
+			[
+				"untitled",
+				"untitled-scene-dae/"
+			],
+			[
+				"backst",
+				"backstretch"
+			],
+			[
+				"FishTna",
+				"fishTankRenderer	tracker.ejs"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 342.0,
+		"last_filter": "pro",
+		"selected_items":
+		[
+			[
+				"pro",
+				"Project Manager"
+			],
+			[
+				"makes",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"lint",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"toggl",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"linter",
+				"SublimeLinter: Enable Linter"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"toggle li",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"set go",
+				"Set Syntax: Go"
+			],
+			[
+				"install",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"setbab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"save",
+				"File: Save All"
+			],
+			[
+				"saveall",
+				"File: Save All"
+			],
+			[
+				"savea",
+				"File: Save All"
+			],
+			[
+				"set bab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"make",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"make s",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"set babe",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"bab",
+				"Babel Transform"
+			],
+			[
+				"set babel",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"savel",
+				"File: Save All"
+			],
+			[
+				"diff",
+				"Git: Diff All Files"
+			],
+			[
+				"com",
+				"Sublimerge: Compare to Revision..."
+			],
+			[
+				"compare",
+				"Sublimerge: Compare to Revision..."
+			],
+			[
+				"revision",
+				"Sublimerge: Compare Revision to Revision..."
+			],
+			[
+				"compew",
+				"Sublimerge: Compare to View..."
+			],
+			[
+				"saveal",
+				"File: Save All"
+			],
+			[
+				"sub",
+				"Sublimerge"
+			],
+			[
+				"subl",
+				"Sublimerge"
+			],
+			[
+				"su",
+				"Sublimerge"
+			],
+			[
+				"comp",
+				"Sublimerge: Compare to Revision..."
+			],
+			[
+				"compa",
+				"Sublimerge: Compare to Revision..."
+			],
+			[
+				"save all",
+				"File: Save All"
+			],
+			[
+				"wrap",
+				"BracketHighlighter: Wrap Selections with Brackets"
+			],
+			[
+				"sublim",
+				"Sublimerge"
+			],
+			[
+				"compra",
+				"Sublimerge: Compare to Revision..."
+			],
+			[
+				"subli",
+				"Sublimerge"
+			],
+			[
+				"fold",
+				"BracketHighlighter: Fold Bracket Content"
+			],
+			[
+				"mini",
+				"Minify Javascript"
+			],
+			[
+				"format co",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"vinta",
+				"Vintageous: Toggle Vim Ctrl Keys"
+			],
+			[
+				"javascrip",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"dib",
+				"Package Control: Disable Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"compareto",
+				"Sublimerge: Compare to Revision..."
+			],
+			[
+				"revisio n",
+				"Sublimerge: Compare to Revision..."
+			],
+			[
+				"proje",
+				"Project Manager"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"disablepl",
+				"SublimeCodeIntel: Disable Plugin"
+			],
+			[
+				"p",
+				"Project Manager"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"diab",
+				"Package Control: Disable Package"
+			],
+			[
+				"set javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set java",
+				"Set Syntax: Java"
+			],
+			[
+				"build",
+				"Build With: xJs"
+			],
+			[
+				"build j",
+				"Build With: xJs"
+			],
+			[
+				"bui",
+				"Build: Cancel"
+			],
+			[
+				"disable ",
+				"Package Control: Disable Package"
+			],
+			[
+				"set syntax javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pr",
+				"Project Manager"
+			],
+			[
+				"coffee lint",
+				"Coffee: Lint"
+			],
+			[
+				"coffee syn",
+				"Coffee: Check Syntax"
+			],
+			[
+				"ctag",
+				"CTags: Show Symbols (all)"
+			],
+			[
+				"wa",
+				"WakaTime: Open Dashboard"
+			],
+			[
+				"waka",
+				"WakaTime: Open Dashboard"
+			],
+			[
+				"isntal",
+				"Haxelib: Install library"
+			],
+			[
+				"vintag",
+				"Vintageous: Open .vintageousrc"
+			],
+			[
+				"shel",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"forma",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"for",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"form",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"syntax c ",
+				"Set Syntax: C++"
+			],
+			[
+				"ctags",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"next",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"linter show",
+				"SublimeLinter: Don’t Show Errors on Save"
+			],
+			[
+				"linter ",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"linter st",
+				"SublimeLinter: Choose Mark Style"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"enabl",
+				"BracketHighlighter: Toggle Global Enable"
+			],
+			[
+				"enable l",
+				"SublimeLinter: Enable Linter"
+			],
+			[
+				"disable linte",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"linter deb",
+				"SublimeLinter: Enable Debug Mode"
+			],
+			[
+				"javasci",
+				"Set Syntax: JavaScript Next"
+			],
+			[
+				"html",
+				"Snippet: html"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"single",
+				"Snippet: Comment - Single-line block comment"
+			],
+			[
+				"beau",
+				"HTMLBeautify"
+			],
+			[
+				"reinde	",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"beaut",
+				"HTMLBeautify"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"set ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"jaa",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"set css",
+				"Set Syntax: CSS"
+			],
+			[
+				"set jva",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"codefor",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"REI",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"code",
+				"CodeFormatter: Format as Javascript Syntax"
+			],
+			[
+				"cod",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"reiinde",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"comment",
+				"Snippet: Comment - Block style comment"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"packe",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"linte",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"projec",
+				"Project Manager: Remove Project"
+			],
+			[
+				"set htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"pretty",
+				"HTMLPrettify"
+			],
+			[
+				"enag",
+				"Package Control: Enable Package"
+			],
+			[
+				"pa",
+				"Package Control: Disable Package"
+			],
+			[
+				"package",
+				"Package Control: Disable Package"
+			],
+			[
+				"proj",
+				"Project Manager"
+			],
+			[
+				"prett",
+				"HTMLPrettify"
+			],
+			[
+				"prettif",
+				"HTMLPrettify"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"beay",
+				"HTMLBeautify"
+			],
+			[
+				"set js",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"sublime.log_input(True)",
+			"sublime.log_commands(True)",
+			"clear",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282'+ 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s),please try manual install' % (dh, h)) if dh != h else open(os.path.join(ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/ykido/workspace/go/src/github.com/no-wa-ke/rtsupport"
+	],
+	"file_history":
+	[
+		"/Users/ykido/workspace/go/src/github.com/no-wa-ke/rtsupport/main.go",
+		"/Users/ykido/workspace/go/src/github.com/no-wa-ke/rtsupport/client.go",
+		"/Users/ykido/workspace/go/src/github.com/no-wa-ke/rtsupport/junk.go",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/printf.sublime-snippet",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/GoSublime/CHANGELOG.md",
+		"/Users/ykido/.zprofile",
+		"/Users/ykido/workspace/personalSpace/prometones_three/components/messages/MessageSection.jsx",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/lili.sublime-snippet",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/li.sublime-snippet",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/div.sublime-snippet",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/bootstrap.sublime-snippet",
+		"/Users/ykido/.ssh/config",
+		"/Users/ykido/workspace/job-works/uno-photo-page/public/SP/bin/bundle.css",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/js/Consts.js",
+		"/Users/ykido/Desktop/13054652_10206367318557980_1302734466_o.jpg",
+		"/Users/ykido/workspace/job-works/uno-photo-page/public/SP/bin/lib/SP_consts.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/public/bin/lib/PC_consts.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/public/bin/bundle.css",
+		"/Users/ykido/workspace/job-works/uno-photo-page/public/bin/bundle.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/public/bin/lib/lib.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/public/bin/lib/lib.css",
+		"/Users/ykido/.ssh/n",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/SP/js/Facedeformer.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/SP/js/FaceFixer.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/public/sp.html",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/js/init.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/js/WindowEvent.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/js/FileClass.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/js/utils.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/js/FaceFixer.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/js/PostProcess.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/SP/js/Consts.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/README.md",
+		"/Users/ykido/workspace/job-works/uno-photo-page/public/index.html",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/js/MainClass.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/node_modules/argparse/lib/const.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/SP/js/Init.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/README.md",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/css/main.css",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/SP/bin/lib/lib.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/bower_components/clmtrackr/.bower.json",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/bin/bundle.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/js/ApiHandler.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/SP/bin/socialbarber_sp.min.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/bower.json",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/index.html",
+		"/Users/ykido/workspace/threeJs/gulpfile.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/SP/bin/bundle.css",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/gulpfile.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/css/socialBarBar.css",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/js/main.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/sp.html",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/SP/bin/lib/lib.css",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/SP/bin/bundle.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/js/UserInput.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/js/FileClass.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/bower_components/clmtrackr/js/clm.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/js/init.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/js/SendingHandler.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/js/MainClass.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/js/WindowEvent.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/js/Init.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/js/Consts.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/js/FileHandler.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/js/PostProcess.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/js/FaceDetection.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/js/eventHandler.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/css/socialBarBar.css",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/css/main.css",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/js/Main.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/node_modules/argparse/lib/const.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/js/CameraApp.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/js/utils.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/bin/lib/lib.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/bin/lib/lib.css",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/bin/bundle.css",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/bower_components/bootstrap/bower.json",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/js/TokenHandler.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/bower_components/bootstrap/package.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/package.json",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/main.css",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/app/template.jade",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/gulpfile.coffee",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/21 - Capture and Upload/src/main.js",
+		"/Users/ykido/dotfiles/script/LinkDotFiles.sh",
+		"/Users/ykido/dotfiles/script/LinkTmux.sh",
+		"/Users/ykido/dotfiles/LinkTmux.sh",
+		"/Users/ykido/dotfiles/script/enviorment.sh",
+		"/Users/ykido/workspace/shell/spotify_debug_apps.sh",
+		"/Users/ykido/workspace/OF/of_v0.9.2_osx_release/libs/openFrameworks/communication/ofSerial.cpp",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/WakaTime.sublime-settings",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/WakaTime/WakaTime.sublime-settings",
+		"/Users/ykido/.vim/colors/molokai.vim",
+		"/Library/Preferences/.GlobalPreferences.plist",
+		"/Users/ykido/workspace/python/slack_logger/main.py",
+		"/Users/ykido/dotfiles/src/sublime/User/.vintageousrc",
+		"/Users/ykido/.ssh/rsync-rsa.pub",
+		"/Users/ykido/workspace/shell/watch_spotify.sh",
+		"/Users/ykido/.ssh/rsync-rsa",
+		"/tmp/crontab.IrqJraQYVQ",
+		"/tmp/crontab.7g8bTcZKgR",
+		"/Users/ykido/Desktop/OSCManager.cpp",
+		"/Users/ykido/Desktop/OSCManager.h",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/33 - Binary format/web_modules/OrbitControls.js",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/22 - Face morph/webpack.config.js",
+		"/Users/ykido/workspace/generativeArt/Subete-ga-F-ni-naru-ED/golly/export-otca-metapixels.py",
+		"/Users/ykido/workspace/generativeArt/Subete-ga-F-ni-naru-ED/p5js/cell-diffuse/sketch.js",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/data/4 - C4DPy/djv.py",
+		"/Users/ykido/.zshrc",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/data/4 - C4DPy/export_keyframes_test.py",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/33 - Binary format/src/main.js",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/15 - Keyframes test/src/main.js",
+		"/Users/ykido/workspace/generativeArt/simple_export.py",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/22 - JSON Checker/src/main.js",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/22 - JSON Checker/public/bundle.js",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/15 - Keyframes test/public/bundle.js",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/33 - Binary format/package.json",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/33 - Binary format/public/0.worker.js",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/33 - Binary format/webpack.config.js",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/33 - Binary format/public/bundle.js",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/ykido/Downloads/threejs-attemps/Masks.js",
+		"/Users/ykido/Downloads/face.blend",
+		"/Users/ykido/workspace/javascript/JankenGame/index.html",
+		"/Users/ykido/Dropbox/my_signature.html",
+		"/Users/ykido/Downloads/VisageSDK-HTML5/Documentation.html",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 94.0,
+		"where_history":
+		[
+			"./components",
+			"components",
+			"",
+			"public/",
+			"dev/assets/js",
+			"dev/assets/SP",
+			"dev/assets/js",
+			"dev/assets/SP",
+			"dev/assets/js",
+			"dev/assets/SP",
+			"",
+			"bower_components/clmtrackr",
+			"dev/assets/SP",
+			"dev/assets/",
+			"dev/assets/js",
+			"dev/assets/",
+			"dev/assets/SP",
+			"dev/assets/",
+			"dev/assets/js",
+			"dev/assets/SP/js",
+			"dev/assets/js",
+			"dev/assets/SP",
+			"dev/assets/js",
+			"dev/assets/ks",
+			"bower_components/clmtrackr",
+			"dev/assets/js",
+			"bower_components/bootstrap/less/",
+			"bower_components/",
+			"bower_components",
+			"dev/assets/js",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"this.state",
+			"Channel",
+			"channel",
+			"Channel",
+			"channel",
+			"Channel",
+			"channel",
+			"Channel",
+			"channel",
+			"Channel",
+			"channel",
+			"Channel",
+			"panel",
+			"activechannel",
+			"active",
+			"addchannel",
+			"setState",
+			"addChannel",
+			"new",
+			"stg:",
+			"stg",
+			"stg:",
+			"guide",
+			"normal",
+			"guide",
+			"stg:false",
+			"DEBUG.on:false",
+			"api.social",
+			"api.so",
+			"api.uno",
+			"blink",
+			"loading",
+			"blink",
+			"body",
+			"gui",
+			"CANVAS",
+			"512/",
+			"bri34htness",
+			"bri34htness\nbri34htness\nbri34htness\nbri34htness",
+			"bri34htness\n",
+			"brightnes",
+			"result_canvas",
+			"renderCtx",
+			"FaceDetection.detect",
+			"FaceDetection.detect ",
+			"normal",
+			"debug",
+			"normal",
+			"setupFaceDeformation",
+			"debug_",
+			"greyscaleFilter",
+			"20px",
+			"debug_",
+			"context",
+			"settime",
+			"draw",
+			"localstorage",
+			"w_limit/2",
+			"512/2",
+			"256",
+			"localstorage",
+			"display: none;pointer-events: none;",
+			"localstorage",
+			"local",
+			"bright",
+			"2",
+			"54",
+			"51",
+			"8;",
+			"localstorage",
+			"polygonBufferctx",
+			"polygonBuffer",
+			"generate()",
+			"generate",
+			"polygonBuffer",
+			"header-logo",
+			"model",
+			".json",
+			"getelement",
+			"ソーシャルのあなた",
+			"PostProcess.image",
+			"PostProcess.image.src ",
+			"job",
+			"localst",
+			"face",
+			"face texture",
+			"face",
+			"texture",
+			"face",
+			"prepared",
+			"face",
+			"texture",
+			"face texture",
+			"date",
+			"prepared",
+			"goback-vid",
+			"BUTTONS.video_stop",
+			"clearInterval",
+			"addEventListener",
+			"detectImage",
+			"detectimage",
+			"FaceDetection.detectImage",
+			"camera pla",
+			"camera playing",
+			"newPosX",
+			"coefX",
+			"xonmap",
+			"canvasmiddleX",
+			"FaceDetection.stopAll",
+			"CAMERA_APP.stream.getVideoTracks()[0].stop();",
+			"CAMERA_APP.stop",
+			"CAMERA_APP.stream.getVideoTracks()[0]",
+			"CAMERA_APP.stream.getVideoTracks()[0].stop();",
+			"CAMERA_APP.stream",
+			"stream",
+			"AMERA_APP.draw",
+			"killall",
+			"font-size: 20",
+			" $(BUTTONS.video_guide).css({",
+			"error",
+			"dozoom",
+			"canvas",
+			"minus",
+			"guide",
+			"pc",
+			"setupFaceDeformation",
+			"drawDeformedFace",
+			"FACEFIX.drawResult"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"0",
+			"value",
+			"size",
+			"\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 26.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 116.0
+	},
+	"pinned_build_system": "",
+	"project": "rtsupport-go-serverside.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"event",
+				"dev/assets/SP/js/eventHandler.js"
+			],
+			[
+				"postpr",
+				"dev/assets/js/PostProcess.js"
+			],
+			[
+				"untit",
+				"untitled"
+			],
+			[
+				"index",
+				"public/index.html"
+			],
+			[
+				"main",
+				"dev/assets/js/main.js"
+			],
+			[
+				"conts",
+				"dev/assets/js/Consts.js"
+			],
+			[
+				"main.cs",
+				"dev/assets/css/main.css"
+			],
+			[
+				"main.css",
+				"dev/assets/css/main.css"
+			],
+			[
+				"consts",
+				"dev/assets/js/Consts.js"
+			],
+			[
+				"cons",
+				"node_modules/argparse/lib/const.js"
+			],
+			[
+				"cosn",
+				"dev/assets/js/Consts.js"
+			],
+			[
+				"cam",
+				"dev/assets/js/CameraApp.js"
+			],
+			[
+				"face",
+				"dev/assets/js/FaceDetection.js"
+			],
+			[
+				"eventhandler",
+				"dev/assets/js/EventHandler.js"
+			],
+			[
+				"const",
+				"node_modules/argparse/lib/const.js"
+			],
+			[
+				"eventha",
+				"dev/assets/SP/js/eventHandler.js"
+			],
+			[
+				"sp.",
+				"public/sp.html"
+			],
+			[
+				"file",
+				"dev/assets/js/FileClass.js"
+			],
+			[
+				"main.js",
+				"dev/assets/js/main.js"
+			],
+			[
+				"cameraapp",
+				"dev/assets/js/CameraApp.js"
+			],
+			[
+				"win",
+				"dev/assets/js/WindowEvent.js"
+			],
+			[
+				"camera",
+				"dev/assets/js/CameraApp.js"
+			],
+			[
+				"windw",
+				"dev/assets/js/WindowEvent.js"
+			],
+			[
+				"init",
+				"dev/assets/js/init.js"
+			],
+			[
+				"",
+				"dev/assets/js/WindowEvent.js"
+			],
+			[
+				"inde",
+				"www/index.php"
+			],
+			[
+				"i",
+				"www/index.php"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"g",
+				"examples/js/GSVPano.js"
+			],
+			[
+				"gs",
+				"examples/js/GSVPano.js"
+			],
+			[
+				"animationskinnin",
+				"webgl_animation_skinning_blending.html"
+			],
+			[
+				"loaderjson",
+				"webgl_loader_json_blender.html"
+			],
+			[
+				"jsonl",
+				"webgl_loader_json_claraio.html"
+			],
+			[
+				"loadjson",
+				"webgl_loader_json_blender.html"
+			],
+			[
+				"jsonlo",
+				"js/loaders/AssimpJSONLoader.js"
+			],
+			[
+				"me.",
+				"threeJsLoadJSONFileFromBlenderSampleStudy/me.js"
+			],
+			[
+				"animatin",
+				"webgl_animation_skinning_blending.html"
+			],
+			[
+				"loadjso",
+				"webgl_loader_json_objconverter.html"
+			],
+			[
+				"track",
+				"js/controls/TrackballControls.js"
+			],
+			[
+				"json",
+				"webgl_loader_json_blender.html"
+			],
+			[
+				"animation",
+				"webgl_animation_skinning_blending.html"
+			],
+			[
+				"anima",
+				"webgl_animation_skinning_blending.html"
+			],
+			[
+				"collada",
+				"webgl_loader_collada_skinning.html"
+			],
+			[
+				"clara",
+				"three.js/examples/models/json/teapot-claraio.json"
+			],
+			[
+				"dat.gui",
+				"bower_components/dat-gui/build/dat.gui.js"
+			],
+			[
+				"datgui",
+				"bower_components/dat-gui/build/dat.gui.min.js"
+			],
+			[
+				"datgu",
+				"bower_components/dat-gui/build/dat.gui.js"
+			],
+			[
+				"fishtank",
+				"app/dev/js/FishTankRenderer.js"
+			],
+			[
+				"fishtan",
+				"app/dev/js/FishTankRenderer.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 252.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

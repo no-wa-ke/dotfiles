@@ -1,0 +1,1991 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"is",
+				"isMobile"
+			],
+			[
+				"getelemen",
+				"getElementById(${0:id})	Element"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"jqu",
+				"jquery.js"
+			],
+			[
+				"effect",
+				"effectBloom"
+			],
+			[
+				"autopla",
+				"autoplay"
+			],
+			[
+				"au",
+				"audio.min.js"
+			],
+			[
+				"came",
+				"cameraPosZ"
+			],
+			[
+				"camera",
+				"cameraSpeed"
+			],
+			[
+				"jinja",
+				"jinja.dae"
+			],
+			[
+				"hip",
+				"hiphopVersion9.json"
+			],
+			[
+				"hi",
+				"hiphopVersion6.json"
+			],
+			[
+				"me",
+				"me9.json"
+			],
+			[
+				"_OBJEc",
+				"_OBJECT_SCALE_"
+			],
+			[
+				"controls",
+				"controls/"
+			],
+			[
+				"setsi",
+				"setSize()	Three.js"
+			],
+			[
+				"pla",
+				"play( animation )	AnimationHandler.js"
+			],
+			[
+				"warpto",
+				"warpToDuration( duration )	three.js"
+			],
+			[
+				"mode",
+				"models/"
+			],
+			[
+				"collada",
+				"collada/"
+			],
+			[
+				"untitled",
+				"untitled-scene-dae/"
+			],
+			[
+				"backst",
+				"backstretch"
+			],
+			[
+				"FishTna",
+				"fishTankRenderer	tracker.ejs"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!doctype html>\n<html lang=\"en\">\n	<head>\n		<title>Face Tracker</title>\n		<meta charset=\"utf-8\">\n		<style>\n			@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);\n\n			body {\n				font-family: 'Lato';\n				background-color: #f0f0f0;\n				margin: 0px auto;\n				max-width: 1150px;\n			}\n			\n			#overlay {\n				position: absolute;\n				top: 0px;\n				left: 0px;\n			}\n\n			#container {\n				position : relative;\n				width : 700px;\n				height : 500px;\n				/*margin : 0px auto;*/\n			}\n\n			#content {\n				margin-top : 70px;\n				margin-left : 100px;\n				margin-right : 100px;\n				max-width: 950px;\n			}\n			\n			#sketch {\n				display: none;\n			}\n			\n			#filter {\n				display: none;\n			}\n\n			#convergenc\n			 {\n				display : inline;\n			}\n\n			h2 {\n				font-weight : 400;\n			}\n\n			.btn {\n				font-family: 'Lato';\n				font-size: 16px;\n			}\n\n			.hide {\n				display : none;\n			}\n		</style>\n		<script type=\"text/javascript\">\n			var _gaq = _gaq || [];\n			_gaq.push(['_setAccount', 'UA-32642923-1']);\n			_gaq.push(['_trackPageview']);\n\n			(function() {\n				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;\n				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\n				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);\n			})();\n		</script>\n	</head>\n	<body>\n		<script src=\"./ext_js/utils.js\"></script>\n		<script src=\"./ext_js/dat.gui.min.js\"></script>\n		<script src=\"./ext_js/jsfeat-min.js\"></script>\n		<script src=\"./ext_js/frontalface.js\"></script>\n		<script src=\"./ext_js/jsfeat_detect.js\"></script>\n		<script src=\"./ext_js/numeric-1.2.6.min.js\"></script>\n		<script src=\"./ext_js/mosse.js\"></script>\n		<script src=\"./ext_js/left_eye_filter.js\"></script>\n		<script src=\"./ext_js/right_eye_filter.js\"></script>\n		<script src=\"./ext_js/nose_filter.js\"></script>\n		<script src=\"../models/model_pca_20_svm.js\"></script>\n		<script src=\"../js/clm.js\"></script>\n		<script src=\"../js/svmfilter_webgl.js\"></script>\n		<script src=\"../js/svmfilter_fft.js\"></script>\n		<script src=\"../js/mossefilter.js\"></script>\n		<script src=\"./ext_js/Stats.js\"></script>\n		\n		<link rel=\"stylesheet\" type=\"text/css\" href=\"./styles/imgareaselect-default.css\" />\n		<script src=\"./ext_js/jquery.min.js\"></script>\n		<script src=\"./ext_js/jquery.imgareaselect.pack.js\"></script>\n		<script src=\"./ext_js/BlobBuilder.min.js\"></script>\n		<script src=\"./ext_js/Filesaver.min.js\"></script>\n		\n		<div id=\"content\">\n			<h2>Face tracking in images</h2>\n			<div id=\"container\">\n				<canvas id=\"image\" width=\"625\" height=\"500\"></canvas>\n				<canvas id=\"overlay\" width=\"625\" height=\"500\"></canvas>\n			</div>\n			<br/>\n			<input type=\"button\" class=\"btn\" value=\"start\" onclick=\"animateClean()\"></input>\n			<input type=\"button\" class=\"btn\" value=\"manually select face\" onclick=\"selectBox()\"></input>\n			<input type=\"file\" class=\"btn\" id=\"files\" name=\"files[]\" />\n			<p id=\"convergence\"></p>\n			<div id=\"text\">\n				<p>This is an example of precise face-tracking in an image using the javascript library <a href=\"https://github.com/auduno/clmtrackr\"><em>clmtrackr</em></a>. To try it out, simply click start.</p>\n				<span id=\"loadimagetext\"><p>To try it out with your own image, choose a file above by clicking \"choose file\". If the tracking has problems, try selecting the face in the image manually by clicking \"manually select face\", and click and hold to drag a square around the face in the image.</p></span>\n			</div>\n			<p>The image is from the <a href=\"http://www-prima.inrialpes.fr/FGnet/data/01-TalkingFace/talking_face.html‎\">FG-net Talking Face</a> project</p>\n			<a href=\"https://github.com/auduno/clmtrackr\"><img style=\"position: absolute; top: 0; left: 0; border: 0;\" src=\"https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png\" alt=\"Fork me on GitHub\"></a>\n\n			<script>\n				var cc = document.getElementById('image').getContext('2d');\n				var overlay = document.getElementById('overlay');\n				var overlayCC = overlay.getContext('2d');\n				var img = new Image();\n\n				img.onload = function() {\n					cc.drawImage(img,0,0,625, 500);\n				};\n				\n				img.src = './media/franck_02159.jpg';\n			\n				var ctrack = new clm.tracker({stopOnConvergence : true});\n				ctrack.init(pModel);\n			\n				stats = new Stats();\n				stats.domElement.style.position = 'absolute';\n				stats.domElement.style.top = '0px';\n\n\n				document.getElementById('container').appendChild( stats.domElement );\n				\n				var drawRequest;\n				\n				function animateClean() {\n					ctrack.start(document.getElementById('image'));\n					drawLoop();\n				}\n\n				function animate(box) {\n					ctrack.start(document.getElementById('image'), box);\n					drawLoop();\n				}\n				\n				function drawLoop() {\n					drawRequest = requestAnimFrame(drawLoop);\n					overlayCC.clearRect(0, 0, 720, 576);\n					if (ctrack.getCurrentPosition()) {\n						ctrack.draw(overlay);\n					}\n				}\n				\n				// detect if tracker fails to find a face\n				document.addEventListener(\"clmtrackrNotFound\", function(event) {\n					ctrack.stop();\n					alert(\"The tracking had problems with finding a face in this image. Try selecting the face in the image manually.\")\n				}, false);\n				\n				// detect if tracker loses tracking of face\n				document.addEventListener(\"clmtrackrLost\", function(event) {\n					ctrack.stop();\n					alert(\"The tracking had problems converging on a face in this image. Try selecting the face in the image manually.\")\n				}, false);\n				\n				// detect if tracker has converged\n				document.addEventListener(\"clmtrackrConverged\", function(event) {\n					\n					document.getElementById('convergence').innerHTML = \"CONVERGED\";\n					document.getElementById('convergence').style.backgroundColor = \"#00FF00\";\n					// stop drawloop\n					cancelRequestAnimFrame(drawRequest);\n				}, false);\n				\n				// update stats on iteration\n				document.addEventListener(\"clmtrackrIteration\", function(event) {\n					stats.update();\n				}, false);\n\n				// manual selection of faces (with jquery imgareaselect plugin)\n				function selectBox() {\n					overlayCC.clearRect(0, 0, 720, 576);\n					document.getElementById('convergence').innerHTML = \"\";\n					ctrack.reset();\n					$('#overlay').addClass('hide');\n					$('#image').imgAreaSelect({\n						handles : true,\n						onSelectEnd : function(img, selection) {\n							// create box\n							var box = [selection.x1, selection.y1, selection.width, selection.height];\n							\n							// do fitting\n							animate(box);\n							$('#overlay').removeClass('hide');\n						},\n						autoHide : true\n					});\n				}\n\n				// function to start showing images\n				function loadImage() {\n					if (fileList.indexOf(fileIndex) < 0) {\n						var reader = new FileReader();\n						reader.onload = (function(theFile) {\n							return function(e) {\n								// check if positions already exist in storage\n							\n								// Render thumbnail.\n								var canvas = document.getElementById('image')\n								var cc = canvas.getContext('2d');\n								var img = new Image();\n								img.onload = function() {\n									if (img.height > 500 || img.width > 700) {\n										var rel = img.height/img.width;\n										var neww = 700;\n										var newh = neww*rel;\n										if (newh > 500) {\n											newh = 500;\n											neww = newh/rel;\n										}\n										canvas.setAttribute('width', neww);\n										canvas.setAttribute('height', newh);\n										cc.drawImage(img,0,0,neww, newh);\n									} else {\n										canvas.setAttribute('width', img.width);\n										canvas.setAttribute('height', img.height);\n										cc.drawImage(img,0,0,img.width, img.height);\n									}\n								}\n								img.src = e.target.result;\n							};\n						})(fileList[fileIndex]);\n						reader.readAsDataURL(fileList[fileIndex]);\n						overlayCC.clearRect(0, 0, 720, 576);\n						document.getElementById('convergence').innerHTML = \"\";\n						ctrack.reset();\n					}\n\n				}\n\n				// set up file selector and variables to hold selections\n				var fileList, fileIndex;\n				if (window.File && window.FileReader && window.FileList) {\n					\n					function handleFileSelect(evt) {\n						var files = evt.target.files;\n						fileList = [];\n						for (var i = 0;i < files.length;i++) {\n							if (!files[i].type.match('image.*')) {\n								continue;\n							}\n							fileList.push(files[i]);\n						}\n						if (files.length > 0) {\n							fileIndex = 0;\n						}\n						\n						loadImage();\n					}\n					document.getElementById('files').addEventListener('change', handleFileSelect, false);\n				} else {\n					$('#files').addClass(\"hide\");\n					$('#loadimagetext').addClass(\"hide\");\n				}\n			</script>\n		</div>\n	</body>\n</html>\n",
+			"file": "/Users/ykido/workspace/javascript/clmtrackr/examples/clm_image.html",
+			"file_size": 8625,
+			"file_write_time": 131055211230000000,
+			"settings":
+			{
+				"buffer_size": 8629,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ykido/workspace/javascript/clmtrackr/examples/face_deform_test.html",
+			"settings":
+			{
+				"buffer_size": 14363,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ykido/workspace/javascript/clmtrackr/examples/face_mask.html",
+			"settings":
+			{
+				"buffer_size": 45363,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ykido/workspace/javascript/clmtrackr/examples/ext_js/fabric.js",
+			"settings":
+			{
+				"buffer_size": 744362,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ykido/Library/Application Support/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 416,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\"use strict\";\nvar faceDeformer = function() {\n  \n  var gl, verticeMap;\n  var numTriangles;\n  var maxx, minx, maxy, miny;\n  var width, height;\n  var first = true;\n  var textureVertices, gridVertices;\n  var texCoordBuffer, gridCoordbuffer;\n  var texCoordLocation;\n  var pdmModel;\n\n  var usegrid = false;\n  var drawProgram, gridProgram;\n  \n  this.init = function(canvas) {\n    // ready a webgl element\n    gl = getWebGLContext(canvas); \n  }\n\n  this.load = function(element, points, pModel, vertices) {\n    pdmModel = pModel;\n    if (vertices) {\n      verticeMap = vertices;\n    } else {\n\n      verticeMap = pdmModel.path.vertices;\n      \n      console.log('verticeMap',verticeMap);\n\n    }  \n    numTriangles = verticeMap.length;\n    \n    // get cropping\n    maxx = 0;\n    minx = element.width;\n    maxy = 0;\n    miny = element.height;\n    for (var i = 0;i < points.length;i++) {\n      if (points[i][0] > maxx) maxx = points[i][0];\n      if (points[i][0] < minx) minx = points[i][0];\n      if (points[i][1] > maxy) maxy = points[i][1];\n      if (points[i][1] < miny) miny = points[i][1];\n    }\n    minx = Math.floor(minx);\n    console.log('minx',minx);\n    maxx = Math.ceil(maxx);\n    console.log('maxx',maxx);\n    miny = Math.floor(miny);\n    console.log('miny',miny);\n    maxy = Math.ceil(maxy);\n    console.log('maxy',maxy);\n    width = maxx-minx;\n    height = maxy-miny;\n    console.log('height',height);\n\n    if (element.tagName == 'VIDEO' || element.tagName == 'IMG') {\n      var ca = document.createElement('canvas');\n      ca.width = element.width;\n      ca.height = element.height;\n      var cc = ca.getContext('2d');\n      cc.drawImage(element, 0, 0, element.width, element.height);\n    } else if (element.tagName == 'CANVAS') {\n      var cc = element.getContext('2d');\n    }\n    var image = cc.getImageData(minx, miny, width, height);\n    \n    // correct points\n    var nupoints = [];\n    for (var i = 0;i < points.length;i++) {\n      nupoints[i] = [];\n      nupoints[i][0] = points[i][0] - minx;\n      nupoints[i][1] = points[i][1] - miny;\n    }\n    \n    console.log('new points',nupoints);\n\n\n      // // EDIT: include eyebrows\n      // nupoints[19][1] = nupoints[19][1] - 10;\n      // nupoints[20][1] = nupoints[20][1] - 10;\n      // nupoints[21][1] = nupoints[21][1] - 10;\n      // nupoints[22][1] = nupoints[22][1] - 10;\n\n      // nupoints[15][1] = nupoints[15][1] - 10;\n      // nupoints[16][1] = nupoints[16][1] - 10;\n      // nupoints[17][1] = nupoints[17][1] - 10;\n      // nupoints[18][1] = nupoints[18][1] - 10;\n\n    // create vertices based on points\n    var textureVertices = [];\n    for (var i = 0;i < verticeMap.length;i++) {\n      textureVertices.push(nupoints[verticeMap[i][0]][0]/width);\n      textureVertices.push(nupoints[verticeMap[i][0]][1]/height);\n      textureVertices.push(nupoints[verticeMap[i][1]][0]/width);\n      textureVertices.push(nupoints[verticeMap[i][1]][1]/height);\n      textureVertices.push(nupoints[verticeMap[i][2]][0]/width);\n      textureVertices.push(nupoints[verticeMap[i][2]][1]/height); \n    }\n\n    console.log('texture verti',textureVertices);\n    \n    if (first) {\n      // create program for drawing grid\n      var gridVertexShaderProg = [\n        \"attribute vec2 a_position;\",\n        \"\",\n        \"uniform vec2 u_resolution;\",\n        \"\",\n        \"void main() {\",\n        \"  vec2 zeroToOne = a_position / u_resolution;\",\n        \"  vec2 zeroToTwo = zeroToOne * 2.0;\",\n        \"  vec2 clipSpace = zeroToTwo - 1.0;\",\n        \"  gl_Position = vec4(clipSpace * vec2(1, -1), 0, 1);\",\n        \"}\"\n      ].join('\\n');\n      \n      var gridFragmentShaderProg = [\n        \"void main() {\",\n        \"  gl_FragColor = vec4(0.2, 0.2, 0.2, 1.0);\",\n        \"}\"\n      ].join('\\n');\n\n      var gridVertexShader = loadShader(gl, gridVertexShaderProg, gl.VERTEX_SHADER);\n      var gridFragmentShader = loadShader(gl, gridFragmentShaderProg, gl.FRAGMENT_SHADER);\n      try {\n        gridProgram = createProgram(gl, [gridVertexShader, gridFragmentShader]);\n      } catch(err) {\n        alert(\"There was a problem setting up the webGL programs. Maybe you should try it in another browser. :(\");\n      }\n\n      gridCoordbuffer = gl.createBuffer();\n\n      // create program for drawing deformed face\n      var vertexShaderProg = [\n        \"attribute vec2 a_texCoord;\",\n        \"attribute vec2 a_position;\",\n        \"\",\n        \"varying vec2 v_texCoord;\",\n        \"\",\n        \"uniform vec2 u_resolution;\",\n        \"\",\n        \"void main() {\",\n        \"  vec2 zeroToOne = a_position / u_resolution;\",\n        \"  vec2 zeroToTwo = zeroToOne * 2.0;\",\n        \"  vec2 clipSpace = zeroToTwo - 1.0;\",\n        \"  gl_Position = vec4(clipSpace * vec2(1, -1), 0, 1);\",\n        \"  \",\n        \"  v_texCoord = a_texCoord;\",\n        \"}\"\n      ].join('\\n');\n      \n      var fragmentShaderProg = [\n        \"precision mediump float;\",\n        \"\",\n        \"uniform sampler2D u_image;\",\n        \"\",\n        \"varying vec2 v_texCoord;\",\n        \"\",\n        \"void main() {\",\n        \"  gl_FragColor = texture2D(u_image, v_texCoord);\",\n        \"}\"\n      ].join('\\n');\n    \n      var vertexShader = loadShader(gl, vertexShaderProg, gl.VERTEX_SHADER);\n      var fragmentShader = loadShader(gl, fragmentShaderProg, gl.FRAGMENT_SHADER);\n      drawProgram = createProgram(gl, [vertexShader, fragmentShader]);\n\n      texCoordBuffer = gl.createBuffer();\n      \n      first = false;\n    }\n\n    // load program for drawing grid\n    gl.useProgram(gridProgram);\n\n    // set the resolution for grid program\n    var resolutionLocation = gl.getUniformLocation(gridProgram, \"u_resolution\");\n    gl.uniform2f(resolutionLocation, gl.drawingBufferWidth, gl.drawingBufferHeight);\n\n    // load program for drawing deformed face\n    gl.useProgram(drawProgram);\n    \n    // look up where the vertex data needs to go.\n    texCoordLocation = gl.getAttribLocation(drawProgram, \"a_texCoord\");\n    \n    // provide texture coordinates for face vertices (i.e. where we're going to copy face vertices from).\n    gl.enableVertexAttribArray(texCoordLocation);\n\n    gl.bindBuffer(gl.ARRAY_BUFFER, texCoordBuffer);\n    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(textureVertices), gl.STATIC_DRAW);\n    \n    gl.vertexAttribPointer(texCoordLocation, 2, gl.FLOAT, false, 0, 0);\n    \n    // Create the texture.\n    var texture = gl.createTexture();\n    gl.bindTexture(gl.TEXTURE_2D, texture);\n    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);\n    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);\n    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);\n    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);\n    \n    // Upload the image into the texture.\n    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, image);\n    \n    // set the resolution for draw program\n    resolutionLocation = gl.getUniformLocation(drawProgram, \"u_resolution\");\n    gl.uniform2f(resolutionLocation, gl.drawingBufferWidth, gl.drawingBufferHeight);\n  }\n\n  this.draw = function(points) {\n    \n    if (usegrid) {\n      // switch program if needed\n      gl.useProgram(drawProgram);\n\n      //texCoordLocation = gl.getAttribLocation(drawProgram, \"a_texCoord\");\n\n      gl.enableVertexAttribArray(texCoordLocation);\n      gl.bindBuffer(gl.ARRAY_BUFFER, texCoordBuffer);\n      gl.vertexAttribPointer(texCoordLocation, 2, gl.FLOAT, false, 0, 0);\n      \n      usegrid = false;\n    }\n\n    // create drawvertices based on points\n    var vertices = [];\n    for (var i = 0;i < verticeMap.length;i++) {\n      vertices.push(points[verticeMap[i][0]][0]);\n      vertices.push(points[verticeMap[i][0]][1]);\n      vertices.push(points[verticeMap[i][1]][0]);\n      vertices.push(points[verticeMap[i][1]][1]);\n      vertices.push(points[verticeMap[i][2]][0]);\n      vertices.push(points[verticeMap[i][2]][1]); \n    }\n    \n    var positionLocation = gl.getAttribLocation(drawProgram, \"a_position\");\n    \n    // Create a buffer for the position of the vertices.\n    var drawPosBuffer = gl.createBuffer();\n    gl.bindBuffer(gl.ARRAY_BUFFER, drawPosBuffer);\n    gl.enableVertexAttribArray(positionLocation);\n    gl.vertexAttribPointer(positionLocation, 2, gl.FLOAT, false, 0, 0);\n    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW);\n    \n    // Draw the face vertices\n    gl.drawArrays(gl.TRIANGLES, 0, numTriangles*3);\n  }\n\n  this.drawGrid = function(points) {\n    \n    if (!usegrid) {\n      gl.useProgram(gridProgram);\n\n      usegrid = true;\n    }\n\n    // create drawvertices based on points\n    var vertices = [];\n    // create new texturegrid\n    for (var i = 0;i < verticeMap.length;i++) {\n      vertices.push(points[verticeMap[i][0]][0]);\n      vertices.push(points[verticeMap[i][0]][1]);\n      vertices.push(points[verticeMap[i][1]][0]);\n      vertices.push(points[verticeMap[i][1]][1]);\n\n      vertices.push(points[verticeMap[i][1]][0]);\n      vertices.push(points[verticeMap[i][1]][1]);\n      vertices.push(points[verticeMap[i][2]][0]);\n      vertices.push(points[verticeMap[i][2]][1]);\n\n      vertices.push(points[verticeMap[i][2]][0]);\n      vertices.push(points[verticeMap[i][2]][1]);\n      vertices.push(points[verticeMap[i][0]][0]);\n      vertices.push(points[verticeMap[i][0]][1]);\n    }\n\n    var positionLocation = gl.getAttribLocation(gridProgram, \"a_position\");\n    \n    // Create a buffer for position of the vertices (lines)\n    gl.bindBuffer(gl.ARRAY_BUFFER, gridCoordbuffer);\n    gl.enableVertexAttribArray(positionLocation);\n    gl.vertexAttribPointer(positionLocation, 2, gl.FLOAT, false, 0, 0);\n    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW);\n\n    // Draw the lines\n    gl.drawArrays(gl.LINES, 0, numTriangles*6);\n  }\n\n  this.clear = function() {\n    gl.clear(gl.COLOR_BUFFER_BIT);\n  }\n  \n  this.calculatePositions = function(parameters, useTransforms) {\n    var x, y, a, b;\n    var numParameters = parameters.length;\n    var positions = [];\n    for (var i = 0;i < pdmModel.patchModel.numPatches;i++) {\n      x = pdmModel.shapeModel.meanShape[i][0];\n      y = pdmModel.shapeModel.meanShape[i][1];\n      for (var j = 0;j < numParameters-4;j++) {\n        x += pdmModel.shapeModel.eigenVectors[(i*2)][j]*parameters[j+4];\n        y += pdmModel.shapeModel.eigenVectors[(i*2)+1][j]*parameters[j+4];\n      }\n      if (useTransforms) {\n        a = parameters[0]*x - parameters[1]*y + parameters[2];\n        b = parameters[0]*y + parameters[1]*x + parameters[3];\n        x += a;\n        y += b;\n      }\n      positions[i] = [x,y];\n    }\n    \n    return positions;\n  }\n}\n",
+			"file": "/Users/ykido/workspace/javascript/clmtrackr/js/face_deformer.js",
+			"file_size": 10549,
+			"file_write_time": 131055305230000000,
+			"settings":
+			{
+				"buffer_size": 10565,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ykido/workspace/javascript/clmtrackr/clmtools/model_viewer/classviewer.html",
+			"settings":
+			{
+				"buffer_size": 4356,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ykido/workspace/javascript/clmtrackr/models/model_spca_20_svm.js",
+			"settings":
+			{
+				"buffer_size": 651820,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ykido/workspace/javascript/clmtrackr/models/model_pca_20_mosse.js",
+			"settings":
+			{
+				"buffer_size": 872208,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ykido/workspace/javascript/clmtrackr/models/model_pca_20_svm.js",
+			"settings":
+			{
+				"buffer_size": 667328,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 297.0,
+		"last_filter": "compare",
+		"selected_items":
+		[
+			[
+				"compare",
+				"Sublimerge: Compare to Revision..."
+			],
+			[
+				"termin",
+				"Terminal: Open in project folder"
+			],
+			[
+				"terminal",
+				"Terminal: Open in project folder"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"stop",
+				"SublimeServer: Stop SublimeServer"
+			],
+			[
+				"start",
+				"SublimeServer: Start SublimeServer"
+			],
+			[
+				"server",
+				"SublimeServer: Stop SublimeServer"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pro",
+				"Project Manager"
+			],
+			[
+				"disable ",
+				"Package Control: Disable Package"
+			],
+			[
+				"set syntax javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pr",
+				"Project Manager"
+			],
+			[
+				"coffee lint",
+				"Coffee: Lint"
+			],
+			[
+				"coffee syn",
+				"Coffee: Check Syntax"
+			],
+			[
+				"set java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ctag",
+				"CTags: Show Symbols (all)"
+			],
+			[
+				"wa",
+				"WakaTime: Open Dashboard"
+			],
+			[
+				"waka",
+				"WakaTime: Open Dashboard"
+			],
+			[
+				"isntal",
+				"Haxelib: Install library"
+			],
+			[
+				"vinta",
+				"Vintageous: Toggle Vim Ctrl Keys"
+			],
+			[
+				"vintag",
+				"Vintageous: Open .vintageousrc"
+			],
+			[
+				"shel",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"forma",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"for",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"form",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"syntax c ",
+				"Set Syntax: C++"
+			],
+			[
+				"ctags",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"next",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"linter show",
+				"SublimeLinter: Don’t Show Errors on Save"
+			],
+			[
+				"linter ",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"linter st",
+				"SublimeLinter: Choose Mark Style"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"linter",
+				"SublimeLinter: Previous Error"
+			],
+			[
+				"enabl",
+				"BracketHighlighter: Toggle Global Enable"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"disable",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"enable l",
+				"SublimeLinter: Enable Linter"
+			],
+			[
+				"disable linte",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"linter deb",
+				"SublimeLinter: Enable Debug Mode"
+			],
+			[
+				"javasci",
+				"Set Syntax: JavaScript Next"
+			],
+			[
+				"html",
+				"Snippet: html"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"single",
+				"Snippet: Comment - Single-line block comment"
+			],
+			[
+				"beau",
+				"HTMLBeautify"
+			],
+			[
+				"reinde	",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"beaut",
+				"HTMLBeautify"
+			],
+			[
+				"proje",
+				"Project Manager"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"set ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"jaa",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"set css",
+				"Set Syntax: CSS"
+			],
+			[
+				"set javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set jva",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"codefor",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"REI",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"code",
+				"CodeFormatter: Format as Javascript Syntax"
+			],
+			[
+				"cod",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"reiinde",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"comment",
+				"Snippet: Comment - Block style comment"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"packe",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"linte",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"projec",
+				"Project Manager: Remove Project"
+			],
+			[
+				"set htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"pretty",
+				"HTMLPrettify"
+			],
+			[
+				"enag",
+				"Package Control: Enable Package"
+			],
+			[
+				"pa",
+				"Package Control: Disable Package"
+			],
+			[
+				"package",
+				"Package Control: Disable Package"
+			],
+			[
+				"proj",
+				"Project Manager"
+			],
+			[
+				"prett",
+				"HTMLPrettify"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"prettif",
+				"HTMLPrettify"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"beay",
+				"HTMLBeautify"
+			],
+			[
+				"set js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"new snip",
+				"z:AAAPackageDev: New Raw Snippet"
+			],
+			[
+				"shell sc",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"shell",
+				"Shell Exec: Open"
+			]
+		],
+		"width": 544.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"sublime.log_input(True)",
+			"sublime.log_commands(True)",
+			"clear",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282'+ 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s),please try manual install' % (dh, h)) if dh != h else open(os.path.join(ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/ykido/workspace/javascript/clmtrackr",
+		"/Users/ykido/workspace/javascript/clmtrackr/clmtools",
+		"/Users/ykido/workspace/javascript/clmtrackr/examples",
+		"/Users/ykido/workspace/javascript/clmtrackr/examples/ext_js",
+		"/Users/ykido/workspace/javascript/clmtrackr/js",
+		"/Users/ykido/workspace/javascript/clmtrackr/models"
+	],
+	"file_history":
+	[
+		"/Users/ykido/workspace/javascript/clmtrackr/examples/face_deformation_video.html",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/Terminal.sublime-settings",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/SublimeServer.sublime-settings",
+		"/Users/ykido/workspace/javascript/clmtrackr/examples/ext_js/mosse.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/gulpfile.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/package.json",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/main.css",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/index.html",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/app/template.jade",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/gulpfile.coffee",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/bower.json",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/21 - Capture and Upload/src/main.js",
+		"/Users/ykido/dotfiles/script/LinkDotFiles.sh",
+		"/Users/ykido/dotfiles/script/LinkTmux.sh",
+		"/Users/ykido/dotfiles/LinkTmux.sh",
+		"/Users/ykido/dotfiles/script/enviorment.sh",
+		"/Users/ykido/workspace/shell/spotify_debug_apps.sh",
+		"/Users/ykido/workspace/OF/of_v0.9.2_osx_release/libs/openFrameworks/communication/ofSerial.cpp",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/WakaTime.sublime-settings",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/WakaTime/WakaTime.sublime-settings",
+		"/Users/ykido/.vim/colors/molokai.vim",
+		"/Library/Preferences/.GlobalPreferences.plist",
+		"/Users/ykido/workspace/python/slack_logger/main.py",
+		"/Users/ykido/dotfiles/src/sublime/User/.vintageousrc",
+		"/Users/ykido/.ssh/rsync-rsa.pub",
+		"/Users/ykido/.zprofile",
+		"/Users/ykido/workspace/shell/watch_spotify.sh",
+		"/Users/ykido/.ssh/rsync-rsa",
+		"/tmp/crontab.IrqJraQYVQ",
+		"/tmp/crontab.7g8bTcZKgR",
+		"/Users/ykido/Desktop/OSCManager.cpp",
+		"/Users/ykido/Desktop/OSCManager.h",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/33 - Binary format/web_modules/OrbitControls.js",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/22 - Face morph/webpack.config.js",
+		"/Users/ykido/workspace/generativeArt/Subete-ga-F-ni-naru-ED/golly/export-otca-metapixels.py",
+		"/Users/ykido/workspace/generativeArt/Subete-ga-F-ni-naru-ED/p5js/cell-diffuse/sketch.js",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/data/4 - C4DPy/djv.py",
+		"/Users/ykido/.zshrc",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/data/4 - C4DPy/export_keyframes_test.py",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/33 - Binary format/src/main.js",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/15 - Keyframes test/src/main.js",
+		"/Users/ykido/workspace/generativeArt/simple_export.py",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/22 - JSON Checker/src/main.js",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/22 - JSON Checker/public/bundle.js",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/15 - Keyframes test/public/bundle.js",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/33 - Binary format/package.json",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/33 - Binary format/public/0.worker.js",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/33 - Binary format/webpack.config.js",
+		"/Users/ykido/workspace/generativeArt/KAMRA-Deja-Vu/experiments/33 - Binary format/public/bundle.js",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/ykido/Downloads/threejs-attemps/Masks.js",
+		"/Users/ykido/Downloads/face.blend",
+		"/Users/ykido/workspace/javascript/JankenGame/index.html",
+		"/Users/ykido/Dropbox/my_signature.html",
+		"/Users/ykido/Downloads/VisageSDK-HTML5/Documentation.html",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/ykido/Downloads/VisageSDK-HTML5/www/Samples/FaceDetector/sampleDetector.html",
+		"/Users/ykido/workspace/personalSpace/DiscoJinja/www/index.php",
+		"/Users/ykido/workspace/personalSpace/DiscoJinja/,",
+		"/Users/ykido/workspace/personalSpace/DiscoJinja/three.js",
+		"/Users/ykido/workspace/personalSpace/DiscoJinja/www/js/jquery.js",
+		"/Users/ykido/workspace/personalSpace/DiscoJinja/contents.php",
+		"/Users/ykido/workspace/personalSpace/DiscoJinja/main.js",
+		"/Users/ykido/workspace/personalSpace/dancingPlayer/js/js/StaticShader.js",
+		"/Users/ykido/workspace/personalSpace/dancingPlayer/js/js/BadTVShader.js",
+		"/Users/ykido/workspace/shell/imageResize.sh",
+		"/Users/ykido/workspace/personalSpace/dancingPlayer/debug.html",
+		"/Users/ykido/workspace/personalSpace/dancingPlayer/hiphopVersion10.json",
+		"/Users/ykido/workspace/personalSpace/dancingPlayer/js/BadTVShader",
+		"/Users/ykido/workspace/personalSpace/dancingPlayer/me8.json",
+		"/Users/ykido/workspace/personalSpace/dancingPlayer/hiphopVersion7.json",
+		"/Users/ykido/workspace/personalSpace/dancingPlayer/hiphopVersion5.json",
+		"/Users/ykido/workspace/personalSpace/dancingPlayer/hiphopVersion6.json",
+		"/Users/ykido/workspace/personalSpace/dancingPlayer/js/main.js",
+		"/Users/ykido/.config/scdl/scdl.cfg",
+		"/Users/ykido/.pyenv/shims/scdl",
+		"/Users/ykido/workspace/javascript/lib/three.js/examples/models/skinned/marine/marine_anims.js",
+		"/Users/ykido/workspace/javascript/lib/three.js/examples/webgl_loader_json_blender.html",
+		"/Users/ykido/workspace/javascript/lib/three.js/examples/js/loaders/AssimpJSONLoader.js",
+		"/Users/ykido/workspace/javascript/lib/three.js/examples/threeJsLoadJSONFileFromBlenderSampleStudy/me.js",
+		"/Users/ykido/workspace/javascript/lib/three.js/examples/webgl_loader_json_objconverter.html",
+		"/Users/ykido/workspace/javascript/lib/three.js/examples/models/collada/avatar.dae",
+		"/Users/ykido/workspace/javascript/lib/three.js/examples/webgl_loader_collada.html",
+		"/Users/ykido/workspace/personalSpace/m_showcase/index.html",
+		"/Users/ykido/workspace/javascript/trackerJs/app/public/css/facecontroll.css",
+		"/Users/ykido/workspace/javascript/trackerJs/app/public/tracker.html",
+		"/Users/ykido/workspace/javascript/trackerJs/app/dev/three.ejs",
+		"/Users/ykido/workspace/javascript/trackerJs/Procfile",
+		"/Users/ykido/workspace/javascript/trackerJs/.gitignore",
+		"/Users/ykido/workspace/javascript/algo.js/build/algo.js",
+		"/Users/ykido/Desktop/job/tsutaya/yokokana_tenji_2/new/cad.dwg",
+		"/Users/ykido/workspace/javascript/sample-Animation-breakdown.js",
+		"/Users/ykido/Desktop/PROFILE.txt",
+		"/Users/ykido/workspace/php/design-pattern/index.php",
+		"/Users/ykido/workspace/php/design-pattern/decorator.php",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/Volumes/ssd/Parallels/parallelsDesktop/Parallels Desktop 10.1.3 (28868) [Ubud-Bali]/Install [Ubud-Bali.txt",
+		"/Users/ykido/dotfiles/src/sublime/User/snippet",
+		"/Users/ykido/workspace/edison/edisonSetup.sh",
+		"/Users/ykido/workspace/index.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 94.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ctrack.sto",
+			"lost",
+			"ctrack.",
+			"ctrack.stop;",
+			"ctrack.stop",
+			"stop",
+			"addeve",
+			"remove",
+			"add",
+			"removee",
+			"- 3",
+			"- 5",
+			"5",
+			"- 10",
+			"nupoints",
+			"similarityTransforms",
+			"draw",
+			"emotionModel",
+			"verticeMap",
+			"load",
+			"init",
+			"webgl",
+			"init",
+			"getWebGLContext",
+			"gl=",
+			"gl =",
+			"elem",
+			"var elem = document.getElementById('container');",
+			"elem",
+			"vertex",
+			"face_deformer",
+			"shader",
+			"faceDeformer",
+			"xOffset",
+			"scale",
+			"xOffset",
+			"draw",
+			"xOffset",
+			"vid",
+			"startVideo",
+			"startbutton",
+			"startbutton.value ",
+			"fd",
+			"start",
+			"cancel",
+			"drawAllShips",
+			"drawShip",
+			"fd = new",
+			"box",
+			"ship",
+			"offsetX",
+			"ship",
+			"DRAGPOS",
+			"var ",
+			"var",
+			"xOffset",
+			"switchDeformedFace",
+			"score",
+			"new",
+			"parameterHolder",
+			"presets",
+			"drawRequest",
+			"todata",
+			"drawloop",
+			"ctrack",
+			"animateClean",
+			"animateCleananimateClean",
+			"handleFileSelect",
+			"canvas",
+			"canvascanvas",
+			"loadImage",
+			"pause",
+			"stop",
+			"overlay",
+			"overla",
+			"webgl",
+			"content",
+			"canvas",
+			"	var canvas = document.getElementById('canvasel');",
+			"canvasel",
+			"jsfeat_face",
+			"js_feat",
+			"jsfeat",
+			"js-fea",
+			"elem",
+			"startvideo",
+			"mosse",
+			"mosse.js",
+			"mosse",
+			"mosseFilter",
+			"ctrack",
+			"getWebGLContext",
+			"webgl",
+			"gl",
+			"drawLoop",
+			"vid",
+			"insertAltImage",
+			"navigat",
+			"navigater",
+			"navigator",
+			"gum",
+			"clmtrackr",
+			"clmtra",
+			"clm",
+			"n",
+			"check",
+			"fileList",
+			"filter",
+			"restore",
+			"debug",
+			"bower",
+			"webcam",
+			"rawFeaturePoints",
+			"image2",
+			"face",
+			"takeSnapshot",
+			"key",
+			"vid",
+			"pmodel",
+			"pmodel\n",
+			"pmodel\npmodel\npmodel\npmodel\npModel",
+			"pmodel\npmodel\npmodel\npModel",
+			"pmodel\npmodel\npModel",
+			"pmodel\npModel",
+			"pmodel",
+			"model\nmodel\nmodel\npModel",
+			"model\nmodel\npModel",
+			"model\npModel"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"n",
+			"0",
+			"value",
+			"size",
+			"\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/ykido/workspace/javascript/clmtrackr/examples/clm_image.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8629,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5064,
+								5064
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 207.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/ykido/workspace/javascript/clmtrackr/examples/face_deform_test.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14363,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4232,
+								4232
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"_anf_new": "",
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5893.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/ykido/workspace/javascript/clmtrackr/examples/face_mask.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 45363,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/ykido/workspace/javascript/clmtrackr/examples/ext_js/fabric.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 744362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								743166,
+								743166
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"_anf_new": "",
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 6.0,
+						"translation.y": 413126.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/ykido/Library/Application Support/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 416,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								416,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/PackageDev/Syntax Definitions/Sublime Settings.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/ykido/workspace/javascript/clmtrackr/js/face_deformer.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10565,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2528,
+								2103
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1062.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/ykido/workspace/javascript/clmtrackr/clmtools/model_viewer/classviewer.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4356,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1024,
+								1024
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 666.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/ykido/workspace/javascript/clmtrackr/models/model_spca_20_svm.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 651820,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11294,
+								11294
+							],
+							[
+								11315,
+								11315
+							],
+							[
+								11336,
+								11336
+							],
+							[
+								11357,
+								11357
+							],
+							[
+								11378,
+								11378
+							],
+							[
+								11399,
+								11399
+							],
+							[
+								11420,
+								11420
+							],
+							[
+								11441,
+								11441
+							],
+							[
+								11462,
+								11462
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 6,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 395.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/ykido/workspace/javascript/clmtrackr/models/model_pca_20_mosse.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 872208,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11297,
+								11297
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 16.0,
+						"translation.y": 463.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/ykido/workspace/javascript/clmtrackr/models/model_pca_20_svm.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 667328,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								54632,
+								54632
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 6,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 26.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "clmtrackr.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"main",
+				"www/js/main.js"
+			],
+			[
+				"inde",
+				"www/index.php"
+			],
+			[
+				"",
+				"www/index.php"
+			],
+			[
+				"i",
+				"www/index.php"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"g",
+				"examples/js/GSVPano.js"
+			],
+			[
+				"gs",
+				"examples/js/GSVPano.js"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"animationskinnin",
+				"webgl_animation_skinning_blending.html"
+			],
+			[
+				"loaderjson",
+				"webgl_loader_json_blender.html"
+			],
+			[
+				"jsonl",
+				"webgl_loader_json_claraio.html"
+			],
+			[
+				"loadjson",
+				"webgl_loader_json_blender.html"
+			],
+			[
+				"jsonlo",
+				"js/loaders/AssimpJSONLoader.js"
+			],
+			[
+				"me.",
+				"threeJsLoadJSONFileFromBlenderSampleStudy/me.js"
+			],
+			[
+				"animatin",
+				"webgl_animation_skinning_blending.html"
+			],
+			[
+				"loadjso",
+				"webgl_loader_json_objconverter.html"
+			],
+			[
+				"track",
+				"js/controls/TrackballControls.js"
+			],
+			[
+				"json",
+				"webgl_loader_json_blender.html"
+			],
+			[
+				"animation",
+				"webgl_animation_skinning_blending.html"
+			],
+			[
+				"anima",
+				"webgl_animation_skinning_blending.html"
+			],
+			[
+				"collada",
+				"webgl_loader_collada_skinning.html"
+			],
+			[
+				"clara",
+				"three.js/examples/models/json/teapot-claraio.json"
+			],
+			[
+				"dat.gui",
+				"bower_components/dat-gui/build/dat.gui.js"
+			],
+			[
+				"datgui",
+				"bower_components/dat-gui/build/dat.gui.min.js"
+			],
+			[
+				"datgu",
+				"bower_components/dat-gui/build/dat.gui.js"
+			],
+			[
+				"fishtank",
+				"app/dev/js/FishTankRenderer.js"
+			],
+			[
+				"fishtan",
+				"app/dev/js/FishTankRenderer.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 252.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

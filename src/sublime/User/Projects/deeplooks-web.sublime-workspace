@@ -1,0 +1,2637 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fadeIn",
+				"fadeInCallback"
+			],
+			[
+				"my",
+				"myConfig"
+			],
+			[
+				"active",
+				"activechannel"
+			],
+			[
+				"Channel",
+				"ChannelSection"
+			],
+			[
+				"image_po",
+				"image_polygon_ctx"
+			],
+			[
+				"Timel",
+				"TimeLimitFaceNotFound"
+			],
+			[
+				"localS",
+				"localstorage()	browser.js"
+			],
+			[
+				"polygon",
+				"polygonBuffer	PostProcess.js"
+			],
+			[
+				"_debug",
+				"_debugCtx"
+			],
+			[
+				"_detec",
+				"_detectCtx"
+			],
+			[
+				"getele",
+				"getElementById	(PostProcess.js)"
+			],
+			[
+				"Event",
+				"EventHandler"
+			],
+			[
+				"removeE",
+				"removeEventListener	(bundle.js)"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"trac",
+				"tracker	FaceDetection.js"
+			],
+			[
+				"Post",
+				"PostProcess"
+			],
+			[
+				"VIE",
+				"VIEWS"
+			],
+			[
+				"face",
+				"FaceLost()	FaceDetection.js"
+			],
+			[
+				"Face",
+				"FaceDetection"
+			],
+			[
+				"texcoo",
+				"texCoordBuffer	face_deformer.js"
+			],
+			[
+				"Even",
+				"EventHandler"
+			],
+			[
+				"position",
+				"positionStorage"
+			],
+			[
+				"w_",
+				"w_offset〔variable〕"
+			],
+			[
+				"getconte",
+				"getContext(\"2d	(lib.js)"
+			],
+			[
+				"fill",
+				"fillRect	(PostProcess.js)"
+			],
+			[
+				"video_guide",
+				"video_guide_comment	(bundle.js)"
+			],
+			[
+				"istra",
+				"isTrackingFired	CameraApp.js"
+			],
+			[
+				"tracker",
+				"trackerCanvas	CameraApp.js"
+			],
+			[
+				"webCAm",
+				"webcamCanvas	CameraApp.js"
+			],
+			[
+				"webcam",
+				"webcamCanvas"
+			],
+			[
+				"CAMERA",
+				"CAMERA_APP"
+			],
+			[
+				"move",
+				"moveTo"
+			],
+			[
+				"get",
+				"getcamera	(Consts.js)"
+			],
+			[
+				"getCurrent",
+				"getCurrentParameters()	clmtrackr.js"
+			],
+			[
+				"doPost",
+				"doPostPhoto	(Main.js)"
+			],
+			[
+				"pointer",
+				"pointer-events"
+			],
+			[
+				"getCurre",
+				"getCurrentPosition"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"confirm_",
+				"confirm_photo	(bundle.js)"
+			],
+			[
+				"css_file",
+				"css_files_sp"
+			],
+			[
+				"photo",
+				"photo_confirmed"
+			],
+			[
+				"getcurren",
+				"getCurrentPosition"
+			],
+			[
+				"recognition",
+				"recognitionTrack"
+			],
+			[
+				"getWi",
+				"getWidth()	bitmap.js"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"getelement",
+				"getElementById"
+			],
+			[
+				"hidden",
+				"hiddenCanvas"
+			],
+			[
+				"getw",
+				"getWidth()	bitmap.js"
+			],
+			[
+				"requestani",
+				"requestAnimFrame	(lib.js)"
+			],
+			[
+				"showCame",
+				"showCameraView	(bundle.js)"
+			],
+			[
+				"show",
+				"showCameraCheck	(bundle.js)"
+			],
+			[
+				"showCam",
+				"showCameraView	(bundle.js)"
+			],
+			[
+				"showca",
+				"showCameraView	(bundle.js)"
+			],
+			[
+				"showc",
+				"showCameraCheck	(bundle.js)"
+			],
+			[
+				"showCamer",
+				"showCameraCheck	(WindowEvent.js)"
+			],
+			[
+				"backgroun",
+				"background-image"
+			],
+			[
+				"connect",
+				"connect_token	main.js"
+			],
+			[
+				"is",
+				"isMobile"
+			],
+			[
+				"getelemen",
+				"getElementById(${0:id})	Element"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"jqu",
+				"jquery.js"
+			],
+			[
+				"effect",
+				"effectBloom"
+			],
+			[
+				"autopla",
+				"autoplay"
+			],
+			[
+				"au",
+				"audio.min.js"
+			],
+			[
+				"came",
+				"cameraPosZ"
+			],
+			[
+				"camera",
+				"cameraSpeed"
+			],
+			[
+				"jinja",
+				"jinja.dae"
+			],
+			[
+				"hip",
+				"hiphopVersion9.json"
+			],
+			[
+				"hi",
+				"hiphopVersion6.json"
+			],
+			[
+				"me",
+				"me9.json"
+			],
+			[
+				"_OBJEc",
+				"_OBJECT_SCALE_"
+			],
+			[
+				"controls",
+				"controls/"
+			],
+			[
+				"setsi",
+				"setSize()	Three.js"
+			],
+			[
+				"pla",
+				"play( animation )	AnimationHandler.js"
+			],
+			[
+				"warpto",
+				"warpToDuration( duration )	three.js"
+			],
+			[
+				"mode",
+				"models/"
+			],
+			[
+				"collada",
+				"collada/"
+			],
+			[
+				"untitled",
+				"untitled-scene-dae/"
+			],
+			[
+				"backst",
+				"backstretch"
+			],
+			[
+				"FishTna",
+				"fishTankRenderer	tracker.ejs"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "{\n  \"top\": {\n    \"title\": \"Deeplooks\",\n    \"description\": \"A technology that visualizes the invisible.\"\n  },\n  \"nav\": {\n    \"demo\": \"Demonstration\",\n    \"concept\": \"Concept\",\n    \"usage\": \"Possibilities\",\n    \"contact\": \"Contact\"\n  },\n  \"footer\": {\n    \"termsofuse\": \"Terms of Service\"\n  },\n  \"termsofuse\": {\n    \"title\": \"Terms of Service\",\n    \"text\": \"<p>Please read these Terms of Service (\\\"Terms\\\") carefully before using the Deeplooks (the \\\"Service\\\") operated by PARTY Inc. Your access to and use of the Service is conditioned on your acceptance and compliance with these Terms. By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the terms, then you may not access the Service.<br /><br /> 1. Photos used for uploading to the Service must be those taken or created by and of the users themselves. In the case that a photo contains or involves a third party, users must explain the Service to the third party and obtain approval before uploading the photo. Ownership and copyright issues of the photos must be cleared by the users before the photos may be uploaded to the Service.<br /> 2. Users grant PARTY Inc. the right to use photos uploaded or saved on the Service for purposes of improving the operations of the Service and/or promotional activities of the Service or PARTY Inc. itself (Including using the photos for press coverage or content generation by third party media).<br /> 3. The intellectual property rights, portrait rights, and publicity rights of information including texts, images, and programming that constitutes the Service belong to PARTY Inc. and involved third parties.<br /> 4. Regarding the photos uploaded to deeplooks.com and their analysis results, the following usages are prohibited: Using the photos and results for purposes other than personal or private use; using the photos and results for business, commerical, and/or promotional purposes; using the photos and results in ways contrary to public order and morals and/or in any way deemed inappropriate by PARTY Inc.<br />  In the case of any action corresponding to the abovementioned, the users must immediately terminate use of the Service. When using the Service, users are held responsible for ensuring that there are no violations of copyrights, portrait rights, honor rights, and/or privacy of third parties. PARTY Inc. takes no responsiblity for the violation of the abovementioned rights.<br /> 5. Users agree to use the Service at their own discretion. PARTY Inc. shall be exempt from responsibility for any damage (including emotional distress or mental damage) caused by using and viewing the Service.</p>\"\n  },\n  \"demo\": {\n    \"top\": {\n      \"start-btn-pc\": \"Drag & drop<br />a photo of your face\",\n      \"start-btn-sp\": \"Upload<br />a photo of your face\",\n      \"select-btn\": \"Select photo\",\n      \"webcam-btn\": \"Use webcam\"\n    },\n    \"webcam\": {\n      \"webcam-intro\": \"Click the \\\"Allow\\\" button on your browser.\",\n      \"text\": \"Follow the guide to adjust the position of your eyes.\"\n    },\n    \"preview\": {\n      \"text\": \"Are you happy with this photo?\"\n    },\n    \"adjust\": {\n      \"text-pc\": \"Adjust the placement and size of the eyes<br />according the guide.\",\n      \"text-sp\": \"Adjust the placement and size of the eyes<br />according the guide.\",\n      \"try-again\": \"Back\",\n      \"calculate\": \"Calculating score...\"\n    },\n    \"result\": {\n      \"title\": \"Result\",\n      \"score\": \"Beauty Score:\",\n      \"note\": \"Please Note:\",\n      \"note-text\": \"The learning of the Deeplooks algorithm has been based on images of people of multiple nationalities and cultures. Beauty standards and scales vary.<br />Please have fun with this service responsibly and refrain from taking the scoring too seriously.\",\n      \"share\": \"Share:\",\n      \"how-it-works\": \"Try with a different photo\"\n    },\n    \"error\": {\n      \"not-recognized\": \"Face recognition failed.\",\n      \"general-error\": \"An error has occurred.<br />Please wait a few minutes and try again.\",\n      \"retry\": \"Retry\"\n    }\n  },\n  \"concept\": {\n    \"title\": \"Concept\",\n    \"text\": \"<p>Deeplooks is a system that uses the most advanced Deep Learning technology to quantify abstract evaluations of \\\"looks\\\" such as the physical appearance of humans or objects.<br />For example, the physical good-looks of people or the delicious-looking quality of food. These concepts are subjective and cannot be quantified.<br />Through this original quantifying system, quantifying these concepts according to something similar to the public consensus becomes possible.<br />From entertainment purposes to practical uses, we can visualize \\\"invisible values\\\" in a wide range of fields.</p>\"\n  },\n  \"usage\": {\n    \"title\": \"Possibilities\",\n    \"examples-1\": {\n      \"title\": \"Daily face record app/IoT\",\n      \"text\": \"Logging your skin condition or make-up quality every day, and comparing with past data to create an app that analyzes your skin condition. Maybe you could even make a mirror-type device that reflects your best skin condition.\"\n    },\n    \"examples-2\": {\n      \"title\": \"Selecting your perfect pair of glasses\",\n      \"text\": \"Add an objective quantifying element to your glasses shopping. Combine Deeplooks with virtual simulation technology to make a round robin algorithm that examines \\\"from the viewpoint of others, which types of glasses and to what degree do they suit the wearer?\\\" This tool could help you choose the pair of glasses that suits you best.\"\n    },\n    \"examples-3\": {\n      \"title\": \"Diagnosing faces in relation to personalites\",\n      \"text\": \"Can we really trust methods out there that claim to diagnose people’s personalities by their facial features? Applying Deeplooks to such personality tests, we could quantify subjective diagnoses of various types of faces in relation to personality types.\"\n    },\n    \"examples-4\": {\n      \"title\": \"Diagnosing faces in relation to tendencies\",\n      \"text\": \"Good-looks is not the only variable for scoring. From someone’s looks, we can to a certain degree tell whether that person is kind-hearted, outgoing, intelligent, likely to become a good parent, etc. Tendencies like these could be quantified. From intelligence and physical strength, to wealth, luck, and personality traits.\"\n    },\n    \"examples-5\": {\n      \"title\": \"Searching for beautiful scenery and terrains\",\n      \"text\": \"If the scoring of \\\"scenic terrains\\\" is made possible, and Deeplooks mechanically analyzes Google Maps or Google Street View, you could discover beautiful terrains in unexpected corners of the world.\"\n    },\n    \"examples-6\": {\n      \"title\": \"A/B testing for buttons that attract clicks\",\n      \"text\": \"Conversions such as \\\"buttons in the color of XYZ attract more clicks\\\" are often seen. By having Deeplooks learn \\\"buttons that attract clicks\\\" from a large pool of such subjective data,\\\" it could help you determine the optimal button shapes and colors for your websites.\"\n    },\n    \"examples-7\": {\n      \"title\": \"Deciding outfit of the day\",\n      \"text\": \"The everyday decisions of what to wear, or what to buy on e-commerce sites could be made easier if Deeplooks provides recommendations of the most suitable outfit coordinations for you. It could also give you advice on the impression each outfit gives, such as mature-looking or sweet-looking.\"\n    }\n  },\n  \"contact\": {\n    \"title\": \"Contact Us\",\n    \"text\": \"We are currently looking for business partners who want to make use of Deeplooks.<br />We're quite friendly, don't hesitate to say hello with any and all inquiries you might have,<br />including technical details, pricing, or integration with your business.\"\n  }\n}",
+			"file": "/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/src/resources/locales/en/translation.json",
+			"file_size": 7687,
+			"file_write_time": 131127797540000000,
+			"settings":
+			{
+				"buffer_size": 7683,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/src/templates/index.ejs",
+			"settings":
+			{
+				"buffer_size": 8528,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/src/styles/_font.scss",
+			"settings":
+			{
+				"buffer_size": 466,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"ja\">\n<head>\n    <title>Deeplooks - a technology that visualizes the invisible</title>\n    <meta charset=\"UTF-8\">\n    <meta name=\"description\" content=\"Deeplooks is a system that uses the most advanced Deep Learning technology to quantify abstract evaluations of “looks” such as the physical appearance of humans or objects.\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1,user-scalable=no\">\n    <meta name=\"format-detection\" content=\"telephone=no\">\n    \n    <meta property=\"og:title\" conte nt=\"Deeplooks - a technology that visualizes the invisible\">\n    <meta property=\"og:description\" content=\"Deeplooks is a system that uses the most advanced Deep Learning technology to quantify abstract evaluations of “looks” such as the physical appearance of humans or objects.\">\n    <meta property=\"og:image\" content=\"https://deeplooks.com/assets/images/share.jpg\">\n    <meta property=\"og:type\" content=\"website\">\n    <meta property=\"og:url\" content=\"https://deeplooks.com/\">\n    <meta property=\"og:site_name\" content=\"Deeplooks\">\n    <meta property=\"twitter:card\" content=\"summary_large_image\">\n    <meta property=\"twitter:title\" content=\"Deeplooks - a technology that visualizes the invisible\">\n    <meta property=\"twitter:description\" content=\"Deeplooks is a system that uses the most advanced Deep Learning technology to quantify abstract evaluations of “looks” such as the physical appearance of humans or objects.\">\n    <meta property=\"twitter:image:src\" content=\"https://deeplooks.com/assets/images/share.jpg\">\n    <meta property=\"twitter:site\" content=\"@prty_tokyo\">\n    <link href=\"./assets/images/favicon.ico\" rel=\"icon\">\n    <title>Deeplooks - a technology that visualizes the invisible</title>\n    <link href=\"./assets/styles/main.css\" rel=\"stylesheet\">\n</head>\n<body>\n    <header>\n        <nav class=\"nav\">\n            <div id=\"nav-menu\" class=\"nav-menu\">\n                <div class=\"nav-menu-logo\">\n                    <a href=\"./\"><img src=\"./assets/images/pc-logo-header.png\" class=\"retina\" width=\"108\" height=\"23\" /></a>\n                </div>\n                <ul id=\"nav-menu-list\" class=\"nav-menu-list\">\n                    <li><a href=\"./\" data-i18n=\"[html]nav.demo\"></a></li>\n                    <li><a href=\"./concept.html\" data-i18n=\"[html]nav.concept\"></a></li>\n                    <li><a href=\"./usage.html\" data-i18n=\"[html]nav.usage\"></a></li>\n                    <li><a href=\"./contact.html\" data-i18n=\"[html]nav.contact\"></a></li>\n                </ul>\n                <div class=\"nav-translation\">\n                    <span class=\"nav-translation-ja\">Jp</span> <span class=\"nav-translation-en\">En</span>\n                </div>\n            </div>\n            <div class=\"sp-nav-menu-bar\">\n                <button id=\"sp-nav-button\" class=\"sp-nav-button\">\n                    <span class=\"sp-nav-button-icon\"></span>\n                </button>\n                <div class=\"sp-nav-menu-logo\">\n                    <a href=\"./\"><img src=\"./assets/images/sp-logo-header.png\" class=\"retina\" width=\"123\" height=\"26\" /></a>\n                </div>\n            </div>\n            <div id=\"sp-nav-menu\" class=\"sp-nav-menu\">\n                <ul id=\"sp-nav-menu-list\" class=\"sp-nav-menu-list\">\n                    <li><a href=\"./\" data-i18n=\"[html]nav.demo\"></a></li>\n                    <li><a href=\"./concept.html\" data-i18n=\"[html]nav.concept\"></a></li>\n                    <li><a href=\"./usage.html\" data-i18n=\"[html]nav.usage\"></a></li>\n                    <li><a href=\"./contact.html\" data-i18n=\"[html]nav.contact\"></a></li>\n                </ul>\n                <div class=\"nav-translation\">\n                    <span class=\"nav-translation-en\">English</span> <span class=\"nav-translation-ja\">Japanese</span>\n                </div>\n            </div>\n        </nav>\n    </header>\n\n    <section class=\"concept\" id=\"concept\">\n        <div class=\"container\">\n            <h2 class=\"section-title\" data-i18n=\"[html]concept.title\"></h2>\n            <div class=\"row\">\n                <div class=\"one-half column\">\n                    <img id=\"system-image\" class=\"system-image retina\" src=\"./assets/images/system.png\" alt=\"Deeplooks\" width=\"280\" height=\"405\" />\n                </div>\n                <div class=\"one-half column\" data-i18n=\"[html]concept.text\"></div>\n            </div>\n        </div>\n    </section>\n\n    <footer class=\"footer\">\n        <div class=\"footer-text\">\n            <span class=\"copyright\">2016 &copy; <a href=\"http://prty.jp\" target=\"_blank\">PARTY</a></span>\n            <a href=\"./termsofuse.html\"><span class=\"terms\" data-i18n=\"[html]footer.termsofuse\"></span></a>\n        </div>\n        <div class=\"social\">\n            <a href=\"https://twitter.com/intent/tweet?text=Deeplooks%20-%20A%20technology%20for%20seeing%20the%20invisible%20-%20http://deeplooks.com\" target=\"_blank\"><i class=\"fa fa-twitter fa-2x\"></i></a>\n            <a href=\"https://www.facebook.com/sharer/sharer.php?u=https://deeplooks.com\" target=\"_blank\"><i class=\"fa fa-facebook fa-2x\"></i></a>\n        </div>\n    </footer>\n</body>\n<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-76440615-1', 'auto');ga('send', 'pageview');</script>\n<script src=\"./assets/scripts/main.js\"></script>\n</html>",
+			"file": "/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/public/concept.html",
+			"file_size": 5542,
+			"file_write_time": 131127797540000000,
+			"settings":
+			{
+				"buffer_size": 5531,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/src/templates/components/_nav.ejs",
+			"settings":
+			{
+				"buffer_size": 1992,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "import $ from 'jquery';\nimport i18next from 'i18next';\nimport i18nextJquery from 'jquery-i18next';\nimport XHR from 'i18next-xhr-backend';\nimport Utils from './utils';\nimport Nav from './nav';\nimport 'slick-carousel';\nimport createjs from 'easeljs';\nimport Spinner from 'spin.js';\n\nclass Main {\n\n    constructor() {\n        $(() => {\n            this.adjustBitmapPos = {x: 0, y: 0, width: 0, height: 0, scale: 1};\n            this.adjustBitmapDragStart = {x: 0, y: 0, mouseX: 0, mouseY: 0};\n            this.cameraStage = null;\n            this.adjustStage = null;\n            this.isReadyCamera = false;\n            this.cameraBitmapAdjusted = false;\n            this.orientation = 1;\n\n            this.initLocales();\n            Utils.retinize();\n            this.initNav();\n            this.initCarousel();\n            this.initSp();\n            this.initIndex();\n\n            this.initDropUploadPhoto();\n\n            $('#start-btn').click(() => {\n            });\n        });\n    }\n\n    initNav() {\n        let nav = new Nav();\n\n        // for sp\n        nav.spNavBtn.on('click', () => {\n            nav.toggleSpNav();\n        });\n\n        //if (Utils.isSp()) {\n        //    nav.activate();\n        //}\n    }\n\n    initLocales() {\n        \n        i18next.use(XHR).init({\n            lngs: ['ja', 'en'],\n            debug: false,\n            backend: {\n                loadPath: 'assets/locales/{{lng}}/{{ns}}.json'\n            }\n        }, () => {\n            if (Utils.checkLanguage() === 'ja') {\n                i18nextJquery.init(i18next, $);\n                i18next.changeLanguage('ja', () => {\n                    $('[data-i18n]').localize();\n                    $('.nav-translation-ja').addClass('active');\n                    $('#system-image').attr('src', './assets/images/system-ja.png');\n                    $('#system-image').attr('srcset', './assets/images/system-ja@2x.png 2x');\n                    $('#usecase_3').attr('src', './assets/images/usecase_3_ja.jpg');\n                    $('#usecase_4').attr('src', './assets/images/usecase_4_ja.jpg');\n                    $('#contact-link-en').css('display', 'none');\n                    $('#contact-link-ja').css('display', 'inherit');\n\n                    if (Utils.isAvailableSessionStorage()) {\n                        sessionStorage.setItem('locale', 'ja');\n                    }\n                });\n            } else {\n                i18nextJquery.init(i18next, $);\n                i18next.changeLanguage('en', () => {\n                    $('[data-i18n]').localize();\n                    $('.nav-translation-en').addClass('active');\n                    $('#system-image').attr('src', './assets/images/system.png');\n                    $('#system-image').attr('srcset', './assets/images/system@2x.png 2x');\n                    $('#usecase_3').attr('src', './assets/images/usecase_3_en.jpg');\n                    $('#usecase_4').attr('src', './assets/images/usecase_4_en.jpg');\n                    $('#contact-link-en').css('display', 'inherit');\n                    $('#contact-link-ja').css('display', 'none');\n\n                    if (Utils.isAvailableSessionStorage()) {\n                        sessionStorage.setItem('locale', 'en');\n                    }\n                });\n            }\n        });\n    }\n\n    initCarousel() {\n        if (Utils.isSp()) {\n            $('#sp-usage-carousel').slick({\n                speed: 500,\n                //slidesToShow: 3,\n                //slidesToScroll: 1,\n                //centerMode: true,\n                //centerPadding: '60px',\n                dots: true,\n                infinite: true,\n                //variableWidth: true,\n                prevArrow: '.arrow-area-prev',\n                nextArrow: '.arrow-area-next',\n                fade: false\n            });\n        } else {\n            $('#usage-carousel').slick({\n                speed: 500,\n                //slidesToShow: 3,\n                //slidesToScroll: 1,\n                //centerMode: true,\n                //centerPadding: '60px',\n                dots: true,\n                infinite: true,\n                //variableWidth: true,\n                prevArrow: '.arrow-area-prev',\n                nextArrow: '.arrow-area-next',\n                fade: true\n            });\n        }\n    }\n\n    initSp() {\n        // SP\n        if (Utils.isSp()) {\n            $('#sp-start-btn').css('display', 'block');\n            $('#usage-arrow-prev').css('display', 'none');\n            $('#usage-arrow-next').css('display', 'none');\n            $('#adjust-arrow-prev').css('display', 'none');\n            $('#adjust-arrow-next').css('display', 'none');\n            $('#result-arrow-prev').css('display', 'none');\n            $('#result-arrow-next').css('display', 'none');\n            $('.social').css('display', 'none');\n            $('#top .btn-area').css('display', 'none');\n            $('#adjust-ok-btn').addClass('ok-btn-sp');\n        }\n        // PC\n        else {\n            $('#pc-start-btn').css('display', 'block');\n            $('#adjust .top-description').attr('data-i18n', '[html]demo.adjust.text-pc');\n            $('#try-again-btn').css('display', 'none');\n            $('#adjust-ok-btn').addClass('ok-btn-pc');\n        }\n    }\n\n    initIndex() {\n        //this.switchView('#top');\n        this.currentId = '#top';\n\n        //$('#pc-start-btn').click(() => {\n        //    this.switchView('#webcam');\n        //});\n\n        if (typeof isUserContent !== 'undefined' && isUserContent === 'true') {\n            let percentage = (Number(score) / 5.0) * 100;\n            $('#result-score').html(score);\n            $('#result-star').attr('style', 'width: ' + percentage + '%');\n            $('#result-image').attr('src', imageUrl);\n            this.switchView('#result');\n            return;\n        }\n\n        $('#sp-start-btn,#select-btn').click(() => {\n            $('#file-upload').click();\n        });\n\n        $('#file-upload').on('change', e => {\n            e.preventDefault();\n            let file = e.target.files;\n\n            if (!file) return;\n            if (!(file[0].type === 'image/png' || file[0].type === 'image/jpeg')) {\n                alert('Please upload a jpeg or png image.');\n                return;\n            }\n\n            let reader = new FileReader();\n\n            reader.onload = e => {\n                let base64 = e.target.result;\n                let base64Data = base64.split(',')[1];\n\n                let orientation;\n                if (base64.split(',')[0].match('jpeg')) {\n                    orientation = Utils.getOrientation(base64);\n                }\n                this.orientation = orientation || 1;\n\n                this.startAdjust(base64Data);\n            };\n\n            reader.readAsDataURL(file[0]);\n            this.switchView('#adjust');\n            this.initAdjustCanvas();\n        });\n\n        //$('#select-btn').click(() => {\n        //    this.switchView('#webcam');\n        //});\n\n        $('#webcam-btn').click(() => {\n            //this.switchView('#webcam');\n            this.initCamera();\n            this.startTakePhotoCamera();\n        });\n\n        $('#webcam-arrow-prev').click(() => {\n            //this.switchView('#top');\n            location.reload();\n        });\n\n        $('#webcam-ok-btn').click(() => {\n            this.takePhoto();\n        });\n\n        $('#adjust-arrow-prev').click(() => {\n            //this.switchView('#top');\n            location.reload();\n        });\n\n        $('#adjust-ok-btn').click(e => {\n            e.preventDefault();\n\n            //this.switchView('#result');\n            let formData = new FormData();\n            let base64Image = this.createAdjustedImage();\n            //let file = this.base64ToFile(base64Image, 'image/png');\n            let blob = this.base64ToBlob(base64Image, 'image/png');\n            formData.append('f', blob);\n            if (Utils.checkLanguage() === 'ja') {\n                formData.append('lang', 'ja');\n            } else {\n                formData.append('lang', 'en');\n            }\n\n            let xhr = new XMLHttpRequest();\n            xhr.onload = e => {\n                let json = JSON.parse(xhr.responseText);\n                //console.log(json);\n\n                if (json.error_key !== undefined) {\n                    if (json.error_key === 'is_face_detected') {\n                        if (Utils.checkLanguage() === 'ja') {\n                            $('#error-text').html('顔が認識できませんでした。');\n                        } else {\n                            $('#error-text').html('Face recognition failed.');\n                        }\n                    } else {\n                        if (Utils.checkLanguage() === 'ja') {\n                            $('#error-text').html('問題が発生しました。<br />しばらく経ってから再度お試しください。');\n                        } else {\n                            $('#error-text').html('An error has occurred.<br />Please wait a few minutes and try again.');\n                        }\n                    }\n                    this.switchView('#error');\n                    ga('send', 'event', 'result', 'show_error', 'face_not_detected');\n                    return;\n                } else if (xhr.status === 500) {\n                    if (Utils.checkLanguage() === 'ja') {\n                        $('#error-text').html('問題が発生しました。<br />しばらく経ってから再度お試しください。');\n                    } else {\n                        $('#error-text').html('An error has occurred.<br />Please wait a few minutes and try again.');\n                    }\n                    this.switchView('#error');\n                    ga('send', 'event', 'result', 'show_error');\n                    return;\n                }\n\n                let score = json.score;\n                let percentage = (score / 5.0) * 100;\n                $('#result-score').html(score);\n                $('#result-star').attr('style', 'width: ' + percentage + '%');\n                $('#result-image').attr('src', json.image_url);\n                $('#result-share-tw').attr('href', json.tw_url);\n                $('#result-share-fb').attr('href', json.fb_url);\n                $('#result-share-area').css('display', '-webkit-box');\n                $('#result-share-area').css('display', '-webkit-flex');\n                $('#result-share-area').css('display', 'flex');\n                this.switchView('#result');\n\n                //https://deeplooks.com/?s=2.5&u=aHR0cDovL2FwcC5mYWNlLWF0dHJhY3RpdmVuZXNzLmRlZXBsb29rcy5jb20vdXBsb2Fkcy8yMDE2MDQvMTkxNzExMTZfNzAzNDIzNzFkOWMyMzNlNDRhNmQyMjI0MTU0MTAxMGQucG5n\n                ga('send',\n                   'event',\n                   'result',\n                   'show_success',\n                   score + ''\n                );\n            };\n            xhr.open('post', './api/upload', true);\n            xhr.send(formData);\n\n            this.switchView('#loading');\n            new Spinner({\n                color: '#fff',\n                scale: 0.75,\n                width: 3,\n                position: 'relative'\n            }).spin($('#spin-area')[0]);\n        });\n\n        $('#try-again-btn').click(e => {\n            //this.switchView('#top');\n            location.reload();\n        });\n    }\n\n    switchView(id) {\n        if (this.currentId === id) {\n            return;\n        }\n\n        //$(id).css('display', 'flex').animate({opacity: '1'}, 200);\n        $(id).css('opacity', '0')\n            .css('display', '-webkit-box')\n            .css('display', '-webkit-flex')\n            .css('display', 'flex')\n            .animate({opacity: '1'}, 400, 'swing');\n\n        $(this.currentId).animate({opacity: '0'}, 200, 'swing', function() {\n            $(this).css('display', 'none');\n        });\n        this.currentId = id;\n\n        if (id === '#top') {\n            $('.index .nav-menu-logo')\n                .css({visibility: 'hidden'});\n            $('.index .footer').css('position', 'absolute');\n        } else {\n            $('.index .nav-menu-logo')\n                .css({visibility: 'visible'});\n            $('.index .footer').css('position', 'relative');\n        }\n    }\n\n    initCamera() {\n        if (this.isReadyCamera === true) {\n            return;\n        }\n\n        if (Utils.hasGetUserMedia() && Utils.isSupportCanvas()) {\n            this.cameraStage = new createjs.Stage($('#webcam-canvas')[0]);\n            this.cameraStage.canvas.width = $($('#webcam-canvas')[0]).width();\n            this.cameraStage.canvas.height = $($('#webcam-canvas')[0]).height() + 1;\n        }\n\n        this.isReadyCamera = true;\n    }\n\n    initAdjustCanvas() {\n        if (!Utils.isSupportCanvas()) {\n            return;\n        }\n\n        this.adjustStage = new createjs.Stage($('#adjust-canvas')[0]);\n        if (createjs.Touch.isSupported()) {\n            createjs.Touch.enable(this.adjustStage);\n        }\n\n        this.adjustStage.canvas.width = this.adjustStage.width = this.adjustStageWidth = $('#adjust-canvas').width() * 2;\n        this.adjustStage.canvas.height = this.adjustStage.height = this.adjustStageHeight = $('#adjust-canvas').height() * 2;\n        this.adjustStageAspect = this.adjustStageHeight / this.adjustStageWidth;\n    }\n\n    initDropUploadPhoto() {\n        // cancel\n        let cancelEvent = function(event) {\n            event.preventDefault();\n            event.stopPropagation();\n            return false;\n        };\n\n        $('.index').bind('drop', cancelEvent);\n        $('.index').bind('dragenter', cancelEvent);\n        $('.index').bind('dragover', cancelEvent);\n\n        // drop upload areas\n        $('#pc-start-btn').bind('drop', e => {\n            e.preventDefault();\n\n            let file = e.originalEvent.dataTransfer.files;\n            if (!file) return;\n            if (!(file[0].type === 'image/png' || file[0].type === 'image/jpeg')) {\n                alert('Please upload a jpeg or png image.');\n                return;\n            }\n\n            let reader = new FileReader();\n\n            reader.onload = e => {\n                let base64 = e.target.result;\n                let base64Data = base64.split(',')[1];\n\n                let orientation;\n                if (base64.split(',')[0].match('jpeg')) {\n                    orientation = Utils.getOrientation(base64);\n                }\n                this.orientation = orientation || 1;\n\n                this.startAdjust(base64Data);\n            };\n\n            reader.readAsDataURL(file[0]);\n            this.switchView('#adjust');\n            this.initAdjustCanvas();\n            $(this).removeClass('enter');\n            cancelEvent(e);\n        });\n        $('#pc-start-btn').bind('dragenter', function(event) {\n            $(this).addClass('enter');\n            event.preventDefault();\n            event.stopPropagation();\n            return false;\n        });\n        $('#pc-start-btn').bind('dragover', function(event) {\n            event.preventDefault();\n            event.stopPropagation();\n            return false;\n        });\n        $('#pc-start-btn').bind('dragleave', function(event) {\n            $(this).removeClass('enter');\n            event.preventDefault();\n            event.stopPropagation();\n            return false;\n        });\n    }\n\n    startTakePhotoCamera() {\n        if (!Utils.hasGetUserMedia()) {\n            alert('Your device camera is not available.');\n            return;\n        }\n\n        if (Utils.hasGetUserMedia) {\n            // canvas clear\n            this.cameraBitmapAdjusted = false;\n            //this.cameraStage.clear();\n            //this.cameraStage.removeAllChildren();\n            //this.cameraStage.update();\n            if (this.cameraStage !== null) {\n                this.cameraStage.clear();\n            }\n\n            window.URL = window.URL || window.webkitURL;\n            navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;\n            navigator.getUserMedia({video: true}, stream => {\n                // shutter button active\n                this.switchView('#webcam');\n\n                this.cameraStream = stream;\n                $('#webcam-video')[0].src = window.URL.createObjectURL(stream);\n                $('#webcam-video')[0].play();\n\n                this.cameraBitmap = new createjs.Bitmap($('#webcam-video')[0]);\n                this.cameraStage.addChild(this.cameraBitmap);\n\n                // render start\n                this.renderCameraPreview();\n                createjs.Ticker.addEventListener('tick', this.renderCameraPreview.bind(this));\n            }, this.handleCameraFail);\n        }\n    }\n\n    renderCameraPreview() {\n        if (this.cameraBitmapAdjusted === false) {\n            let bitmap = this.cameraBitmap;\n            let canvasWidth = this.cameraStage.canvas.width;\n            let canvasHeight = this.cameraStage.canvas.height;\n            let videoWidth = bitmap.image.videoWidth;\n            let videoHeight = bitmap.image.videoHeight;\n\n            if (videoWidth > 0 && videoHeight > 0) {\n                let scale = Math.max(canvasWidth / videoWidth, canvasHeight / videoHeight);\n                bitmap.scaleX = -scale;\n                bitmap.scaleY = scale;\n                bitmap.x = Math.floor((canvasWidth - videoWidth * -scale) / 2);\n                bitmap.y = Math.floor((canvasHeight - videoHeight * scale) / 2);\n                this.cameraBitmapAdjusted = true;\n            }\n        }\n\n        this.cameraStage.update();\n    }\n\n    // shutter event\n    takePhoto() {\n        let base64Data = null;\n        if (this.cameraStream) {\n            let bitmap = new createjs.Bitmap(this.cameraBitmap);\n            let canvas = this.cameraStage.toDataURL('image/png');\n            base64Data = canvas.split(',')[1];\n            this.cameraStage.addChild(bitmap);\n            this.cameraStage.update();\n        }\n\n        if (!base64Data) {\n            return;\n        }\n\n        this.switchView('#adjust');\n        this.initAdjustCanvas();\n        this.orientation = 0;\n        this.startAdjust(base64Data);\n        this.clearVideoStream();\n    }\n\n    // Error webcam\n    handleCameraFail(error) {\n        //setTimeout(function() {\n        //    var ua = window.navigator.userAgent.toLowerCase();\n        //    if (ua.indexOf('chrome') != -1) {\n        //        $(\"#cameraHelp .ff\").hide();\n        //    }\n        //    else if (ua.indexOf('firefox') != -1) {\n        //        $(\"#cameraHelp .chrome\").hide();\n        //    }\n        //    $(\"#shooting\").hide();\n        //    $(\"#cameraHelp\").show();\n        //    $(\"#cameraHelp .backShooting\").on(\"click\", function() {\n        //        location.reload();\n        //    });\n        //}, 300);\n    }\n\n    clearVideoStream() {\n        if (this.cameraStream !== null) {\n            createjs.Ticker.removeEventListener('tick', this.renderCameraPreview);\n\n            if (this.cameraStage !== null) {\n                this.cameraStage.clear();\n            }\n            //this.cameraStage.removeAllChildren();\n            $('#webcam-video')[0].pause();\n            this.cameraStream.getVideoTracks()[0].stop();\n            this.cameraStream = null;\n            this.cameraBitmap = null;\n        }\n    }\n\n    startAdjust(base64) {\n        //this.adjustStage.clear();\n        //this.adjustStage.removeChild(this.adjustBitmap);\n        //this.adjustStage.removeAllChildren();\n        //this.adjustStage.update();\n\n        if (this.adjustStage !== null) {\n            this.adjustStage.clear();\n        }\n\n        this.loadPhoto(base64);\n        this.addCanvasEventListener();\n    }\n\n    loadPhoto(base64) {\n        this.image = new Image();\n        this.image.src = 'data:image/png;base64,' + base64;\n        this.image.onload = () => {\n            this.adjustBitmap = new createjs.Bitmap(this.createOrientationImage(this.image));\n            let bitmap = this.adjustBitmap;\n\n            let bitmapWidth = this.adjustBitmap.getBounds().width;\n            let bitmapHeight = this.adjustBitmap.getBounds().height;\n            let scale = Math.max(this.adjustStageWidth / bitmapWidth, this.adjustStageHeight / bitmapHeight);\n            let x = Math.floor(this.adjustStageWidth / 2);\n            let y = Math.floor(this.adjustStageHeight / 2);\n\n            this.adjustBitmap.x = x;\n            this.adjustBitmap.y = y;\n            this.adjustBitmap.scale = scale;\n\n            this.adjustBitmapPos.x = x;\n            this.adjustBitmapPos.y = y;\n            this.adjustBitmapPos.width = bitmapWidth;\n            this.adjustBitmapPos.height = bitmapHeight;\n            this.adjustBitmapPos.scale = scale;\n\n            //bitmap.regX = this.adjustStage.width / 2;\n            //bitmap.regY = this.adjustStage.height / 2;\n\n            this.pinchDistance = 0;\n            this.adjustStage.addChild(this.adjustBitmap);\n            this.renderAdjust();\n\n            $(this.adjustBitmap).bind('mousedown', {self: this}, this.startDragAdjustBitmap);\n            $(this.image).bind('mousedown', {self: this}, this.startDragAdjustBitmap);\n        };\n    }\n\n    addCanvasEventListener() {\n        //$(this.faceBitmap).bind('mousedown', {'self': this}, this.FaceBitmapStartAdjustDragHandler);\n        //$(this.adjustStage.canvas).bind('mousewheel', {'self': this}, this.adjustImage);\n\n        //$('#adjust-scale-plus').bind('mousedown', {self: this, func: this.adjustSize, val: +1}, this.handleTapHold);\n        //$('#adjust-scale-minus').bind('mousedown', {self: this, func: this.adjustSize, val: -1}, this.handleTapHold);\n\n        $('#adjust-scale-slider').on('input', () => {\n            this.adjustBitmapPos.scale = this.adjustBitmap.scale + $('#adjust-scale-slider').val() * 0.5;\n            this.renderAdjust();\n        });\n        //$('#adjust-scale-slider').change(() => {\n        //    console.log($('#adjust-scale-slider').val());\n        //    this.adjustBitmapPos.scale += Math.abs(this.adjustBitmapPos.scale) * $('#adjust-scale-slider').val() * 0.03;\n        //    this.renderAdjust();\n        //});\n\n        $('#adjust-canvas').bind('touchstart', {self: this}, this.adjustTouchStart);\n\n        $('#adjust-canvas').bind('touchstart', {self: this}, e => {\n            let touches = e.originalEvent.touches;\n            if (touches.length > 1) {\n                this.pinchDistance = Math.sqrt(Math.pow((touches[1].pageX - touches[0].pageX), 2) + Math.pow((touches[1].pageY - touches[0].pageY), 2));\n                this.adjustGestureStart(e);\n            } else {\n                this.pinchDistance = 0;\n            }\n        });\n        $('#adjust-canvas').bind('touchmove', {self: this}, e => {\n            let touches = e.originalEvent.touches;\n            if (this.pinchDistance <= 0) {\n                return;\n            }\n            if (touches.length < 2) {\n                this.pinchDistance = 0;\n                return;\n            }\n\n            let newDistance = Math.sqrt(Math.pow((touches[1].pageX - touches[0].pageX), 2) + Math.pow((touches[1].pageY - touches[0].pageY), 2));\n            let pinchCenterX = (touches[0].clientX + touches[1].clientX) / 2;\n            let pinchCenterY = (touches[0].clientY + touches[1].clientY) / 2;\n\n            let event = {scale: newDistance / this.pinchDistance, centerX: pinchCenterX, centerY: pinchCenterY, self: this};\n            this.adjustGestureChange(event);\n            //this.adjustGestureChange(event);\n        });\n        $('#adjust-canvas').bind('touchend', {self: this}, e => {\n            if (this.pinchDistance <= 0) {\n                return;\n            }\n            this.adjustGestureEnd(e);\n        });\n    }\n\n    startDragAdjustBitmap(e) {\n        let self = e.data.self;\n        let instance = e.originalEvent.currentTarget;\n        self.adjustBitmapDragStart.x = instance.x;\n        self.adjustBitmapDragStart.y = instance.y;\n        self.adjustBitmapDragStart.mouseX = e.originalEvent.stageX;\n        self.adjustBitmapDragStart.mouseY = e.originalEvent.stageY;\n        $(instance).bind('pressmove', {self: self}, self.dragAdjustBitmap);\n        $(instance).bind('pressup', {self: self}, self.stopDragAdjustBitmap);\n    }\n\n    dragAdjustBitmap(e) {\n        let self = e.data.self;\n        let instance = e.originalEvent.currentTarget;\n        instance.x = self.adjustBitmapDragStart.x + (e.originalEvent.stageX - self.adjustBitmapDragStart.mouseX);\n        instance.y = self.adjustBitmapDragStart.y + (e.originalEvent.stageY - self.adjustBitmapDragStart.mouseY);\n        self.adjustBitmapPos.x = instance.x;\n        self.adjustBitmapPos.y = instance.y;\n        self.renderAdjust();\n    }\n\n    stopDragAdjustBitmap(e) {\n        let self = e.data.self;\n        let instance = e.originalEvent.currentTarget;\n        $(instance).unbind('pressmove', self.dragAdjustBitmap);\n        $(instance).unbind('pressup', self.stopDragAdjustBitmap);\n    }\n\n    renderAdjust() {\n        // dragable area\n        //let posMinX = upload.adjustStage.canvas.width / 2 - (upload.adjustBitmapPos.width * upload.adjustBitmapPos.scale) / 2;\n        //let posMaxX = upload.adjustStage.canvas.width / 2 + (upload.adjustBitmapPos.width * upload.adjustBitmapPos.scale) / 2;\n        //let posMinY = upload.adjustStage.canvas.height / 2 - (upload.adjustBitmapPos.height * upload.adjustBitmapPos.scale) / 2;\n        //let posMaxY = upload.adjustStage.canvas.height / 2 + (upload.adjustBitmapPos.height * upload.adjustBitmapPos.scale) / 2;\n        //\n        //if(upload.adjustBitmapPos.x < posMinX) upload.adjustBitmapPos.x = posMinX;\n        //if(upload.adjustBitmapPos.x > posMaxX) upload.adjustBitmapPos.x = posMaxX;\n        //if(upload.adjustBitmapPos.y < posMinY) upload.adjustBitmapPos.y = posMinY;\n        //if(upload.adjustBitmapPos.y > posMaxY) upload.adjustBitmapPos.y = posMaxY;\n\n        this.adjustBitmap.regX = this.adjustBitmapPos.width / 2;\n        this.adjustBitmap.regY = this.adjustBitmapPos.height / 2;\n        this.adjustBitmap.x = this.adjustBitmapPos.x;\n        this.adjustBitmap.y = this.adjustBitmapPos.y;\n        this.adjustBitmap.scaleX = this.adjustBitmapPos.scale;\n        this.adjustBitmap.scaleY = this.adjustBitmapPos.scale;\n        this.adjustStage.update();\n    }\n\n    adjustSize(e) {\n        let self = e.data.self;\n        self.adjustBitmapPos.scale += Math.abs(self.adjustBitmapPos.scale) * e.data.val * 0.03;\n        self.renderAdjust();\n    }\n\n    handleTapHold(e) {\n        e.preventDefault();\n\n        let self = e.data.self;\n        $('body').bind('mouseup', {self: self}, self.handleTapHoldEnd);\n\n        let targetFunc = e.data.func;\n        self.tapHoldTimer = setInterval(function() {\n            targetFunc(e);\n        }, 250);\n\n        targetFunc(e);\n    }\n\n    handleTapHoldEnd(e) {\n        e.preventDefault();\n        //console.log(e);\n\n        let self = e.data.self;\n        $('body').unbind('mouseup', self.handleTapHoldEnd);\n\n        clearInterval(self.tapHoldTimer);\n        self.tapHoldTimer = null;\n    }\n\n    // multi touch gesture\n    adjustTouchStart(e) {\n        e.preventDefault();\n\n        let self = e.data.self;\n        self.hitTouches = [];\n        let touches = e.originalEvent.touches;\n        for (let i = 0, l = touches.length; i < l; ++i) {\n            let touch = touches[i];\n            let target = touch.target;\n            let stageX = touch.pageX - target.offsetLeft;\n            let stageY = touch.pageY - target.offsetTop;\n            self.hitTouches.push({touch: touch});\n        }\n    }\n\n    adjustTouchEnd(e) {\n    }\n\n    adjustGestureStart(e) {\n        let self = e.data.self;\n        self.dragEnabled = false;\n        self.pinchStartScale = self.adjustBitmapPos.scale;\n        self.pinchStartX = self.adjustBitmapPos.x;\n        self.pinchStartY = self.adjustBitmapPos.y;\n    }\n\n    adjustGestureChange(e) {\n        if (e.scale === 0) {\n            return;\n        }\n        //let self = e.data.self;\n        let self = e.self;\n        let bitmap = self.adjustBitmap;\n        let canvasScale = Utils.isSp() ? 1 : 0.5;\n        let newScale = self.pinchStartScale * e.scale;\n        let regDistanceX = (e.centerX * canvasScale - self.adjustBitmapPos.x);\n        let regDistanceY = (e.centerY * canvasScale - self.adjustBitmapPos.y);\n        let scaleDistance = newScale - self.adjustBitmapPos.scale;\n\n        self.adjustBitmapPos.scale = newScale;\n        self.adjustBitmapPos.x = self.pinchStartX + (e.centerX * 2 - Math.floor(self.adjustStageWidth / 2)) * scaleDistance;\n        self.adjustBitmapPos.y = self.pinchStartY + (e.centerY * 2 - Math.floor(self.adjustStageHeight / 2)) * scaleDistance;\n\n        self.renderAdjust();\n    }\n\n    adjustGestureEnd(e) {\n        let self = e.data.self;\n        self.pinchStartScale = null;\n        self.hitTouches = [];\n        self.dragEnabled = true;\n    }\n\n    createAdjustedImage() {\n        let createFaceImageWidth = this.adjustStageWidth;\n        let createFaceImageHeight = this.adjustStageHeight;\n\n        // create canvas\n        let canvas = document.createElement('canvas');\n        let stage = new createjs.Stage(canvas);\n        stage.width = createFaceImageWidth;\n        stage.height = createFaceImageHeight;\n        stage.canvas.width = createFaceImageWidth;\n        stage.canvas.height = createFaceImageHeight;\n\n        let bitmap = this.adjustBitmap;\n        stage.addChild(bitmap);\n\n        let bitmapWidth = bitmap.getBounds().width;\n        let bitmapHeight = bitmap.getBounds().height;\n\n        bitmap.regX = bitmapWidth / 2;\n        bitmap.regY = bitmapHeight / 2;\n        bitmap.x = this.adjustBitmapPos.x;\n        bitmap.y = this.adjustBitmapPos.y;\n        bitmap.scaleX = this.adjustBitmapPos.scale;\n        bitmap.scaleY = this.adjustBitmapPos.scale;\n\n        stage.update();\n\n        let trimmingImage = this.createTrimmingImage(stage);\n        // var orientationImage = upload.createOrientationImage(trimmingImage);\n\n        // capture bitmap\n        let base64Image = trimmingImage.toDataURL('image/png');\n\n        return base64Image;\n    }\n\n    createTrimmingImage(stage) {\n        let pos = this.adjustBitmapPos;\n        let drawWidth = pos.width * pos.scale;\n        let drawHeight = pos.height * pos.scale;\n        let drawX = pos.x - (drawWidth / 2);\n        let drawY = pos.y - (drawHeight / 2);\n        let trimmingX = Math.max(drawX, 0);\n        let trimmingY = Math.max(drawY, 0);\n        let trimmingW;\n        let trimmingH;\n\n        if (stage.width > drawWidth) {\n            if (drawX < 0) {\n                trimmingW = drawWidth + drawX;\n            } else {\n                trimmingW = Math.min(drawWidth, stage.width - drawX);\n            }\n        } else {\n            if (drawX < 0) {\n                trimmingW = Math.min(drawWidth + drawX, stage.width);\n            } else {\n                trimmingW = stage.width - drawX;\n            }\n        }\n\n        if (stage.height > drawHeight) {\n            if (drawY < 0) {\n                trimmingH = drawHeight + drawY;\n            } else {\n                trimmingH = Math.min(drawHeight, stage.height - drawY);\n            }\n        } else {\n            if (drawY < 0) {\n                trimmingH = Math.min(drawHeight + drawY, stage.height);\n            } else {\n                trimmingH = stage.height - drawY;\n            }\n        }\n\n        let trimmingCanvas = document.createElement('canvas');\n        let trimmingStage = new createjs.Stage(trimmingCanvas);\n\n        trimmingStage.width = trimmingW;\n        trimmingStage.height = trimmingH;\n        trimmingStage.canvas.width = trimmingW;\n        trimmingStage.canvas.height = trimmingH;\n\n        let bitmap = new createjs.Bitmap(stage.canvas);\n        trimmingStage.addChild(bitmap);\n        bitmap.x = -trimmingX;\n        bitmap.y = -trimmingY;\n\n        trimmingStage.update();\n\n        return trimmingStage.canvas;\n    }\n\n    createOrientationImage(inputImage) {\n        let inputW = inputImage.width;\n        let inputH = inputImage.height;\n        let inputAspect = inputH / inputW;\n\n        let outputW;\n        let outputH;\n        let outputScale;\n\n        if (inputAspect > this.adjustStageAspect) {\n            outputH = Math.min(inputH, 2000);\n            outputW = outputH / inputAspect;\n            outputScale = outputH / inputH;\n        } else {\n            outputW = Math.min(inputW, 2000);\n            outputH = outputW * inputAspect;\n            outputScale = outputW / inputW;\n        }\n\n        let tempCanvas = document.createElement('canvas');\n        let tempContext = tempCanvas.getContext('2d');\n        tempCanvas.width = outputW;\n        tempCanvas.height = outputH;\n\n        let orientationCanvas = document.createElement('canvas');\n        let orientationStage = new createjs.Stage(orientationCanvas);\n\n        orientationStage.width = outputW;\n        orientationStage.height = outputH;\n        orientationStage.canvas.width = outputW;\n        orientationStage.canvas.height = outputH;\n\n        //let graphic = new createjs.Graphics();\n        //graphic.beginFill('#FF0000');\n        //graphic.drawRect(0, 0, outputW, outputH);\n        //\n        //let shape = new createjs.Shape(graphic);\n        //shape.x = 0;\n        //shape.y = 0;\n        //orientationStage.addChild(shape);\n\n        tempContext.drawImage(inputImage, 0, 0, outputW, outputH);\n\n        let bitmap = new createjs.Bitmap(tempCanvas);\n        bitmap.x = 0;\n        bitmap.y = 0;\n        orientationStage.addChild(bitmap);\n\n        let matrix = null;\n        switch (this.orientation) {\n        case 3:\n            // 180 rotate left\n            orientationStage.width = outputW;\n            orientationStage.height = outputH;\n            orientationStage.canvas.width = outputW;\n            orientationStage.canvas.height = outputH;\n\n            matrix = bitmap.getMatrix();\n            matrix.rotate(Math.PI);\n            matrix.translate(outputW, outputH);\n            matrix.decompose(bitmap);\n\n            break;\n        case 6:\n            // 90 rotate right\n            orientationStage.width = outputH;\n            orientationStage.height = outputW;\n            orientationStage.canvas.width = outputH;\n            orientationStage.canvas.height = outputW;\n\n            matrix = bitmap.getMatrix();\n            matrix.rotate(0.5 * Math.PI);\n            matrix.translate(outputH, 0);\n            matrix.decompose(bitmap);\n\n            break;\n        case 8:\n            // 90 rotate left\n            orientationStage.width = outputH;\n            orientationStage.height = outputW;\n            orientationStage.canvas.width = outputH;\n            orientationStage.canvas.height = outputW;\n\n            matrix = bitmap.getMatrix();\n            matrix.rotate(-0.5 * Math.PI);\n            matrix.translate(0, outputW);\n            matrix.decompose(bitmap);\n\n            break;\n        default:\n            break;\n        }\n\n        orientationStage.update();\n        // $(\"body\").append($(orientationStage.canvas));\n\n        return orientationStage.canvas;\n    }\n\n    base64ToFile(base64, type) {\n        let bin = atob(base64.replace(/^.*,/, ''));\n        let buffer = new Uint8Array(bin.length);\n        for (let i = 0; i < bin.length; i++) {\n            buffer[i] = bin.charCodeAt(i);\n        }\n        let file = null;\n        try {\n            file = new File([buffer.buffer], 'image.png', {\n                type: type\n            });\n        } catch (e) {\n            //console.log(e);\n            return null;\n        }\n        return file;\n    }\n\n    base64ToBlob(base64, type) {\n        let bin = atob(base64.replace(/^.*,/, ''));\n        let buffer = new Uint8Array(bin.length);\n        for (let i = 0; i < bin.length; i++) {\n            buffer[i] = bin.charCodeAt(i);\n        }\n        let blob = null;\n        try {\n            blob = new Blob([buffer.buffer], {\n                type: type\n            });\n        } catch (e) {\n            //console.log(e);\n            return null;\n        }\n        return blob;\n    }\n\n}\n\nmodule.exports = new Main();\n",
+			"file": "/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/src/scripts/main.js",
+			"file_size": 35890,
+			"file_write_time": 131127797540000000,
+			"settings":
+			{
+				"buffer_size": 35757,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/src/scripts/nav.js",
+			"settings":
+			{
+				"buffer_size": 3670,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "import $ from 'jquery';\n\nexport default class Utils {\n\n    static circleTrim(){\n            \n    }\n\n\n    static retinize() {\n        let retinaCheck = window.devicePixelRatio;\n        if (retinaCheck >= 2) {\n            $('img.retina').each(function() {\n                let retinaImage = $(this).attr('src').replace(/\\.(?=(?:png|jpg|jpeg)$)/i, '@2x.');\n                $(this).attr('srcset', retinaImage + ' 2x');\n            });\n        }\n    }\n\n    static checkLanguage() {\n        if (this.isAvailableSessionStorage() && sessionStorage.getItem('locale') !== null) {\n            return sessionStorage.getItem('locale');\n        }\n\n        let ua = window.navigator.userAgent.toLowerCase();\n        try {\n            // chrome\n            if (ua.indexOf('chrome') !== -1) {\n                return (navigator.languages[0] || navigator.browserLanguage || navigator.language || navigator.userLanguage).substr(0, 2);\n            }\n            return (navigator.browserLanguage || navigator.language || navigator.userLanguage).substr(0, 2);\n        } catch (e) {\n            return undefined;\n        }\n    }\n\n    static isSp() {\n        let ua = navigator.userAgent;\n        if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0 || ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {\n            return true;\n        }\n        return false;\n    }\n\n    static isSupportCanvas() {\n        return document.createElement('canvas').getContext;\n    }\n\n    static hasGetUserMedia() {\n        return Boolean(navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia);\n    }\n\n    static isAvailableFileApi() {\n        if (window.File && window.FileReader && window.FileList && window.Blob) {\n            return true;\n        }\n        return false;\n    }\n\n    static isAvailableLocalStorage() {\n        if (('localStorage' in window) && (window.localStorage !== null)) {\n            return true;\n        }\n        return false;\n    }\n\n    static isAvailableSessionStorage() {\n        if (('sessionStorage' in window) && (window.sessionStorage !== null)) {\n            return true;\n        }\n        return false;\n    }\n\n    static getOrientation(imgDataURL) {\n        let byteString = atob(imgDataURL.split(',')[1]);\n        let orientaion = byteStringToOrientation(byteString);\n        return orientaion;\n\n        function byteStringToOrientation(img) {\n            let head = 0;\n            let orientation;\n            while (1) {\n                if (img.charCodeAt(head) === 255 & img.charCodeAt(head + 1) === 218) {\n                    break;\n                }\n                if (img.charCodeAt(head) === 255 & img.charCodeAt(head + 1) === 216) {\n                    head += 2;\n                } else {\n                    let length = img.charCodeAt(head + 2) * 256 + img.charCodeAt(head + 3);\n                    let endPoint = head + length + 2;\n                    if (img.charCodeAt(head) === 255 & img.charCodeAt(head + 1) === 225) {\n                        let segment = img.slice(head, endPoint);\n                        let bigEndian = segment.charCodeAt(10) === 77;\n                        let count = 0;\n                        if (bigEndian) {\n                            count = segment.charCodeAt(18) * 256 + segment.charCodeAt(19);\n                        } else {\n                            count = segment.charCodeAt(18) + segment.charCodeAt(19) * 256;\n                        }\n                        for (let i = 0; i < count; i++) {\n                            let field = segment.slice(20 + 12 * i, 32 + 12 * i);\n                            if ((bigEndian && field.charCodeAt(1) === 18) || (!bigEndian && field.charCodeAt(0) === 18)) {\n                                orientation = bigEndian ? field.charCodeAt(9) : field.charCodeAt(8);\n                            }\n                        }\n                        break;\n                    }\n                    head = endPoint;\n                }\n                if (head > img.length) {\n                    break;\n                }\n            }\n            return orientation;\n        }\n    }\n\n}\n",
+			"file": "/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/src/scripts/utils.js",
+			"file_size": 4328,
+			"file_write_time": 131138204820000000,
+			"settings":
+			{
+				"buffer_size": 4184,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 61 files for \"onresize\"\n\n0 matches",
+			"settings":
+			{
+				"buffer_size": 44,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 256.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"rebuild",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"togglel",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"set json",
+				"Set Syntax: JSON (Javascript Next)"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"pro",
+				"Project Manager"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"enable ",
+				"Package Control: Enable Package"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"vim",
+				"View: Toggle Minimap"
+			],
+			[
+				"proej",
+				"Project Manager"
+			],
+			[
+				"lint",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"linter",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"toggle",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"tog",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"to",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"bu",
+				"Build With: Jade"
+			],
+			[
+				"build",
+				"Build With: Jade"
+			],
+			[
+				"format",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"ctags",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"set javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"snippet react",
+				"Snippet: React: class component"
+			],
+			[
+				"vue",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"toggle ",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"save",
+				"File: Save All"
+			],
+			[
+				"set bab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"jsx",
+				"Set Syntax: JSX"
+			],
+			[
+				"set java",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"es",
+				"ESLint Formatter: Format this file"
+			],
+			[
+				"linter ",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"eslint",
+				"ESLint"
+			],
+			[
+				"linter togg",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"disable lin",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"form",
+				"Format: Javascript"
+			],
+			[
+				"esfo",
+				"ESLint Formatter: Format this file"
+			],
+			[
+				"linter setting",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"indent",
+				"Bracketeer: Indent Text"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"sublimli",
+				"SublimeLinter: Clear Caches"
+			],
+			[
+				"fromat",
+				"Format: Javascript"
+			],
+			[
+				"linte",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"snippet edit ",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"disabl",
+				"Package Control: Disable Package"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"json l",
+				"Pretty JSON: Validate"
+			],
+			[
+				"saveall",
+				"File: Save All"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"java ba",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"javascr",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"set coff",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript Next"
+			],
+			[
+				"set h",
+				"Set Syntax: HTML"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"setbab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"savea",
+				"File: Save All"
+			],
+			[
+				"make",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"make s",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"set babe",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"makes",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"bab",
+				"Babel Transform"
+			],
+			[
+				"set babel",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"savel",
+				"File: Save All"
+			],
+			[
+				"diff",
+				"Git: Diff All Files"
+			],
+			[
+				"com",
+				"Sublimerge: Compare to Revision..."
+			],
+			[
+				"compare",
+				"Sublimerge: Compare to Revision..."
+			],
+			[
+				"revision",
+				"Sublimerge: Compare Revision to Revision..."
+			],
+			[
+				"compew",
+				"Sublimerge: Compare to View..."
+			],
+			[
+				"saveal",
+				"File: Save All"
+			],
+			[
+				"sub",
+				"Sublimerge"
+			],
+			[
+				"subl",
+				"Sublimerge"
+			],
+			[
+				"su",
+				"Sublimerge"
+			],
+			[
+				"comp",
+				"Sublimerge: Compare to Revision..."
+			],
+			[
+				"compa",
+				"Sublimerge: Compare to Revision..."
+			],
+			[
+				"save all",
+				"File: Save All"
+			],
+			[
+				"wrap",
+				"BracketHighlighter: Wrap Selections with Brackets"
+			],
+			[
+				"sublim",
+				"Sublimerge"
+			],
+			[
+				"compra",
+				"Sublimerge: Compare to Revision..."
+			],
+			[
+				"subli",
+				"Sublimerge"
+			],
+			[
+				"fold",
+				"BracketHighlighter: Fold Bracket Content"
+			],
+			[
+				"mini",
+				"Minify Javascript"
+			],
+			[
+				"format co",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"vinta",
+				"Vintageous: Toggle Vim Ctrl Keys"
+			],
+			[
+				"javascrip",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"dib",
+				"Package Control: Disable Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"compareto",
+				"Sublimerge: Compare to Revision..."
+			],
+			[
+				"revisio n",
+				"Sublimerge: Compare to Revision..."
+			],
+			[
+				"proje",
+				"Project Manager"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"disablepl",
+				"SublimeCodeIntel: Disable Plugin"
+			],
+			[
+				"p",
+				"Project Manager"
+			],
+			[
+				"toggle li",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"diab",
+				"Package Control: Disable Package"
+			],
+			[
+				"set javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"build j",
+				"Build With: xJs"
+			],
+			[
+				"bui",
+				"Build: Cancel"
+			],
+			[
+				"disable ",
+				"Package Control: Disable Package"
+			],
+			[
+				"set syntax javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pr",
+				"Project Manager"
+			],
+			[
+				"coffee lint",
+				"Coffee: Lint"
+			],
+			[
+				"coffee syn",
+				"Coffee: Check Syntax"
+			],
+			[
+				"ctag",
+				"CTags: Show Symbols (all)"
+			],
+			[
+				"wa",
+				"WakaTime: Open Dashboard"
+			],
+			[
+				"waka",
+				"WakaTime: Open Dashboard"
+			],
+			[
+				"isntal",
+				"Haxelib: Install library"
+			],
+			[
+				"vintag",
+				"Vintageous: Open .vintageousrc"
+			],
+			[
+				"shel",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"forma",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"for",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"syntax c ",
+				"Set Syntax: C++"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"next",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"linter show",
+				"SublimeLinter: Don’t Show Errors on Save"
+			],
+			[
+				"linter st",
+				"SublimeLinter: Choose Mark Style"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"enabl",
+				"BracketHighlighter: Toggle Global Enable"
+			],
+			[
+				"enable l",
+				"SublimeLinter: Enable Linter"
+			],
+			[
+				"disable linte",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"linter deb",
+				"SublimeLinter: Enable Debug Mode"
+			],
+			[
+				"javasci",
+				"Set Syntax: JavaScript Next"
+			],
+			[
+				"html",
+				"Snippet: html"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"sublime.log_input(True)",
+			"sublime.log_commands(True)",
+			"clear",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282'+ 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s),please try manual install' % (dh, h)) if dh != h else open(os.path.join(ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/ykido/Desktop/job/spat/experiments/deeplooks-web",
+		"/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/api",
+		"/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/api/ext_proc",
+		"/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/api/ext_proc/submodule",
+		"/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/api/tmp_uploads",
+		"/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/bin",
+		"/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/public",
+		"/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/server_config",
+		"/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/src",
+		"/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/src/resources",
+		"/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/src/styles",
+		"/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/src/templates",
+		"/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/src/templates/components",
+		"/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/views"
+	],
+	"file_history":
+	[
+		"/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/src/scripts/main.js",
+		"/Users/ykido/.tmux.conf",
+		"/Users/ykido/Desktop/job/androp_flower/bin/androp-hana-manage/local/purge/package.json",
+		"/Users/ykido/Desktop/job/androp_flower/bin/androp-hana-manage/local/sync/test/oscSender.js",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/GoSublime/CHANGELOG.md",
+		"/Users/ykido/Desktop/job/gifted/SOOH/dev/index.jade",
+		"/Users/ykido/Desktop/job/gifted/SOOH/dev/assets/js/Consts.js",
+		"/Users/ykido/Desktop/job/gifted/SOOH/dev/assets/js/Main.js",
+		"/Users/ykido/Desktop/job/gifted/SOOH/dev/assets/js/LetterAnim.js",
+		"/Users/ykido/Desktop/job/gifted/SOOH/public/bin/lib/lib.js",
+		"/Users/ykido/Desktop/job/gifted/SOOH/dev/assets/js/EventHandler.js",
+		"/Users/ykido/Desktop/job/gifted/SOOH/dev/assets/js/Init.js",
+		"/Users/ykido/Desktop/job/gifted/SOOH/bower_components/fakeLoader/fakeLoader.js",
+		"/Users/ykido/Desktop/job/gifted/SOOH/bower_components/fakeLoader/fakeLoader.min.js",
+		"/Users/ykido/Desktop/job/gifted/SOOH/public/bin/bundle.js",
+		"/Users/ykido/Desktop/job/gifted/SOOH/public/bin/bundle.css",
+		"/Users/ykido/Desktop/job/gifted/SOOH/public/index.html",
+		"/Users/ykido/Desktop/job/gifted/SOOH/bower.json",
+		"/Users/ykido/Desktop/job/gifted/SOOH/public/media/img/SOOH_LANDING.svg",
+		"/Users/ykido/Desktop/job/gifted/SOOH/dev/assets/css/main.css",
+		"/Users/ykido/Desktop/job/gifted/SOOH/dev/assets/css/spinner.css",
+		"/Library/Preferences/com.apple.RemoteManagement.plist",
+		"/Library/Preferences/com.teamviewer.teamviewer.preferences.plist",
+		"/Users/ykido/Desktop/job/androp_flower/doc/equip/projector",
+		"/Users/ykido/Desktop/job/androp_flower/bin/androp-timer/timerApp/_app.js",
+		"/Users/ykido/Desktop/job/androp_flower/scripts/millumin-sync-master.sh",
+		"/Users/ykido/workspace/OF/of_v0.9.3_osx_release/apps/myApps/Kinect2Syphon/bin/run.sh",
+		"/Users/ykido/Desktop/job/androp_flower/scripts/millumin-sync-all.sh",
+		"/Users/ykido/workspace/personalSpace/study/react/react-fullpage/example/ui/home.js",
+		"/Users/ykido/workspace/OF/of_v0.9.3_osx_release/apps/projection/lpmtX2/clone_lpmt_addons",
+		"/Users/ykido/workspace/OF/of_v0.9.3_osx_release/apps/myApps/DurationX/clone_addons.sh",
+		"/Users/ykido/workspace/personalSpace/study/react/react-fullpage/example/demo.js",
+		"/Users/ykido/.ssh/config",
+		"/Users/ykido/dotfiles/src/.vimrc",
+		"/Users/ykido/workspace/OF/of_v0.9.3_osx_release/apps/myApps/Duration/clone_addons.sh",
+		"/Users/ykido/workspace/OF/of_v0.9.3_osx_release/addons/ofxTimeline/ofv09_osx_compilation_issues.md",
+		"/Users/ykido/workspace/personalSpace/study/react/react-fullpage/example/page/first.js",
+		"/Users/ykido/workspace/personalSpace/study/react/react-fullpage/,",
+		"/Users/ykido/workspace/personalSpace/generator/generator-rgwebpack/generators/app/templates/dist/js/bundle.map",
+		"/Users/ykido/workspace/personalSpace/generator/generator-rgwebpack/generators/app/templates/package.json",
+		"/Users/ykido/workspace/personalSpace/generator/generator-rgwebpack/generators/app/templates/gulpfile.js",
+		"/Users/ykido/workspace/personalSpace/generator/generator-rgwebpack/generators/app/templates/dist/js/bundle.js",
+		"/Users/ykido/workspace/personalSpace/generator/generator-rgwebpack/generators/app/templates/app/app.js",
+		"/Users/ykido/workspace/personalSpace/generator/generator-rgwebpack/generators/app/templates/.eslintrc",
+		"/Users/ykido/workspace/personalSpace/generator/generator-rgwebpack/generators/app/templates/app/ui/home.js",
+		"/Users/ykido/workspace/personalSpace/generator/generator-rgwebpack/generators/app/templates/dist/index.html",
+		"/Users/ykido/workspace/personalSpace/generator/generator-rgwebpack/generators/app/index.js",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/ESLint.sublime-settings",
+		"/Users/ykido/workspace/personalSpace/generator/generator-rgwebpack/generators/app/templates/webpack.config.js",
+		"/Users/ykido/.eslintrc",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/ESLint-Formatter/ESLint-Formatter.sublime-settings",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/ESLint-Formatter.sublime-settings",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/li.sublime-snippet",
+		"/Users/ykido/dotfiles/src/sublime/User/Default (OSX).sublime-keymap",
+		"/Users/ykido/dotfiles/src/sublime/User/Default (OSX).sublime-mousemap",
+		"/Users/ykido/workspace/job-works/uno/uno-face-capture-page/dev/assets/js/Consts.js",
+		"/Users/ykido/workspace/threeJs/app/dev/collada.ejs",
+		"/Users/ykido/.zprofile",
+		"/Users/ykido/workspace/personalSpace/prometones_three/components/messages/MessageSection.jsx",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/lili.sublime-snippet",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/div.sublime-snippet",
+		"/Users/ykido/Library/Application Support/Sublime Text 3/Packages/User/bootstrap.sublime-snippet",
+		"/Users/ykido/workspace/job-works/uno-photo-page/public/SP/bin/bundle.css",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/js/Consts.js",
+		"/Users/ykido/Desktop/13054652_10206367318557980_1302734466_o.jpg",
+		"/Users/ykido/workspace/job-works/uno-photo-page/public/SP/bin/lib/SP_consts.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/public/bin/lib/PC_consts.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/public/bin/bundle.css",
+		"/Users/ykido/workspace/job-works/uno-photo-page/public/bin/bundle.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/public/bin/lib/lib.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/public/bin/lib/lib.css",
+		"/Users/ykido/.ssh/n",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/SP/js/Facedeformer.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/SP/js/FaceFixer.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/public/sp.html",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/js/init.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/js/WindowEvent.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/js/FileClass.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/js/utils.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/js/FaceFixer.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/js/PostProcess.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/SP/js/Consts.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/README.md",
+		"/Users/ykido/workspace/job-works/uno-photo-page/public/index.html",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/js/MainClass.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/node_modules/argparse/lib/const.js",
+		"/Users/ykido/workspace/job-works/uno-photo-page/dev/assets/SP/js/Init.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/README.md",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/css/main.css",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/SP/bin/lib/lib.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/bower_components/clmtrackr/.bower.json",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/bin/bundle.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/js/ApiHandler.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/SP/bin/socialbarber_sp.min.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/bower.json",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/index.html",
+		"/Users/ykido/workspace/threeJs/gulpfile.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/SP/bin/bundle.css",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/gulpfile.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/css/socialBarBar.css",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/js/main.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/sp.html",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/SP/bin/lib/lib.css",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/SP/bin/bundle.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/js/UserInput.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/js/FileClass.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/bower_components/clmtrackr/js/clm.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/js/init.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/js/SendingHandler.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/js/MainClass.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/js/WindowEvent.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/js/Init.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/js/Consts.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/js/FileHandler.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/js/PostProcess.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/js/FaceDetection.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/js/eventHandler.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/css/socialBarBar.css",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/css/main.css",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/SP/js/Main.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/node_modules/argparse/lib/const.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/js/CameraApp.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/dev/assets/js/utils.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/bin/lib/lib.js",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/bin/lib/lib.css",
+		"/Users/ykido/workspace/job-works/webapp-skeleton/public/bin/bundle.css"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 94.0,
+		"where_history":
+		[
+			"",
+			"./src/",
+			"src/",
+			"src/pages",
+			"src/components",
+			"src/",
+			"src",
+			"",
+			"./test/",
+			"./8.react-redux/",
+			"./public",
+			"./",
+			"./components",
+			"components",
+			"",
+			"public/",
+			"dev/assets/js",
+			"dev/assets/SP",
+			"dev/assets/js",
+			"dev/assets/SP",
+			"dev/assets/js",
+			"dev/assets/SP",
+			"",
+			"bower_components/clmtrackr",
+			"dev/assets/SP",
+			"dev/assets/",
+			"dev/assets/js",
+			"dev/assets/",
+			"dev/assets/SP",
+			"dev/assets/",
+			"dev/assets/js",
+			"dev/assets/SP/js",
+			"dev/assets/js",
+			"dev/assets/SP",
+			"dev/assets/js",
+			"dev/assets/ks",
+			"bower_components/clmtrackr",
+			"dev/assets/js",
+			"bower_components/bootstrap/less/",
+			"bower_components/",
+			"bower_components",
+			"dev/assets/js",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"sp",
+			"media",
+			"content",
+			"ejs",
+			"view",
+			"ejs",
+			"this.initLocales();",
+			"resize",
+			"onresize",
+			"nav",
+			"jp-",
+			"jp",
+			"-btn\" class=\"start-btn\" type=\"button\" data-i18n=\"[html]demo.top.start-btn-pc\"></button>\n                    <button id=\"sp-start-",
+			"Utils",
+			"XHR",
+			"Utils",
+			"initna",
+			"module",
+			"ejs",
+			"video",
+			"クリック",
+			"click",
+			"hiddenItem",
+			"hiddenitem",
+			"#000",
+			"#fff",
+			" background-color:",
+			"background-color",
+			"loader",
+			"blink",
+			"callback",
+			"settings.",
+			"callback",
+			"less",
+			"callback",
+			"timelinemax",
+			"timeline",
+			"green",
+			"gsap",
+			"eventhandler",
+			"window",
+			"init",
+			"body-msg",
+			"js_files",
+			"extension",
+			"blackmagic",
+			"broadcast",
+			"history",
+			");",
+			"var ",
+			");",
+			"bootstrap",
+			"jque",
+			"\"",
+			"path",
+			"theme",
+			"yktest",
+			"eslint",
+			"update",
+			"update(",
+			"provide",
+			"Provider",
+			"provide",
+			"Pro",
+			"provide",
+			"histo",
+			"router",
+			"ptech",
+			"u_resolution",
+			"super",
+			"runseq",
+			"nw",
+			"nw.js",
+			"nw",
+			"fs",
+			"pointOnLine",
+			"Glsl",
+			"ss",
+			"_panoClient",
+			"_composeFromTile",
+			"_total",
+			"onProgress",
+			"statPano",
+			"stat-pano",
+			"progress",
+			"api",
+			"fadeaction",
+			"Anim",
+			"anim",
+			"Presets",
+			"set_specific_morph",
+			"ensureLoop",
+			"Logic",
+			"å",
+			"this.state",
+			"Channel",
+			"channel",
+			"Channel",
+			"channel",
+			"Channel",
+			"channel",
+			"Channel",
+			"channel",
+			"Channel",
+			"channel",
+			"Channel",
+			"panel",
+			"activechannel",
+			"active",
+			"addchannel",
+			"setState",
+			"addChannel",
+			"new",
+			"stg:",
+			"stg",
+			"stg:",
+			"guide",
+			"normal",
+			"guide",
+			"stg:false",
+			"DEBUG.on:false",
+			"api.social",
+			"api.so",
+			"api.uno",
+			"blink",
+			"loading",
+			"blink",
+			"body"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"0",
+			"value",
+			"size",
+			"\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/src/resources/locales/en/translation.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7683,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								7683
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+									"1":
+									[
+										4771,
+										4772
+									]
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/src/templates/index.ejs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8528,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1108,
+								1108
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/EJS/EJS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/src/styles/_font.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 466,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								466,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/public/concept.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5531,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								542,
+								542
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										511,
+										515
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										511,
+										515
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/src/templates/components/_nav.ejs",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1992,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1115,
+								1115
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1121,
+										1122
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1104,
+										1105
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/EJS/EJS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/src/scripts/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 35757,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								685,
+								685
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										974,
+										975
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										331,
+										332
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/src/scripts/nav.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3670,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								130,
+								130
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										129,
+										130
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										128,
+										129
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/ykido/Desktop/job/spat/experiments/deeplooks-web/src/scripts/utils.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4184,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								92,
+								92
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										97,
+										98
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										78,
+										79
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 548.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 44,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"default_dir": "/Users/ykido/Desktop/job/spat/experiments/deeplooks-web",
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ 	].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 26.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 116.0
+	},
+	"pinned_build_system": "Packages/Jade Build/Jade.sublime-build",
+	"project": "deeplooks-web.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"dev/assets/js/Init.js"
+			],
+			[
+				"i",
+				"dev/index.jade"
+			],
+			[
+				"inde",
+				"public/index.html"
+			],
+			[
+				"update",
+				"test/update.js"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"event",
+				"dev/assets/SP/js/eventHandler.js"
+			],
+			[
+				"postpr",
+				"dev/assets/js/PostProcess.js"
+			],
+			[
+				"untit",
+				"untitled"
+			],
+			[
+				"index",
+				"public/index.html"
+			],
+			[
+				"main",
+				"dev/assets/js/main.js"
+			],
+			[
+				"conts",
+				"dev/assets/js/Consts.js"
+			],
+			[
+				"main.cs",
+				"dev/assets/css/main.css"
+			],
+			[
+				"main.css",
+				"dev/assets/css/main.css"
+			],
+			[
+				"consts",
+				"dev/assets/js/Consts.js"
+			],
+			[
+				"cons",
+				"node_modules/argparse/lib/const.js"
+			],
+			[
+				"cosn",
+				"dev/assets/js/Consts.js"
+			],
+			[
+				"cam",
+				"dev/assets/js/CameraApp.js"
+			],
+			[
+				"face",
+				"dev/assets/js/FaceDetection.js"
+			],
+			[
+				"eventhandler",
+				"dev/assets/js/EventHandler.js"
+			],
+			[
+				"const",
+				"node_modules/argparse/lib/const.js"
+			],
+			[
+				"eventha",
+				"dev/assets/SP/js/eventHandler.js"
+			],
+			[
+				"sp.",
+				"public/sp.html"
+			],
+			[
+				"file",
+				"dev/assets/js/FileClass.js"
+			],
+			[
+				"main.js",
+				"dev/assets/js/main.js"
+			],
+			[
+				"cameraapp",
+				"dev/assets/js/CameraApp.js"
+			],
+			[
+				"win",
+				"dev/assets/js/WindowEvent.js"
+			],
+			[
+				"camera",
+				"dev/assets/js/CameraApp.js"
+			],
+			[
+				"windw",
+				"dev/assets/js/WindowEvent.js"
+			],
+			[
+				"init",
+				"dev/assets/js/init.js"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"g",
+				"examples/js/GSVPano.js"
+			],
+			[
+				"gs",
+				"examples/js/GSVPano.js"
+			],
+			[
+				"animationskinnin",
+				"webgl_animation_skinning_blending.html"
+			],
+			[
+				"loaderjson",
+				"webgl_loader_json_blender.html"
+			],
+			[
+				"jsonl",
+				"webgl_loader_json_claraio.html"
+			],
+			[
+				"loadjson",
+				"webgl_loader_json_blender.html"
+			],
+			[
+				"jsonlo",
+				"js/loaders/AssimpJSONLoader.js"
+			],
+			[
+				"me.",
+				"threeJsLoadJSONFileFromBlenderSampleStudy/me.js"
+			],
+			[
+				"animatin",
+				"webgl_animation_skinning_blending.html"
+			],
+			[
+				"loadjso",
+				"webgl_loader_json_objconverter.html"
+			],
+			[
+				"track",
+				"js/controls/TrackballControls.js"
+			],
+			[
+				"json",
+				"webgl_loader_json_blender.html"
+			],
+			[
+				"animation",
+				"webgl_animation_skinning_blending.html"
+			],
+			[
+				"anima",
+				"webgl_animation_skinning_blending.html"
+			],
+			[
+				"collada",
+				"webgl_loader_collada_skinning.html"
+			],
+			[
+				"clara",
+				"three.js/examples/models/json/teapot-claraio.json"
+			],
+			[
+				"dat.gui",
+				"bower_components/dat-gui/build/dat.gui.js"
+			],
+			[
+				"datgui",
+				"bower_components/dat-gui/build/dat.gui.min.js"
+			],
+			[
+				"datgu",
+				"bower_components/dat-gui/build/dat.gui.js"
+			],
+			[
+				"fishtank",
+				"app/dev/js/FishTankRenderer.js"
+			],
+			[
+				"fishtan",
+				"app/dev/js/FishTankRenderer.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 252.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
