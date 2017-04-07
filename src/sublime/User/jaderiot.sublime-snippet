@@ -1,0 +1,25 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+hoge
+	div hello
+
+	script.
+		import riot from "riot"
+
+		this.on("mount",()=>{
+
+
+			})
+
+		this.on("unmount",()=>{
+
+			
+			})
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>jaderiot</tabTrigger>
+  <description>riot+es6+jade template</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.jade.riot, meta.tag.any.jade, entity.name.tag.jade</scope>
+</snippet>

@@ -13,7 +13,7 @@
 		{
 			"annotations":
 			{
-				"@disable": false,
+				"@disable": true,
 				"args":
 				[
 				],
@@ -55,7 +55,7 @@
 			},
 			"eslint":
 			{
-				"@disable": false,
+				"@disable": true,
 				"args":
 				[
 				],
@@ -93,7 +93,7 @@
 			},
 			"jshint":
 			{
-				"@disable": true,
+				"@disable": false,
 				"args":
 				[
 				],

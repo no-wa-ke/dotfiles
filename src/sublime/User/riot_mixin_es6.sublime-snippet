@@ -1,0 +1,22 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+
+  	const hogeMixin = {
+  		init:()=>{
+
+  		},
+  		foo: ()=>{
+
+  		}
+  	}
+
+  	export default hogeMixin
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>riot-mixin-es6</tabTrigger>
+  <description>template for mixin for riot.js with es6</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js</scope>
+</snippet>

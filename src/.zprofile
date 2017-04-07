@@ -17,15 +17,17 @@ alias glog="tail -f /var/log/system.log | ccze -A"
 alias ofx="cd ~/github_tester/OF/"
 alias ws="cd ~/workspace"
 alias t2="tree -L 2"
+alias mytmp="cd ~/Desktop/dev/.tmp"
 alias gulp-php-skelton="sh ~/workspace/gulp-php-skelton/make.sh"
 alias rszp="sh ~/workspace/shell/imageResize.sh"
 alias aws="ssh -i ~/workspace/keys/aws/yk-test-app.pem ec2-user@52.37.128.78"
 alias vi="vim"
+alias get_esp32="export PATH=$PATH:$HOME/esp/xtensa-esp32-elf/bin"
 ##OS DEPENDENCIES(TODO:別ファイルに分ける)
 
 case "${OSTYPE}" in
 darwin*)
-  	# Mac  	
+  	# Mac
 	alias ls="ls -GF"
 	alias la="ls -la"
 	alias ctags="`brew --prefix`/bin/ctags"
@@ -35,14 +37,17 @@ linux*)
 	 alias ls='ls -F --color'
   ;;
 esac
+
 	#PATH設定
+	PATH=$PATH:$HOME/esp/esp-idf #path to esp-idf
 	PATH=$PATH:$HOME/.node/bin
 	PATH=$PATH:$HOME/.rbenv/bin
 	PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 	PATH=$PATH:$HOME/.node/bin/npm
 	PATH=$PATH:/usr/local/lib/node_modules
 	PATH=$PATH:/usr/local/heroku/bin ### Added by the Heroku Toolbel
-	export NODE_PATH=$NODE_PATH:/Users/ykido/.nvm/versions/node/v4.2.6/lib/node_modules	
+	PATH=$PATH:$HOME/esp/xtensa-esp32-elf/bin
+	# export NODE_PATH=$NODE_PATH:/Users/ykido/.nvm/versions/node/v4.2.6/lib/node_modules
 	export PATH
 	#export NODE_PATH=/usr/local/lib/node_module
 
@@ -50,10 +55,11 @@ esac
 	# The orginal version is saved in .zprofile.pysave
 	export PYENV_ROOT="$HOME/.pyenv"
 	export GOPATH=$HOME/workspace/go
-	export PATH=$PATH:$GOPATH/bin 
+	export PATH=$PATH:$GOPATH/bin
 	export PATH="$PYENV_ROOT/bin:$PATH"
 	eval "$(pyenv init -)"
-	# export MECAB_PATH=/usr/local/Cellar/mecab/0.996/lib/libmecab.dylib 	
+	eval "$(rbenv init -)"
+	# export MECAB_PATH=/usr/local/Cellar/mecab/0.996/lib/libmecab.dylib
 	# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 	# eval "$(anyenv init -)"
 # Initialization for FDK command line tools.Fri Oct 30 23:13:43 2015
@@ -61,3 +67,4 @@ FDK_EXE="/Users/ykido/bin/FDK/Tools/osx"
 PATH=${PATH}:"/Users/ykido/bin/FDK/Tools/osx"
 export PATH
 export FDK_EXE
+export PATH="$HOME/.rbenv/bin:$PATH"

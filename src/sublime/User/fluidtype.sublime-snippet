@@ -1,0 +1,12 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+@include fluid-type(font-size,${1:window-min-width},${2:window-max-width},${3:min-size},${4:max-size})
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>fluid-type</tabTrigger>
+  <description>fluid-type template</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.sass</scope>
+</snippet>
